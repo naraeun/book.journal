@@ -1,0 +1,27 @@
+name: 독서 통계 자동 갱신
+
+on:
+  push:
+    paths:
+      - 'books/**.md'
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 통계 생성
+        run: python scripts/analyze.py
+
+      - name: 변경사항 커밋
+        run: |
+          git config user.name "naraeun"
+          git config user.email "naraeun@gmail.com"
+          git add analysis/stats.md README.md
+          git diff --cached --quiet || git commit -m "📊 통계 자동 갱신"
+          git push
