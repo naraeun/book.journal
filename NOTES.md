@@ -29,9 +29,12 @@
 ### 스크립트
 - `scripts/aladin_search.py` — 알라딘 책 검색
 - `scripts/analyze.py` — 전체 통계 생성 (연도별 독서량, 카테고리, 작가, 연동률)
+- `scripts/create_review.py` — 리뷰 md 생성 + books 테이블 자동 연동
 - `scripts/migrate_columns.py` — 기존 md 파일에 리뷰/블로그 컬럼 일괄 추가
 - GitHub Actions로 `books/` 변경 시 통계 자동 갱신
 
 ### 앞으로 해야 할 것
-- 블로그 데이터 전환 방법 찾기
+- 블로그 본문 크롤링 자동화 검토
+- 리뷰 템플릿 필드 추가 검토 (평점, 태그 등)
+- 기존 블로그 글 일괄 전환
 

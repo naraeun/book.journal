@@ -14,7 +14,7 @@ TTB_KEY = os.environ.get("ALADIN_TTB_KEY", "")
 
 def search_book(title: str, author: str = "") -> dict | None:
     """알라딘 API로 책 검색"""
-    query = f"{title} {author}".strip()
+    query = f"{title} {author}".strip().replace("/", " ")
     params = {
         "ttbkey": TTB_KEY,
         "Query": query,

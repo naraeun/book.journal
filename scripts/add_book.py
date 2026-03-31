@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
 알라딘 API로 책 정보를 검색해서 해당 연도 md 파일에 자동 추가
+--blog 옵션 사용 시 리뷰 파일 생성 + 테이블 업데이트까지 수행
+
 사용법: python scripts/add_book.py
        python scripts/add_book.py "책제목"
        python scripts/add_book.py "책제목" "작가"
+       python scripts/add_book.py "책제목" "작가" --blog "URL"
 """
 
 import sys
@@ -13,8 +16,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from aladin_search import search_book, get_category_short
+from create_review import create_review_md, find_book, update_books_table
 
 BOOKS_DIR = Path(__file__).parent.parent / "books"
+REVIEWS_DIR = Path(__file__).parent.parent / "reviews"
 
 
 def parse_table(text: str) -> tuple[list[str], list[str], list[str]]:
@@ -107,13 +112,25 @@ def main():
     now = datetime.now()
     year, month = now.year, now.month
 
-    # 인자로 제목 받거나 입력 받기
-    if len(sys.argv) >= 2:
-        title_input = sys.argv[1]
-        author_input = sys.argv[2] if len(sys.argv) >= 3 else ""
+    # 인자 파싱 (--blog 옵션 분리)
+    args = sys.argv[1:]
+    blog_url = ""
+    if "--blog" in args:
+        idx = args.index("--blog")
+        if idx + 1 < len(args):
+            blog_url = args[idx + 1]
+            args = args[:idx] + args[idx + 2:]
+        else:
+            args = args[:idx]
+
+    if len(args) >= 1:
+        title_input = args[0]
+        author_input = args[1] if len(args) >= 2 else ""
     else:
         title_input = input("📚 책 제목: ").strip()
         author_input = input("✍️  작가 (선택, 엔터 건너뜀): ").strip()
+        if not blog_url:
+            blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
 
     if not title_input:
         print("❌ 제목을 입력해주세요.")
@@ -194,6 +211,25 @@ def main():
 
     if insert_row(md_file, new_row):
         print(f"✅ {year}.md에 추가 완료!")
+
+        # 블로그 URL이 있으면 리뷰 파일도 생성
+        if blog_url:
+            print(f"\n📝 리뷰 생성 중 (#{total_num})...")
+            book = find_book(total_num)
+            if book:
+                review_file = REVIEWS_DIR / str(year) / f"{total_num}.md"
+                review_file.parent.mkdir(parents=True, exist_ok=True)
+                content = create_review_md(book, blog_url)
+                review_file.write_text(content, encoding="utf-8")
+                print(f"✅ {review_file} 생성 완료!")
+
+                review_rel = f"../reviews/{year}/{total_num}.md"
+                if update_books_table(book, review_rel, blog_url):
+                    print(f"✅ {year}.md 테이블 업데이트 완료!")
+                else:
+                    print("⚠️  테이블 업데이트 실패 — 수동으로 확인해주세요.")
+            else:
+                print(f"⚠️  #{total_num}을 테이블에서 찾을 수 없습니다.")
     else:
         print("❌ 추가 실패")
 
