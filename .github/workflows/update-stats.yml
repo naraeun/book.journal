@@ -23,5 +23,5 @@ jobs:
           git config user.name "naraeun"
           git config user.email "naraeun@gmail.com"
           git add analysis/stats.md README.md
-          git diff --cached --quiet || git commit -m "📊 통계 자동 갱신"
+          git diff --cached --quiet || git commit -m "docs: 독서 통계 업데이트"
           git push
