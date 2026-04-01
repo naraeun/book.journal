@@ -65,6 +65,15 @@ def analyze(books: list[dict]) -> dict:
     by_year = Counter(b["연도"] for b in books)
     stats["by_year"] = dict(sorted(by_year.items()))
 
+    # 월별 독서량
+    months = []
+    for b in books:
+        try:
+            months.append(int(b.get("월", 0)))
+        except ValueError:
+            pass
+    stats["by_month"] = {m: c for m, c in sorted(Counter(months).items()) if m > 0}
+
     # 카테고리 분포 (대분류만)
     categories = []
     for b in books:
@@ -73,8 +82,28 @@ def analyze(books: list[dict]) -> dict:
         categories.append(top)
     stats["by_category"] = Counter(categories).most_common(15)
 
+    # 카테고리 세부 분류 (대분류>중분류, 상위 20)
+    sub_categories = []
+    for b in books:
+        cat = b.get("카테고리", "").strip()
+        sub_categories.append(cat if cat else "미분류")
+    stats["by_sub_category"] = Counter(sub_categories).most_common(20)
+
+    # 연도별 카테고리 변화 추이
+    year_cat = defaultdict(Counter)
+    for b in books:
+        cat = b.get("카테고리", "")
+        top = cat.split(">")[0].strip() if cat else "미분류"
+        year_cat[b["연도"]][top] += 1
+    stats["year_category"] = {y: cat.most_common(5) for y, cat in sorted(year_cat.items())}
+
     # 작가별 권수 (상위 15)
     stats["by_author"] = Counter(b.get("작가", "") for b in books).most_common(15)
+
+    # 평균 독서 속도 (월 평균 권수)
+    year_count = len(stats["by_year"])
+    stats["avg_per_year"] = round(len(books) / year_count, 1) if year_count else 0
+    stats["avg_per_month"] = round(len(books) / (year_count * 12), 1) if year_count else 0
 
     # 블로그·리뷰 연동률
     total = len(books)
@@ -104,12 +133,30 @@ def generate_stats_md(stats: dict) -> str:
 
     # 연도별 독서량
     lines.append("## 연도별 독서량\n")
-    lines.append("| 연도 | 권수 | 그래프 |")
-    lines.append("|------|-----:|--------|")
+    lines.append("| 연도 | 권수 | 월평균 | 그래프 |")
+    lines.append("|------|-----:|-------:|--------|")
     max_year_count = max(stats["by_year"].values()) if stats["by_year"] else 1
+    current_year = datetime.now().year
+    current_month = datetime.now().month
     for year, count in stats["by_year"].items():
+        months = current_month if year == current_year else 12
+        monthly_avg = round(count / months, 1)
         bar = render_bar(count, max_year_count)
-        lines.append(f"| {year} | {count} | `{bar}` |")
+        lines.append(f"| {year} | {count} | {monthly_avg} | `{bar}` |")
+
+    # 월별 독서량
+    lines.append("\n## 월별 독서량\n")
+    lines.append("| 월 | 권수 | 그래프 |")
+    lines.append("|---:|-----:|--------|")
+    max_month_count = max(stats["by_month"].values()) if stats["by_month"] else 1
+    for month, count in stats["by_month"].items():
+        bar = render_bar(count, max_month_count)
+        lines.append(f"| {month}월 | {count} | `{bar}` |")
+
+    # 평균 독서 속도
+    lines.append(f"\n## 평균 독서량\n")
+    lines.append(f"- 연 평균: **{stats['avg_per_year']}권**")
+    lines.append(f"- 월 평균: **{stats['avg_per_month']}권**")
 
     # 카테고리 분포
     lines.append("\n## 카테고리 분포 (상위 15)\n")
@@ -117,6 +164,20 @@ def generate_stats_md(stats: dict) -> str:
     lines.append("|----------|-----:|")
     for cat, count in stats["by_category"]:
         lines.append(f"| {cat} | {count} |")
+
+    # 카테고리 세부 분류
+    lines.append("\n## 카테고리 세부 분류 (상위 20)\n")
+    lines.append("| 카테고리 | 권수 |")
+    lines.append("|----------|-----:|")
+    for cat, count in stats["by_sub_category"]:
+        lines.append(f"| {cat} | {count} |")
+
+    # 연도별 카테고리 변화 추이
+    lines.append("\n## 연도별 카테고리 변화 (상위 5)\n")
+    for year, cats in stats["year_category"].items():
+        year_total = sum(n for _, n in cats)
+        cat_str = ", ".join(f"{c}({n}, {n/stats['by_year'][year]*100:.1f}%)" for c, n in cats)
+        lines.append(f"- **{year}**: {cat_str}")
 
     # 작가별
     lines.append("\n## 많이 읽은 작가 (상위 15)\n")
