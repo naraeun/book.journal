@@ -13,11 +13,31 @@
 
 import sys
 import re
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 
 BOOKS_DIR = Path(__file__).parent.parent / "books"
 REVIEWS_DIR = Path(__file__).parent.parent / "reviews"
+
+
+def fetch_blog_date(blog_url: str) -> str | None:
+    """네이버 블로그에서 작성 날짜 추출 (시간 제외)"""
+    # 모바일 URL로 변환
+    url = blog_url.replace("blog.naver.com", "m.blog.naver.com")
+    if not url.startswith("http"):
+        url = "https://" + url
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            html = resp.read().decode("utf-8")
+        # "2026. 3. 27. 5:02" 패턴에서 날짜만 추출
+        m = re.search(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.", html)
+        if m:
+            return f"{m.group(1)}.{m.group(2)}.{m.group(3)}"
+    except Exception as e:
+        print(f"⚠️  블로그 날짜 가져오기 실패: {e}")
+    return None
 
 
 def find_book(book_num: int) -> dict | None:
@@ -52,13 +72,23 @@ def find_book(book_num: int) -> dict | None:
 
 def create_review_md(book: dict, blog_url: str = "") -> str:
     """리뷰 md 파일 내용 생성"""
-    today = datetime.now().strftime("%Y.%-m.%-d")
+    # 블로그 URL이 있으면 블로그 작성 날짜 사용
+    review_date = None
+    if blog_url:
+        print("📅 블로그에서 날짜 가져오는 중...")
+        review_date = fetch_blog_date(blog_url)
+        if review_date:
+            print(f"  → {review_date}")
+
+    if not review_date:
+        review_date = datetime.now().strftime("%Y.%-m.%-d")
+
     blog_line = f"[Link]({blog_url})" if blog_url else ""
 
     content = f"""# {book['title']} — {book['author']}
 
 - **번호**: {book['num']}
-- **날짜**: {today}
+- **날짜**: {review_date}
 - **카테고리**: {book['category']}
 - **블로그**: {blog_line}
 
