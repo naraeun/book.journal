@@ -6,11 +6,21 @@
 
 import sys
 import os
+import re
 import json
 import urllib.request
 import urllib.parse
 
 TTB_KEY = os.environ.get("ALADIN_TTB_KEY", "")
+
+
+def clean_author(author: str) -> str:
+    """작가명에서 역할 표기 제거 (지은이, 옮긴이, 글, 그림 등)"""
+    author = re.sub(r"\s*\((지은이|옮긴이|글|그림|엮은이|사진|감수)\)", "", author)
+    # 역할 표기 제거 후 남은 쉼표+공백 정리
+    author = re.sub(r",\s*,", ",", author)
+    author = author.strip(", ")
+    return author
 
 def search_book(title: str, author: str = "") -> dict | None:
     """알라딘 API로 책 검색"""
@@ -34,7 +44,7 @@ def search_book(title: str, author: str = "") -> dict | None:
                 item = data["item"][0]
                 return {
                     "title": item.get("title", ""),
-                    "author": item.get("author", ""),
+                    "author": clean_author(item.get("author", "")),
                     "publisher": item.get("publisher", ""),
                     "category": item.get("categoryName", ""),
                     "isbn": item.get("isbn13", item.get("isbn", "")),
