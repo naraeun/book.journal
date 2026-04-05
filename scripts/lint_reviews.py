@@ -74,6 +74,23 @@ def check_file(path: Path) -> list[dict]:
     if quote_gap:
         issues.append({"type": "quote_gap", "msg": "인용 구절 사이 빈 줄 불균일", "fixable": True})
 
+    # 7. 외부 미디어 bare link 검사 (YouTube, Apple Music)
+    media_patterns = [
+        r'(?<!\()https?://(?:www\.)?(?:youtube\.com|youtu\.be)/\S+',
+        r'(?<!\()https?://music\.apple\.com/\S+',
+    ]
+    for i, line in enumerate(lines, 1):
+        # 마크다운 링크 안에 있는 URL은 제외
+        stripped = re.sub(r'\[.*?\]\(.*?\)', '', line)
+        for pat in media_patterns:
+            if re.search(pat, stripped):
+                issues.append({"type": "bare_media_link", "msg": f"L{i}: bare 미디어 링크 — 마크다운 링크로 감싸주세요"})
+
+    # 8. 미디어 링크 텍스트 비어있는지 검사
+    empty_media = re.findall(r'\[\s*\]\((https?://(?:www\.)?(?:youtube\.com|youtu\.be|music\.apple\.com)/\S+?)\)', text)
+    for url in empty_media:
+        issues.append({"type": "empty_media_text", "msg": f"미디어 링크 텍스트 비어있음: {url}"})
+
     return issues
 
 
