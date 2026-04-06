@@ -23,8 +23,10 @@ REVIEWS_DIR = Path(__file__).parent.parent / "reviews"
 
 def fetch_blog_date(blog_url: str) -> str | None:
     """네이버 블로그에서 작성 날짜 추출 (시간 제외)"""
-    # 모바일 URL로 변환
-    url = blog_url.replace("blog.naver.com", "m.blog.naver.com")
+    # 모바일 URL로 변환 (이미 모바일이면 그대로)
+    url = blog_url.replace("m.blog.naver.com", "blog.naver.com").replace(
+        "blog.naver.com", "m.blog.naver.com"
+    )
     if not url.startswith("http"):
         url = "https://" + url
     try:
