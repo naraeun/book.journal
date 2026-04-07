@@ -9,6 +9,7 @@
 - 연도별 md 파일은 `books/` 폴더에 보관
 - 컬럼: `| 월 | 번호 | 제목 | 작가 | 연번호 | 카테고리 | 리뷰 | 블로그 |`
 - 리뷰 파일명은 번호로 관리 (예: `reviews/2026/3156.md`)
+- 다독 작가(10권 이상)별 페이지는 `authors/` 폴더에 자동 생성
 
 ### 카테고리
 - 알라딘 API에서 조회 (대분류>중분류)
@@ -30,8 +31,9 @@
 - `scripts/aladin_search.py` — 알라딘 책 검색
 - `scripts/analyze.py` — 전체 통계 생성 (연도별 독서량, 카테고리, 작가, 연동률)
 - `scripts/create_review.py` — 리뷰 md 생성 + books 테이블 자동 연동
+- `scripts/generate_authors.py` — 다독 작가(10권 이상)별 md 파일 자동 생성 (`authors/`)
 - `scripts/migrate_columns.py` — 기존 md 파일에 리뷰/블로그 컬럼 일괄 추가
-- GitHub Actions로 `books/` 변경 시 통계 자동 갱신
+- GitHub Actions로 `books/` 변경 시 통계 + 작가별 페이지 자동 갱신
 
 ### 앞으로 해야 할 것
 - 블로그 본문 크롤링 자동화 검토
