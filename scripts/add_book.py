@@ -158,7 +158,7 @@ def main():
 
         if not confirm("\n이 책이 맞나요?"):
             print("직접 입력으로 전환합니다.")
-            result["title"] = input(f"제목 [{result['title']}]: ").strip() or result["title"]
+            title_input = input(f"제목 [{title_input}]: ").strip() or title_input
             result["author"] = input(f"저자 [{result['author']}]: ").strip() or result["author"]
             category_short = input(f"카테고리 [{category_short}]: ").strip() or category_short
 
@@ -200,8 +200,8 @@ def main():
     total_num = int(total_input) if total_input else total_num
     year_num = int(year_num_input) if year_num_input else year_num
 
-    # 최종 확인
-    new_row = make_row(month, total_num, result["title"],
+    # 최종 확인 — 제목은 사용자가 입력한 원본 사용
+    new_row = make_row(month, total_num, title_input,
                        result["author"], year_num, result["category"])
     print(f"\n추가할 행:\n{new_row.strip()}")
 
