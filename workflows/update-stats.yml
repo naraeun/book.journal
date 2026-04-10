@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'books/**.md'
+      - 'reviews/**.md'
 
 jobs:
   update-stats:
