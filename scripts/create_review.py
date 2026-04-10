@@ -19,6 +19,7 @@ from pathlib import Path
 
 BOOKS_DIR = Path(__file__).parent.parent / "books"
 REVIEWS_DIR = Path(__file__).parent.parent / "reviews"
+PICKS_DIR = Path(__file__).parent.parent / "picks"
 
 
 def fetch_blog_date(blog_url: str) -> str | None:
@@ -145,6 +146,25 @@ def update_books_table(book: dict, review_path: str, blog_url: str = "") -> bool
     return updated
 
 
+def update_picks_link(book_num: int, year: str) -> bool:
+    """picks/ 파일에서 링크 없는 #번호를 리뷰 링크로 교체"""
+    picks_file = PICKS_DIR / f"{year}.md"
+    if not picks_file.exists():
+        return False
+
+    text = picks_file.read_text(encoding="utf-8")
+    # [#번호] 형태로 이미 링크된 것은 제외하고, 단독 #번호만 매칭
+    pattern = rf"(?<!\[)#{book_num}\b"
+    replacement = f"[#{book_num}](../reviews/{year}/{book_num}.md)"
+    new_text = re.sub(pattern, replacement, text)
+
+    if new_text == text:
+        return False
+
+    picks_file.write_text(new_text, encoding="utf-8")
+    return True
+
+
 def confirm(prompt: str, default: bool = True) -> bool:
     hint = "Y/n" if default else "y/N"
     answer = input(f"{prompt} ({hint}): ").strip().lower()
@@ -210,6 +230,10 @@ def main():
         print(f"✅ {book['year_file'].name} 테이블 업데이트 완료!")
     else:
         print("⚠️  테이블 업데이트 실패 — 수동으로 확인해주세요.")
+
+    # picks 링크 업데이트
+    if update_picks_link(book_num, year):
+        print(f"✅ picks/{year}.md 링크 업데이트 완료!")
 
 
 if __name__ == "__main__":
