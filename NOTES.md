@@ -3,7 +3,7 @@
 
 ### 프로젝트 시작
 - 2011년부터 관리해온 책 목록을 GitHub repo에 추가 
-- repo: https://github.com/naraeun/book.journal
+- repository: https://github.com/naraeun/book.journal
 
 ### 구조
 - 연도별 md 파일은 `books/` 폴더에 보관
@@ -11,6 +11,8 @@
 - 리뷰 파일명은 번호로 관리 (예: `reviews/2026/3156.md`)
 - 다독 작가(10권 이상)별 페이지는 `authors/` 폴더에 자동 생성
 - 연도별 기억에 남는 책은 `picks/` 폴더에 보관 (예: `picks/2025.md`)
+- 음악회 목록은 `music/concerts.md`, 앨범 목록은 `music/albums.md`에 보관
+    - 리뷰 파일은 `reviews/music/concerts/YYYY-MM-DD.md`, `reviews/music/albums/아티스트-앨범명.md`
 
 ### 카테고리
 - 알라딘 API에서 조회 (대분류>중분류)
