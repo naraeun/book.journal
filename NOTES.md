@@ -15,6 +15,9 @@
     - 리뷰 파일은 `reviews/music/concerts/YYYY-MM-DD.md`, `reviews/music/albums/아티스트-앨범명.md`
 - 웹툰 목록은 `webtoon/webtoon.md`에 보관
     - 리뷰 파일은 `reviews/webtoon/작품명.md`
+- 드라마/라디오 극장 목록은 `drama/` 폴더에 보관
+    - KBS 라디오 극장: `drama/radio_theater.md`, 리뷰 파일은 `reviews/drama/radio_theater/`
+    - TV/OTT 드라마: `drama/drama.md`, 리뷰 파일은 `reviews/drama/drama/`
 
 ### 카테고리
 - 알라딘 API에서 조회 (대분류>중분류)
