@@ -40,6 +40,7 @@
 - `scripts/analyze.py` — 전체 통계 생성 (연도별 독서량, 카테고리, 작가, 연동률)
 - `scripts/create_review.py` — 리뷰 md 생성 + books 테이블 자동 연동
 - `scripts/generate_authors.py` — 다독 작가(10권 이상)별 md 파일 자동 생성 (`authors/`)
+- `scripts/generate_cast.py` — 라디오 극장 성우 인덱스 자동 생성 (`drama/radio_theater_cast.md`)
 - `scripts/migrate_columns.py` — 기존 md 파일에 리뷰/블로그 컬럼 일괄 추가
 - GitHub Actions로 `books/` 변경 시 통계 + 작가별 페이지 자동 갱신
 
