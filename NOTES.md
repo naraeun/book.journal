@@ -13,6 +13,8 @@
 - 연도별 기억에 남는 책은 `picks/` 폴더에 보관 (예: `picks/2025.md`)
 - 음악회 목록은 `music/concerts.md`, 앨범 목록은 `music/albums.md`에 보관
     - 리뷰 파일은 `reviews/music/concerts/YYYY-MM-DD.md`, `reviews/music/albums/아티스트-앨범명.md`
+- 웹툰 목록은 `webtoon/webtoon.md`에 보관
+    - 리뷰 파일은 `reviews/webtoon/작품명.md`
 
 ### 카테고리
 - 알라딘 API에서 조회 (대분류>중분류)
