@@ -1,15 +1,29 @@
 # 라디오 극장 성우 인덱스
 
+## 강영호
+
+| 작품 | 역할 |
+|------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 보디가드 |
+
+## 권선영
+
+| 작품 | 역할 |
+|------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 엄지민 |
+
 ## 길기철
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 안전 요원, 수영 강사 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 데스크, 배달원 |
 
 ## 김시우
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 지광림 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 사무장 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 임금, 27화 명창 |
 
@@ -17,6 +31,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 추과장, 체육센터 직원, 경찰, 트레이너 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 남변호사 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 용천, 손광익 |
 
@@ -24,6 +39,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 태이 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 영원모 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 
@@ -39,10 +55,17 @@
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 묵호, 내금위장 |
 
+## 박희은
+
+| 작품 | 역할 |
+|------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 염보라 |
+
 ## 배주원
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 고미선 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 원장 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 당골네, 사월 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
@@ -51,6 +74,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 고등학생 우경, 손님 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | AI상담사 |
 
 ## 변혜숙
@@ -81,6 +105,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 김경희, 노인 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 미래모 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 감실, 백연모 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
@@ -89,6 +114,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 윤지애 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 서우 |
 
 ## 윤용식
@@ -119,6 +145,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 오진홍 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 김부장 |
 
 ## 임지현
@@ -127,22 +154,36 @@
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 절쑤, 변씨, 누렁이, 36화 주모 |
 
+## 전승화
+
+| 작품 | 역할 |
+|------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 조우경 |
+
 ## 전종건
 
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 꼭두쇠, 땡중, 주지스님, 오씨 |
 
+## 전지원
+
+| 작품 | 역할 |
+|------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 허인회 |
+
 ## 정다현
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 중학생 인회, 소개팅녀 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 옆반애 |
 
 ## 정상일
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 칸쿤신랑(지애남편) |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 미래부 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 춘봉 |
 
@@ -150,12 +191,14 @@
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 산부인과 의사, 미친 여자(홍옥실 딸) |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 간호사, 종업원 |
 
 ## 정수현
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 홍옥실 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 인영, 보험사 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 숙경, 종달, 곤이 모, 살순이(버순이) |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
@@ -170,6 +213,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | ARS, 직장동료 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 담임 |
 
 ## 주예진
@@ -195,5 +239,6 @@
 
 | 작품 | 역할 |
 |------|------|
+| [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 인회부, 칸쿤동료 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 명훈, 최기자 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 돌삼 |
