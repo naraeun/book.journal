@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'books/**.md'
+      - 'reviews/**.md'
 
 jobs:
   update-stats:
@@ -18,10 +19,13 @@ jobs:
       - name: 통계 생성
         run: python scripts/analyze.py
 
+      - name: 작가 인덱스 생성
+        run: python scripts/generate_authors.py
+
       - name: 변경사항 커밋
         run: |
           git config user.name "naraeun"
           git config user.email "naraeun@gmail.com"
-          git add analysis/stats.md README.md
+          git add analysis/stats.md README.md authors/
           git diff --cached --quiet || git commit -m "docs: 독서 통계 업데이트"
           git push
