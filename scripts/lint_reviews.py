@@ -31,34 +31,59 @@ def find_review_files(target: str = None) -> list[Path]:
     )
 
 
+def detect_review_type(path: Path) -> str:
+    """파일 경로 기반으로 리뷰 유형 판별"""
+    rel = path.relative_to(REVIEWS_DIR)
+    parts = rel.parts
+    if len(parts) >= 2 and parts[0] == "drama":
+        if parts[1] == "radio_theater":
+            return "radio_theater"
+        if parts[1] == "drama":
+            return "drama"
+    if len(parts) >= 1 and parts[0] == "webtoon":
+        return "webtoon"
+    if len(parts) >= 2 and parts[0] == "music":
+        if parts[1] == "concerts":
+            return "concert"
+        if parts[1] == "albums":
+            return "album"
+    return "book"
+
+
+# 유형별 필수 메타데이터 필드
+REQUIRED_META = {
+    "book": ["번호", "날짜", "카테고리", "블로그"],
+    "radio_theater": ["날짜", "방송", "원작", "블로그", "출연진"],
+    "drama": ["날짜", "플랫폼", "방영연도", "연출", "작가", "원작", "블로그"],
+    "webtoon": ["날짜", "작가", "플랫폼", "작품연도", "읽은연도", "블로그"],
+    "concert": ["날짜", "장소", "연주자/단체", "블로그", "프로그램"],
+    "album": ["날짜", "블로그"],
+}
+
+
 def check_file(path: Path) -> list[dict]:
     """파일 검사 후 문제 목록 반환"""
     text = path.read_text(encoding="utf-8")
     lines = text.splitlines()
     issues = []
+    review_type = detect_review_type(path)
 
-    # 1. 헤더에 역할 표기 확인
-    if lines and re.search(r"\(지은이\)|\(옮긴이\)|\(글\)|\(그림\)", lines[0]):
+    # 1. 헤더에 역할 표기 확인 (책 리뷰만)
+    if review_type == "book" and lines and re.search(r"\(지은이\)|\(옮긴이\)|\(글\)|\(그림\)", lines[0]):
         issues.append({"type": "header_role", "msg": "헤더에 역할 표기 포함"})
 
-    # 2. 메타데이터 구조 확인
-    has_num = any("**번호**" in l for l in lines[:10])
-    has_date = any("**날짜**" in l for l in lines[:10])
-    has_cat = any("**카테고리**" in l for l in lines[:10])
-    has_blog = any("**블로그**" in l for l in lines[:10])
-    if not all([has_num, has_date, has_cat, has_blog]):
-        missing = []
-        if not has_num: missing.append("번호")
-        if not has_date: missing.append("날짜")
-        if not has_cat: missing.append("카테고리")
-        if not has_blog: missing.append("블로그")
+    # 2. 유형별 메타데이터 구조 확인
+    # 메타데이터는 헤더 아래 --- 구분선 전까지의 영역 (넉넉히 앞 30줄)
+    meta_lines = lines[:30]
+    required = REQUIRED_META.get(review_type, [])
+    missing = [field for field in required if not any(f"**{field}**" in l for l in meta_lines)]
+    if missing:
         issues.append({"type": "meta_missing", "msg": f"메타데이터 누락: {', '.join(missing)}"})
 
-    # 3. 구분선 확인
-    if "---" not in text.split("\n\n", 1)[0] if "\n\n" in text else text:
-        has_sep = any(l.strip() == "---" for l in lines[:15])
-        if not has_sep:
-            issues.append({"type": "no_separator", "msg": "메타데이터 아래 --- 구분선 없음"})
+    # 3. 구분선 확인 — 메타데이터 아래 --- 가 있는지
+    has_sep = any(l.strip() == "---" for l in lines)
+    if not has_sep:
+        issues.append({"type": "no_separator", "msg": "메타데이터 아래 --- 구분선 없음"})
 
     # 4. zero-width space
     zwsp_count = text.count("\u200b")
