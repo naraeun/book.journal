@@ -22,9 +22,8 @@ def clean_author(author: str) -> str:
     author = author.strip(", ")
     return author
 
-def search_book(title: str, author: str = "") -> dict | None:
-    """알라딘 API로 책 검색"""
-    query = f"{title} {author}".strip().replace("/", " ")
+def _do_search(query: str) -> dict | None:
+    """알라딘 API 단일 검색 요청"""
     params = {
         "ttbkey": TTB_KEY,
         "Query": query,
@@ -33,13 +32,13 @@ def search_book(title: str, author: str = "") -> dict | None:
         "output": "js",
         "Version": "20131101"
     }
-    
+
     url = "http://www.aladin.co.kr/ttb/api/ItemSearch.aspx?" + urllib.parse.urlencode(params)
-    
+
     try:
         with urllib.request.urlopen(url, timeout=10) as response:
             data = json.loads(response.read().decode('utf-8'))
-            
+
             if data.get("item"):
                 item = data["item"][0]
                 return {
@@ -53,8 +52,20 @@ def search_book(title: str, author: str = "") -> dict | None:
                 }
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
-    
+
     return None
+
+
+def search_book(title: str, author: str = "") -> dict | None:
+    """알라딘 API로 책 검색 (작가 포함 실패 시 제목만 재시도)"""
+    query = f"{title} {author}".strip().replace("/", " ")
+    result = _do_search(query)
+
+    # 작가 포함 검색 실패 시 제목만으로 재시도
+    if result is None and author:
+        result = _do_search(title.replace("/", " "))
+
+    return result
 
 
 def get_category_short(category: str) -> str:

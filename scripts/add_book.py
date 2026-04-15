@@ -136,9 +136,10 @@ def main():
         print("❌ 제목을 입력해주세요.")
         sys.exit(1)
 
-    # 알라딘 검색
+    # 알라딘 검색 (작가가 여러 명이면 첫 번째만 검색에 사용)
+    search_author = author_input.split(",")[0].strip() if author_input else ""
     print(f"\n🔍 알라딘에서 '{title_input}' 검색 중...")
-    result = search_book(title_input, author_input)
+    result = search_book(title_input, search_author)
 
     if not result:
         print("❌ 검색 결과가 없습니다. 직접 입력하시겠어요?")
