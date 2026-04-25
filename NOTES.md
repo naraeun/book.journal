@@ -18,6 +18,8 @@
 - 드라마/라디오 극장 목록은 `drama/` 폴더에 보관
     - KBS 라디오 극장: `drama/radio_theater.md`, 리뷰 파일은 `reviews/drama/radio_theater/`
     - TV/OTT 드라마: `drama/drama.md`, 리뷰 파일은 `reviews/drama/drama/`
+- EBS 위대한 수업 목록은 `greatminds/greatminds.md`에 보관
+    - 리뷰 파일은 `reviews/greatminds/`
 
 ### 카테고리
 - 알라딘 API에서 조회 (대분류>중분류)
