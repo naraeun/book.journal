@@ -37,7 +37,7 @@ def fetch_blog_date(blog_url: str) -> str | None:
         # "2026. 3. 27. 5:02" 패턴에서 날짜만 추출
         m = re.search(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.", html)
         if m:
-            return f"{m.group(1)}.{m.group(2)}.{m.group(3)}"
+            return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
     except Exception as e:
         print(f"⚠️  블로그 날짜 가져오기 실패: {e}")
     return None
@@ -84,7 +84,7 @@ def create_review_md(book: dict, blog_url: str = "") -> str:
             print(f"  → {review_date}")
 
     if not review_date:
-        review_date = datetime.now().strftime("%Y.%-m.%-d")
+        review_date = datetime.now().strftime("%Y-%m-%d")
 
     blog_line = f"[Link]({blog_url})" if blog_url else ""
 
