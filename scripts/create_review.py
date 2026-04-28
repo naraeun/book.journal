@@ -27,6 +27,7 @@ ROOT = Path(__file__).parent.parent
 BOOKS_DIR = ROOT / "books"
 REVIEWS_DIR = ROOT / "reviews"
 PICKS_DIR = ROOT / "picks"
+TOPICS_DIR = ROOT / "topics"
 
 # ─── 유형별 설정 ───────────────────────────────────────────────
 
@@ -244,6 +245,43 @@ def update_books_table(book: dict, review_path: str, blog_url: str = "") -> bool
     return updated
 
 
+def list_topics() -> list[str]:
+    """topics/ 폴더의 topic 이름 목록 반환"""
+    if not TOPICS_DIR.exists():
+        return []
+    return sorted(f.stem for f in TOPICS_DIR.glob("*.md"))
+
+
+def add_to_topic(topic_name: str, book: dict, year: str, review_rel: str, blog_url: str = "") -> bool:
+    """topic 파일 마지막 테이블 행에 책 추가"""
+    topic_file = TOPICS_DIR / f"{topic_name}.md"
+    if not topic_file.exists():
+        return False
+
+    text = topic_file.read_text(encoding="utf-8")
+    if f"| {book['num']} |" in text:
+        print(f"  ℹ️  #{book['num']}은 이미 {topic_name}.md에 있습니다.")
+        return False
+
+    review_link = f"[📝]({review_rel})"
+    blog_link = f"[✏️]({blog_url})" if blog_url else ""
+    new_row = f"| {book['num']} | {book['title']} | {book['author']} | {year} | {review_link} | {blog_link} |\n"
+
+    lines = text.splitlines(keepends=True)
+    last_table_idx = -1
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s.startswith("|") and "---" not in s:
+            last_table_idx = i
+
+    if last_table_idx < 0:
+        return False
+
+    lines.insert(last_table_idx + 1, new_row)
+    topic_file.write_text("".join(lines), encoding="utf-8")
+    return True
+
+
 def update_picks_link(book_num: int, year: str) -> bool:
     """picks/ 파일에서 링크 없는 #번호를 리뷰 링크로 교체"""
     picks_file = PICKS_DIR / f"{year}.md"
@@ -324,6 +362,19 @@ def create_book(book_num: int = None, blog_url: str = ""):
 
     if update_picks_link(book_num, year):
         print(f"✅ picks/{year}.md 링크 업데이트 완료!")
+
+    topics = list_topics()
+    if topics:
+        print(f"\n📂 topic 추가 (사용 가능: {', '.join(topics)})")
+        topic_input = input("  topic 이름 (여러 개는 쉼표 구분, 엔터 건너뜀): ").strip()
+        if topic_input:
+            review_rel_topic = f"../reviews/{year}/{book_num}.md"
+            for t in [t.strip() for t in topic_input.split(",") if t.strip()]:
+                if t in topics:
+                    if add_to_topic(t, book, year, review_rel_topic, blog_url):
+                        print(f"✅ topics/{t}.md 추가 완료!")
+                else:
+                    print(f"⚠️  '{t}' topic을 찾을 수 없습니다.")
 
 
 # ─── 드라마 ────────────────────────────────────────────────────

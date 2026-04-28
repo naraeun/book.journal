@@ -14,6 +14,7 @@
 | 🎵 음악 | [music/](music/) | [reviews/music/](reviews/music/) |
 | ✍️ 작가별 | [authors/](authors/) | |
 | ⭐ 기억에 남는 책 | [picks/](picks/) | |
+| 📂 주제별 | [topics/](topics/) | |
 
 ## 독서 통계
 

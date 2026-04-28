@@ -11,6 +11,8 @@
 - 리뷰 파일명은 번호로 관리 (예: `reviews/2026/3156.md`)
 - 다독 작가(10권 이상)별 페이지는 `authors/` 폴더에 자동 생성
 - 연도별 기억에 남는 책은 `picks/` 폴더에 보관 (예: `picks/2025.md`)
+- 주제별 큐레이션 목록은 `topics/` 폴더에 보관 (예: `topics/글쓰기.md`, `topics/독서.md`)
+    - 책 리뷰 생성 시 `create_review.py`에서 topic 추가 여부를 함께 선택 가능
 - 음악회 목록은 `music/concerts.md`, 앨범 목록은 `music/albums.md`에 보관
     - 리뷰 파일은 `reviews/music/concerts/YYYY-MM-DD.md`, `reviews/music/albums/아티스트-앨범명.md`
 - 웹툰 목록은 `webtoon/webtoon.md`에 보관
