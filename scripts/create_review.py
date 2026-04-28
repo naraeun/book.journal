@@ -178,6 +178,23 @@ def update_list_table(list_file: Path, title: str, review_rel: str, blog_url: st
 # ─── 책 ────────────────────────────────────────────────────────
 
 
+def create_review_md(book: dict, blog_url: str = "") -> str:
+    """책 리뷰 md 파일 내용 생성 (add_book.py 호환용)"""
+    review_date = get_date(blog_url)
+    blog_line = f"[Link]({blog_url})" if blog_url else ""
+
+    return f"""# {book['title']} — {book['author']}
+
+- **번호**: {book['num']}
+- **날짜**: {review_date}
+- **카테고리**: {book['category']}
+- **블로그**: {blog_line}
+
+---
+
+"""
+
+
 def find_book(book_num: int) -> dict | None:
     """books/ 폴더의 모든 md 파일에서 번호로 책 정보 검색"""
     for md_file in sorted(BOOKS_DIR.glob("*.md"), reverse=True):
