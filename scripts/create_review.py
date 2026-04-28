@@ -1,30 +1,74 @@
 #!/usr/bin/env python3
 """
 리뷰 md 파일 생성 스크립트
-- books/ 테이블에서 메타데이터 자동 조회
-- reviews/YYYY/번호.md 생성
-- books/ 테이블의 리뷰·블로그 컬럼 자동 업데이트
+- 책, 드라마, 라디오 극장, 영화, 웹툰, 위대한 수업 지원
+- 목록 테이블에서 메타데이터 자동 조회 (책) 또는 대화형 입력 (비도서)
+- 리뷰 파일 생성 + 목록 테이블 자동 업데이트
 
 사용법:
-  python scripts/create_review.py              # 대화형
-  python scripts/create_review.py 3156         # 번호 지정
-  python scripts/create_review.py 3156 URL     # 번호 + 블로그 URL
+  python scripts/create_review.py                        # 대화형 (책)
+  python scripts/create_review.py 3156                   # 책 번호 지정
+  python scripts/create_review.py 3156 URL               # 책 번호 + 블로그 URL
+  python scripts/create_review.py --type drama            # 드라마
+  python scripts/create_review.py --type radio            # 라디오 극장
+  python scripts/create_review.py --type movie            # 영화
+  python scripts/create_review.py --type webtoon          # 웹툰
+  python scripts/create_review.py --type greatminds       # 위대한 수업
 """
 
 import sys
 import re
+import argparse
 import urllib.request
 from datetime import datetime
 from pathlib import Path
 
-BOOKS_DIR = Path(__file__).parent.parent / "books"
-REVIEWS_DIR = Path(__file__).parent.parent / "reviews"
-PICKS_DIR = Path(__file__).parent.parent / "picks"
+ROOT = Path(__file__).parent.parent
+BOOKS_DIR = ROOT / "books"
+REVIEWS_DIR = ROOT / "reviews"
+PICKS_DIR = ROOT / "picks"
+
+# ─── 유형별 설정 ───────────────────────────────────────────────
+
+CONTENT_TYPES = {
+    "book": {
+        "name": "책",
+        "list_file": None,  # books/ 폴더에서 동적 검색
+        "review_dir": None,  # reviews/YYYY/ 동적
+    },
+    "drama": {
+        "name": "드라마",
+        "list_file": ROOT / "drama" / "drama.md",
+        "review_dir": REVIEWS_DIR / "drama" / "drama",
+    },
+    "radio": {
+        "name": "라디오 극장",
+        "list_file": ROOT / "drama" / "radio_theater.md",
+        "review_dir": REVIEWS_DIR / "drama" / "radio_theater",
+    },
+    "movie": {
+        "name": "영화",
+        "list_file": ROOT / "movie" / "movie.md",
+        "review_dir": REVIEWS_DIR / "movie",
+    },
+    "webtoon": {
+        "name": "웹툰",
+        "list_file": ROOT / "webtoon" / "webtoon.md",
+        "review_dir": REVIEWS_DIR / "webtoon",
+    },
+    "greatminds": {
+        "name": "위대한 수업",
+        "list_file": ROOT / "greatminds" / "greatminds.md",
+        "review_dir": REVIEWS_DIR / "greatminds",
+    },
+}
+
+
+# ─── 공통 유틸 ─────────────────────────────────────────────────
 
 
 def fetch_blog_date(blog_url: str) -> str | None:
     """네이버 블로그에서 작성 날짜 추출 (시간 제외)"""
-    # 모바일 URL로 변환 (이미 모바일이면 그대로)
     url = blog_url.replace("m.blog.naver.com", "blog.naver.com").replace(
         "blog.naver.com", "m.blog.naver.com"
     )
@@ -34,13 +78,103 @@ def fetch_blog_date(blog_url: str) -> str | None:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=10) as resp:
             html = resp.read().decode("utf-8")
-        # "2026. 3. 27. 5:02" 패턴에서 날짜만 추출
         m = re.search(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.", html)
         if m:
             return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
     except Exception as e:
         print(f"⚠️  블로그 날짜 가져오기 실패: {e}")
     return None
+
+
+def get_date(blog_url: str = "") -> str:
+    """블로그 URL에서 날짜 추출, 실패 시 오늘 날짜"""
+    if blog_url:
+        print("📅 블로그에서 날짜 가져오는 중...")
+        date = fetch_blog_date(blog_url)
+        if date:
+            print(f"  → {date}")
+            return date
+    return datetime.now().strftime("%Y-%m-%d")
+
+
+def title_to_filename(title: str) -> str:
+    """제목을 파일명으로 변환 (공백 → 언더스코어)"""
+    return title.replace(" ", "_")
+
+
+def confirm(prompt: str, default: bool = True) -> bool:
+    hint = "Y/n" if default else "y/N"
+    answer = input(f"{prompt} ({hint}): ").strip().lower()
+    if not answer:
+        return default
+    return answer in ("y", "yes")
+
+
+def ask(prompt: str, required: bool = True) -> str:
+    """대화형 입력"""
+    while True:
+        value = input(f"{prompt}: ").strip()
+        if value or not required:
+            return value
+        print("  ⚠️  필수 항목입니다.")
+
+
+def update_list_table(list_file: Path, title: str, review_rel: str, blog_url: str = "") -> bool:
+    """목록 테이블에서 제목으로 찾아 리뷰·블로그 컬럼 업데이트"""
+    if not list_file.exists():
+        return False
+
+    text = list_file.read_text(encoding="utf-8")
+    lines = text.splitlines(keepends=True)
+
+    updated = False
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if not stripped.startswith("|"):
+            continue
+        cells = [c.strip() for c in stripped.strip("|").split("|")]
+        if len(cells) < 2:
+            continue
+        # 제목은 첫 번째 데이터 컬럼
+        if cells[0] != title:
+            continue
+
+        # 리뷰 컬럼 찾아서 업데이트 (📝 아이콘이 없는 컬럼)
+        for j, cell in enumerate(cells):
+            if cell == "" or cell.isspace():
+                # 빈 컬럼 중 리뷰 컬럼 위치 추정 (헤더에서 '리뷰' 찾기)
+                header_line = None
+                for h_line in lines:
+                    h_stripped = h_line.strip()
+                    if h_stripped.startswith("|") and "리뷰" in h_stripped:
+                        header_line = h_stripped
+                        break
+                if header_line:
+                    header_cells = [c.strip() for c in header_line.strip("|").split("|")]
+                    try:
+                        review_idx = header_cells.index("리뷰")
+                        blog_idx = header_cells.index("블로그") if "블로그" in header_cells else -1
+                    except ValueError:
+                        break
+
+                    if review_idx < len(cells) and not cells[review_idx]:
+                        cells[review_idx] = f"[📝]({review_rel})"
+                    if blog_url and blog_idx >= 0 and blog_idx < len(cells) and not cells[blog_idx]:
+                        cells[blog_idx] = f"[✏️]({blog_url})"
+
+                    lines[i] = "| " + " | ".join(cells) + " |\n"
+                    updated = True
+                break
+
+        if updated:
+            break
+
+    if updated:
+        list_file.write_text("".join(lines), encoding="utf-8")
+    return updated
+
+
+# ─── 책 ────────────────────────────────────────────────────────
 
 
 def find_book(book_num: int) -> dict | None:
@@ -73,39 +207,6 @@ def find_book(book_num: int) -> dict | None:
     return None
 
 
-def create_review_md(book: dict, blog_url: str = "") -> str:
-    """리뷰 md 파일 내용 생성"""
-    # 블로그 URL이 있으면 블로그 작성 날짜 사용
-    review_date = None
-    if blog_url:
-        print("📅 블로그에서 날짜 가져오는 중...")
-        review_date = fetch_blog_date(blog_url)
-        if review_date:
-            print(f"  → {review_date}")
-
-    if not review_date:
-        review_date = datetime.now().strftime("%Y-%m-%d")
-
-    blog_line = f"[Link]({blog_url})" if blog_url else ""
-
-    content = f"""# {book['title']} — {book['author']}
-
-- **번호**: {book['num']}
-- **날짜**: {review_date}
-- **카테고리**: {book['category']}
-- **블로그**: {blog_line}
-
----
-
-"""
-    return content
-
-
-def get_year_from_file(md_file: Path) -> str:
-    """파일명에서 연도 추출 (예: 2026.md → 2026)"""
-    return md_file.stem
-
-
 def update_books_table(book: dict, review_path: str, blog_url: str = "") -> bool:
     """books/ 테이블의 리뷰·블로그 컬럼 업데이트"""
     md_file = book["year_file"]
@@ -127,16 +228,13 @@ def update_books_table(book: dict, review_path: str, blog_url: str = "") -> bool
         if num != book["num"]:
             continue
 
-        # 리뷰 컬럼 업데이트
         review_link = f"[📝]({review_path})"
         cells[6] = review_link if len(cells) > 6 else review_link
 
-        # 블로그 컬럼 업데이트
         if blog_url and len(cells) > 7:
             if not cells[7]:
                 cells[7] = f"[✏️]({blog_url})"
 
-        # 행 재구성
         lines[i] = "| " + " | ".join(cells) + " |\n"
         updated = True
         break
@@ -153,7 +251,6 @@ def update_picks_link(book_num: int, year: str) -> bool:
         return False
 
     text = picks_file.read_text(encoding="utf-8")
-    # [#번호] 형태로 이미 링크된 것은 제외하고, 단독 #번호만 매칭
     pattern = rf"(?<!\[)#{book_num}\b"
     replacement = f"[#{book_num}](../reviews/{year}/{book_num}.md)"
     new_text = re.sub(pattern, replacement, text)
@@ -165,33 +262,18 @@ def update_picks_link(book_num: int, year: str) -> bool:
     return True
 
 
-def confirm(prompt: str, default: bool = True) -> bool:
-    hint = "Y/n" if default else "y/N"
-    answer = input(f"{prompt} ({hint}): ").strip().lower()
-    if not answer:
-        return default
-    return answer in ("y", "yes")
-
-
-def main():
-    # 인자 파싱
-    if len(sys.argv) >= 2:
-        try:
-            book_num = int(sys.argv[1])
-        except ValueError:
-            print("❌ 번호는 숫자로 입력해주세요.")
-            sys.exit(1)
-        blog_url = sys.argv[2] if len(sys.argv) >= 3 else ""
-    else:
+def create_book(book_num: int = None, blog_url: str = ""):
+    """책 리뷰 생성"""
+    if book_num is None:
         raw = input("📚 책 번호: ").strip()
         try:
             book_num = int(raw)
         except ValueError:
             print("❌ 번호는 숫자로 입력해주세요.")
             sys.exit(1)
+    if not blog_url:
         blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
 
-    # 책 검색
     print(f"\n🔍 #{book_num} 검색 중...")
     book = find_book(book_num)
 
@@ -199,21 +281,31 @@ def main():
         print(f"❌ #{book_num}을 books/ 테이블에서 찾을 수 없습니다.")
         sys.exit(1)
 
-    year = get_year_from_file(book["year_file"])
+    year = book["year_file"].stem
     print(f"  제목    : {book['title']}")
     print(f"  저자    : {book['author']}")
     print(f"  카테고리: {book['category']}")
     print(f"  연도    : {year}")
 
-    # 이미 리뷰가 있는지 확인
     review_file = REVIEWS_DIR / year / f"{book_num}.md"
     if review_file.exists():
         print(f"\n⚠️  {review_file} 이미 존재합니다.")
         if not confirm("덮어쓰시겠어요?", default=False):
             sys.exit(0)
 
-    # 리뷰 생성
-    content = create_review_md(book, blog_url)
+    review_date = get_date(blog_url)
+    blog_line = f"[Link]({blog_url})" if blog_url else ""
+
+    content = f"""# {book['title']} — {book['author']}
+
+- **번호**: {book['num']}
+- **날짜**: {review_date}
+- **카테고리**: {book['category']}
+- **블로그**: {blog_line}
+
+---
+
+"""
 
     print(f"\n📄 생성할 파일: {review_file}")
     if not confirm("생성하시겠어요?"):
@@ -224,16 +316,343 @@ def main():
     review_file.write_text(content, encoding="utf-8")
     print(f"✅ {review_file} 생성 완료!")
 
-    # books 테이블 업데이트
     review_rel = f"../reviews/{year}/{book_num}.md"
     if update_books_table(book, review_rel, blog_url):
         print(f"✅ {book['year_file'].name} 테이블 업데이트 완료!")
     else:
         print("⚠️  테이블 업데이트 실패 — 수동으로 확인해주세요.")
 
-    # picks 링크 업데이트
     if update_picks_link(book_num, year):
         print(f"✅ picks/{year}.md 링크 업데이트 완료!")
+
+
+# ─── 드라마 ────────────────────────────────────────────────────
+
+
+def create_drama(blog_url: str = ""):
+    """드라마 리뷰 생성"""
+    cfg = CONTENT_TYPES["drama"]
+    print(f"\n🎬 {cfg['name']} 리뷰 생성")
+
+    title = ask("📺 제목")
+    platform = ask("📡 플랫폼 (예: 넷플릭스, 티빙)")
+    air_year = ask("📅 방영연도")
+    director = ask("🎬 연출")
+    writer = ask("✍️  작가")
+    original = input("📖 원작 리뷰 경로 (선택, 엔터 건너뜀): ").strip()
+    if not blog_url:
+        blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
+
+    review_date = get_date(blog_url)
+    blog_line = f"[Link]({blog_url})" if blog_url else ""
+    original_line = f"[Link]({original})" if original else ""
+
+    content = f"""# {title}
+
+- **날짜**: {review_date}
+- **플랫폼**: {platform}
+- **방영연도**: {air_year}
+- **연출**: {director}
+- **작가**: {writer}
+- **원작**: {original_line}
+- **블로그**: {blog_line}
+
+---
+
+"""
+
+    filename = title_to_filename(title) + ".md"
+    review_file = cfg["review_dir"] / filename
+
+    if review_file.exists():
+        print(f"\n⚠️  {review_file} 이미 존재합니다.")
+        if not confirm("덮어쓰시겠어요?", default=False):
+            sys.exit(0)
+
+    print(f"\n📄 생성할 파일: {review_file}")
+    if not confirm("생성하시겠어요?"):
+        print("취소했습니다.")
+        sys.exit(0)
+
+    review_file.parent.mkdir(parents=True, exist_ok=True)
+    review_file.write_text(content, encoding="utf-8")
+    print(f"✅ {review_file} 생성 완료!")
+
+    review_rel = f"../reviews/drama/drama/{filename}"
+    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
+
+
+# ─── 라디오 극장 ───────────────────────────────────────────────
+
+
+def create_radio(blog_url: str = ""):
+    """라디오 극장 리뷰 생성"""
+    cfg = CONTENT_TYPES["radio"]
+    print(f"\n📻 {cfg['name']} 리뷰 생성")
+
+    title = ask("📻 제목")
+    broadcast = ask("📅 방송 (예: 2026-03)")
+    original = input("📖 원작 리뷰 경로 (선택, 엔터 건너뜀): ").strip()
+    if not blog_url:
+        blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
+
+    review_date = get_date(blog_url)
+    blog_line = f"[Link]({blog_url})" if blog_url else ""
+    original_line = f"[Link]({original})" if original else ""
+
+    content = f"""# {title} — KBS 라디오 극장
+
+- **날짜**: {review_date}
+- **방송**: {broadcast}
+- **원작**: {original_line}
+- **블로그**: {blog_line}
+- **출연진**:
+
+---
+
+"""
+
+    filename = title_to_filename(title) + ".md"
+    review_file = cfg["review_dir"] / filename
+
+    if review_file.exists():
+        print(f"\n⚠️  {review_file} 이미 존재합니다.")
+        if not confirm("덮어쓰시겠어요?", default=False):
+            sys.exit(0)
+
+    print(f"\n📄 생성할 파일: {review_file}")
+    if not confirm("생성하시겠어요?"):
+        print("취소했습니다.")
+        sys.exit(0)
+
+    review_file.parent.mkdir(parents=True, exist_ok=True)
+    review_file.write_text(content, encoding="utf-8")
+    print(f"✅ {review_file} 생성 완료!")
+
+    review_rel = f"../reviews/drama/radio_theater/{filename}"
+    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
+
+
+# ─── 영화 ──────────────────────────────────────────────────────
+
+
+def create_movie(blog_url: str = ""):
+    """영화 리뷰 생성"""
+    cfg = CONTENT_TYPES["movie"]
+    print(f"\n🎬 {cfg['name']} 리뷰 생성")
+
+    title = ask("🎬 제목")
+    director = ask("🎬 감독")
+    release_year = ask("📅 개봉연도")
+    if not blog_url:
+        blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
+
+    review_date = get_date(blog_url)
+    blog_line = f"[Link]({blog_url})" if blog_url else ""
+
+    content = f"""# {title}
+
+- **날짜**: {review_date}
+- **감독**: {director}
+- **개봉연도**: {release_year}
+- **블로그**: {blog_line}
+
+---
+
+"""
+
+    filename = title_to_filename(title) + ".md"
+    review_file = cfg["review_dir"] / filename
+
+    if review_file.exists():
+        print(f"\n⚠️  {review_file} 이미 존재합니다.")
+        if not confirm("덮어쓰시겠어요?", default=False):
+            sys.exit(0)
+
+    print(f"\n📄 생성할 파일: {review_file}")
+    if not confirm("생성하시겠어요?"):
+        print("취소했습니다.")
+        sys.exit(0)
+
+    review_file.parent.mkdir(parents=True, exist_ok=True)
+    review_file.write_text(content, encoding="utf-8")
+    print(f"✅ {review_file} 생성 완료!")
+
+    review_rel = f"../reviews/movie/{filename}"
+    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
+
+
+# ─── 웹툰 ─────────────────────────────────────────────────────
+
+
+def create_webtoon(blog_url: str = ""):
+    """웹툰 리뷰 생성"""
+    cfg = CONTENT_TYPES["webtoon"]
+    print(f"\n📖 {cfg['name']} 리뷰 생성")
+
+    title = ask("📖 제목")
+    author = ask("✍️  작가")
+    platform = ask("📡 플랫폼 (예: 네이버 웹툰)")
+    work_year = ask("📅 작품연도 (예: 2018-2021)")
+    read_year = ask("📅 읽은연도")
+    if not blog_url:
+        blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
+
+    review_date = get_date(blog_url)
+    blog_line = f"[Link]({blog_url})" if blog_url else ""
+
+    content = f"""# {title}
+
+- **날짜**: {review_date}
+- **작가**: {author}
+- **플랫폼**: {platform}
+- **작품연도**: {work_year}
+- **읽은연도**: {read_year}
+- **블로그**: {blog_line}
+
+---
+
+"""
+
+    filename = title_to_filename(title) + ".md"
+    review_file = cfg["review_dir"] / filename
+
+    if review_file.exists():
+        print(f"\n⚠️  {review_file} 이미 존재합니다.")
+        if not confirm("덮어쓰시겠어요?", default=False):
+            sys.exit(0)
+
+    print(f"\n📄 생성할 파일: {review_file}")
+    if not confirm("생성하시겠어요?"):
+        print("취소했습니다.")
+        sys.exit(0)
+
+    review_file.parent.mkdir(parents=True, exist_ok=True)
+    review_file.write_text(content, encoding="utf-8")
+    print(f"✅ {review_file} 생성 완료!")
+
+    review_rel = f"../reviews/webtoon/{filename}"
+    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
+
+
+# ─── 위대한 수업 ──────────────────────────────────────────────
+
+
+def create_greatminds(blog_url: str = ""):
+    """위대한 수업 리뷰 생성"""
+    cfg = CONTENT_TYPES["greatminds"]
+    print(f"\n🎓 {cfg['name']} 리뷰 생성")
+
+    title = ask("🎓 제목")
+    lecturer = ask("👤 강연자")
+    air_year = ask("📅 방영연도")
+    watch_year = ask("📅 시청연도")
+    if not blog_url:
+        blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
+
+    review_date = get_date(blog_url)
+    blog_line = f"[Link]({blog_url})" if blog_url else ""
+
+    content = f"""# {title} — EBS 위대한 수업
+
+- **날짜**: {review_date}
+- **강연자**: {lecturer}
+- **방영연도**: {air_year}
+- **시청연도**: {watch_year}
+- **블로그**: {blog_line}
+- **구성**
+
+---
+
+"""
+
+    filename = title_to_filename(title) + ".md"
+    review_file = cfg["review_dir"] / filename
+
+    if review_file.exists():
+        print(f"\n⚠️  {review_file} 이미 존재합니다.")
+        if not confirm("덮어쓰시겠어요?", default=False):
+            sys.exit(0)
+
+    print(f"\n📄 생성할 파일: {review_file}")
+    if not confirm("생성하시겠어요?"):
+        print("취소했습니다.")
+        sys.exit(0)
+
+    review_file.parent.mkdir(parents=True, exist_ok=True)
+    review_file.write_text(content, encoding="utf-8")
+    print(f"✅ {review_file} 생성 완료!")
+
+    review_rel = f"../reviews/greatminds/{filename}"
+    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
+
+
+# ─── 메인 ──────────────────────────────────────────────────────
+
+
+TYPE_CHOICES = ["book", "drama", "radio", "movie", "webtoon", "greatminds"]
+TYPE_LABELS = {
+    "book": "📚 책",
+    "drama": "📺 드라마",
+    "radio": "📻 라디오 극장",
+    "movie": "🎬 영화",
+    "webtoon": "📖 웹툰",
+    "greatminds": "🎓 위대한 수업",
+}
+
+CREATORS = {
+    "book": create_book,
+    "drama": create_drama,
+    "radio": create_radio,
+    "movie": create_movie,
+    "webtoon": create_webtoon,
+    "greatminds": create_greatminds,
+}
+
+
+def main():
+    parser = argparse.ArgumentParser(description="리뷰 md 파일 생성")
+    parser.add_argument("book_num", nargs="?", type=int, help="책 번호 (book 유형)")
+    parser.add_argument("blog_url", nargs="?", default="", help="블로그 URL")
+    parser.add_argument(
+        "--type", "-t",
+        choices=TYPE_CHOICES,
+        default=None,
+        help="콘텐츠 유형",
+    )
+    args = parser.parse_args()
+
+    # --type 없이 숫자만 넘기면 책으로 처리 (기존 호환)
+    if args.type is None and args.book_num is not None:
+        args.type = "book"
+
+    # --type도 없고 번호도 없으면 유형 선택
+    if args.type is None:
+        print("📋 콘텐츠 유형을 선택하세요:\n")
+        for i, key in enumerate(TYPE_CHOICES, 1):
+            print(f"  {i}. {TYPE_LABELS[key]}")
+        print()
+        while True:
+            choice = input("번호 선택: ").strip()
+            try:
+                idx = int(choice) - 1
+                if 0 <= idx < len(TYPE_CHOICES):
+                    args.type = TYPE_CHOICES[idx]
+                    break
+            except ValueError:
+                pass
+            print("  ⚠️  올바른 번호를 입력해주세요.")
+
+    # 유형별 생성
+    if args.type == "book":
+        create_book(args.book_num, args.blog_url)
+    else:
+        CREATORS[args.type](args.blog_url)
 
 
 if __name__ == "__main__":
