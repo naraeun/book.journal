@@ -270,7 +270,7 @@ def list_topics() -> list[str]:
 
 
 def add_to_topic(topic_name: str, book: dict, year: str, review_rel: str, blog_url: str = "") -> bool:
-    """topic 파일 마지막 테이블 행에 책 추가"""
+    """topic 파일 테이블에 번호 내림차순으로 책 추가"""
     topic_file = TOPICS_DIR / f"{topic_name}.md"
     if not topic_file.exists():
         return False
@@ -285,16 +285,36 @@ def add_to_topic(topic_name: str, book: dict, year: str, review_rel: str, blog_u
     new_row = f"| {book['num']} | {book['title']} | {book['author']} | {year} | {review_link} | {blog_link} |\n"
 
     lines = text.splitlines(keepends=True)
-    last_table_idx = -1
+
+    # 헤더와 구분선 이후의 데이터 행에서 번호 내림차순 위치 찾기
+    insert_at = -1
+    past_separator = False
     for i, line in enumerate(lines):
         s = line.strip()
-        if s.startswith("|") and "---" not in s:
-            last_table_idx = i
+        if not s.startswith("|"):
+            continue
+        # 구분선 감지
+        cells = [c.strip() for c in s.strip("|").split("|")]
+        if all(re.fullmatch(r"[-: ]+", c) for c in cells if c):
+            past_separator = True
+            insert_at = i + 1  # 구분선 바로 다음이 기본 삽입 위치
+            continue
+        if not past_separator:
+            continue
+        # 데이터 행에서 번호 추출
+        try:
+            row_num = int(cells[0])
+        except (ValueError, IndexError):
+            continue
+        if book["num"] > row_num:
+            insert_at = i
+            break
+        insert_at = i + 1  # 현재 행보다 작으면 다음 위치로
 
-    if last_table_idx < 0:
+    if insert_at < 0:
         return False
 
-    lines.insert(last_table_idx + 1, new_row)
+    lines.insert(insert_at, new_row)
     topic_file.write_text("".join(lines), encoding="utf-8")
     return True
 
