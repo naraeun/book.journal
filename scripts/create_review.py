@@ -175,6 +175,30 @@ def update_list_table(list_file: Path, title: str, review_rel: str, blog_url: st
     return updated
 
 
+def add_to_list_table(list_file: Path, new_row: str, title: str) -> bool:
+    """목록 테이블에 새 행 추가 (테이블 첫 번째 데이터 행 위치에 삽입)"""
+    if not list_file.exists():
+        return False
+
+    text = list_file.read_text(encoding="utf-8")
+
+    # 이미 존재하는지 확인
+    if f"| {title} |" in text or f"| {title} " in text:
+        return False
+
+    lines = text.splitlines(keepends=True)
+
+    # 구분선 바로 다음에 삽입 (최신이 위로)
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s.startswith("|") and re.search(r"[-:]{2,}", s):
+            lines.insert(i + 1, new_row)
+            list_file.write_text("".join(lines), encoding="utf-8")
+            return True
+
+    return False
+
+
 # ─── 책 ────────────────────────────────────────────────────────
 
 
@@ -467,7 +491,16 @@ def create_drama(blog_url: str = ""):
     print(f"✅ {review_file} 생성 완료!")
 
     review_rel = f"../reviews/drama/drama/{filename}"
-    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+    if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        review_link = f"[📝]({review_rel})"
+        blog_link = f"[✏️]({blog_url})" if blog_url else ""
+        watch_year = datetime.now().year
+        new_row = f"| {title} | {director} | {writer} | {platform} | {air_year} | {watch_year} | {review_link} | {blog_link} |\n"
+        if add_to_list_table(cfg["list_file"], new_row, title):
+            print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
+        else:
+            print(f"⚠️  {cfg['list_file'].name} 업데이트 실패 — 수동으로 확인해주세요.")
+    else:
         print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
 
 
@@ -519,7 +552,16 @@ def create_radio(blog_url: str = ""):
     print(f"✅ {review_file} 생성 완료!")
 
     review_rel = f"../reviews/drama/radio_theater/{filename}"
-    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+    if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        review_link = f"[📝]({review_rel})"
+        blog_link = f"[✏️]({blog_url})" if blog_url else ""
+        original_link = f"[📖]({original})" if original else ""
+        new_row = f"| {title} | {original_link} | {broadcast} | {review_link} | {blog_link} |\n"
+        if add_to_list_table(cfg["list_file"], new_row, title):
+            print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
+        else:
+            print(f"⚠️  {cfg['list_file'].name} 업데이트 실패 — 수동으로 확인해주세요.")
+    else:
         print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
 
 
@@ -569,7 +611,16 @@ def create_movie(blog_url: str = ""):
     print(f"✅ {review_file} 생성 완료!")
 
     review_rel = f"../reviews/movie/{filename}"
-    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+    if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        review_link = f"[📝]({review_rel})"
+        blog_link = f"[✏️]({blog_url})" if blog_url else ""
+        watch_year = datetime.now().year
+        new_row = f"| {title} | {director} | {release_year} | {watch_year} | {review_link} | {blog_link} |\n"
+        if add_to_list_table(cfg["list_file"], new_row, title):
+            print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
+        else:
+            print(f"⚠️  {cfg['list_file'].name} 업데이트 실패 — 수동으로 확인해주세요.")
+    else:
         print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
 
 
@@ -623,7 +674,15 @@ def create_webtoon(blog_url: str = ""):
     print(f"✅ {review_file} 생성 완료!")
 
     review_rel = f"../reviews/webtoon/{filename}"
-    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+    if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        review_link = f"[📝]({review_rel})"
+        blog_link = f"[✏️]({blog_url})" if blog_url else ""
+        new_row = f"| {title} | {author} | {platform} | {work_year} | {read_year} | {review_link} | {blog_link} |\n"
+        if add_to_list_table(cfg["list_file"], new_row, title):
+            print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
+        else:
+            print(f"⚠️  {cfg['list_file'].name} 업데이트 실패 — 수동으로 확인해주세요.")
+    else:
         print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
 
 
@@ -676,7 +735,15 @@ def create_greatminds(blog_url: str = ""):
     print(f"✅ {review_file} 생성 완료!")
 
     review_rel = f"../reviews/greatminds/{filename}"
-    if update_list_table(cfg["list_file"], title, review_rel, blog_url):
+    if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        review_link = f"[📝]({review_rel})"
+        blog_link = f"[✏️]({blog_url})" if blog_url else ""
+        new_row = f"| {title} | {lecturer} | {air_year} | {watch_year} | {review_link} | {blog_link} |\n"
+        if add_to_list_table(cfg["list_file"], new_row, title):
+            print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
+        else:
+            print(f"⚠️  {cfg['list_file'].name} 업데이트 실패 — 수동으로 확인해주세요.")
+    else:
         print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
 
 
