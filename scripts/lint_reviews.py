@@ -125,6 +125,11 @@ def check_file(path: Path) -> list[dict]:
     for url in empty_media:
         issues.append({"type": "empty_media_text", "msg": f"미디어 링크 텍스트 비어있음: {url}"})
 
+    # 9. 재독 소제목 레벨 검사 (## 날짜 → ### 날짜)
+    for i, line in enumerate(lines, 1):
+        if re.match(r'^## \d{4}[-./]\d{1,2}[-./]\d{1,2}\s*$', line.strip()):
+            issues.append({"type": "reread_heading", "msg": f"L{i}: 재독 소제목이 ##로 되어있음 (### 이어야 함)", "fixable": True})
+
     return issues
 
 
@@ -148,10 +153,20 @@ def fix_file(path: Path) -> list[str]:
     lines = text.splitlines()
     if lines and re.search(r"\s*\(지은이\)|\s*\(옮긴이\)|\s*\(글\)|\s*\(그림\)", lines[0]):
         lines[0] = re.sub(r"\s*\((지은이|옮긴이|글|그림)\)", "", lines[0])
-        # 쉼표+공백으로 연결된 역할자도 제거
         lines[0] = re.sub(r",\s*\S+\s*\((옮긴이|글|그림)\)", "", lines[0])
         text = "\n".join(lines)
         fixed.append("헤더 역할 표기 제거")
+
+    # 재독 소제목 ## → ### 수정
+    lines = text.splitlines()
+    reread_fixed = False
+    for i, line in enumerate(lines):
+        if re.match(r'^## (\d{4}[-./]\d{1,2}[-./]\d{1,2})\s*$', line.strip()):
+            lines[i] = line.replace("## ", "### ", 1)
+            reread_fixed = True
+    if reread_fixed:
+        text = "\n".join(lines)
+        fixed.append("재독 소제목 ## → ### 수정")
 
     if text != original:
         path.write_text(text, encoding="utf-8")
