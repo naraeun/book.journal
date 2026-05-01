@@ -13,6 +13,7 @@
 | 🎓 위대한 수업 | [greatminds/greatminds.md](greatminds/greatminds.md) | [reviews/greatminds/](reviews/greatminds/) |
 | 🎵 음악 | [music/](music/) | [reviews/music/](reviews/music/) |
 | 🎙️ 팟캐스트 | [podcast/podcast.md](podcast/podcast.md) | [reviews/podcast/](reviews/podcast/) |
+| 🏃 달리기 | [running/](running/) · [통계](running/stats.md) | |
 | ✍️ 작가별 | [authors/](authors/) | |
 | ⭐ 기억에 남는 책 | [picks/](picks/) | |
 | 📂 주제별 | [topics/](topics/) | |
