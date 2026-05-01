@@ -16,7 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from aladin_search import search_book, get_category_short
-from create_review import create_review_md, find_book, update_books_table
+from create_review import create_review_md, find_book, update_books_table, list_topics, add_to_topic
 
 BOOKS_DIR = Path(__file__).parent.parent / "books"
 REVIEWS_DIR = Path(__file__).parent.parent / "reviews"
@@ -231,6 +231,24 @@ def main():
                     print("⚠️  테이블 업데이트 실패 — 수동으로 확인해주세요.")
             else:
                 print(f"⚠️  #{total_num}을 테이블에서 찾을 수 없습니다.")
+
+        # topic 추가 체크
+        topics = list_topics()
+        if topics:
+            print(f"\n📂 topic 추가 (사용 가능: {', '.join(topics)})")
+            topic_input = input("  topic 이름 (여러 개는 쉼표 구분, 엔터 건너뜀): ").strip()
+            if topic_input:
+                book = find_book(total_num)
+                if book:
+                    review_rel_topic = f"../reviews/{year}/{total_num}.md"
+                    for t in [t.strip() for t in topic_input.split(",") if t.strip()]:
+                        if t in topics:
+                            if add_to_topic(t, book, str(year), review_rel_topic, blog_url):
+                                print(f"✅ topics/{t}.md 추가 완료!")
+                        else:
+                            print(f"⚠️  '{t}' topic을 찾을 수 없습니다.")
+                else:
+                    print(f"⚠️  #{total_num}을 테이블에서 찾을 수 없습니다.")
     else:
         print("❌ 추가 실패")
 

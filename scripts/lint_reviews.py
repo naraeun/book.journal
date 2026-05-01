@@ -42,6 +42,12 @@ def detect_review_type(path: Path) -> str:
             return "drama"
     if len(parts) >= 1 and parts[0] == "webtoon":
         return "webtoon"
+    if len(parts) >= 1 and parts[0] == "greatminds":
+        return "greatminds"
+    if len(parts) >= 1 and parts[0] == "movie":
+        return "movie"
+    if len(parts) >= 1 and parts[0] == "podcast":
+        return "podcast"
     if len(parts) >= 2 and parts[0] == "music":
         if parts[1] == "concerts":
             return "concert"
@@ -56,6 +62,9 @@ REQUIRED_META = {
     "radio_theater": ["날짜", "방송", "원작", "블로그", "출연진"],
     "drama": ["날짜", "플랫폼", "방영연도", "연출", "작가", "원작", "블로그"],
     "webtoon": ["날짜", "작가", "플랫폼", "작품연도", "읽은연도", "블로그"],
+    "greatminds": ["날짜", "강연자", "방영연도", "시청연도", "블로그"],
+    "movie": ["날짜", "감독", "개봉연도", "블로그"],
+    "podcast": ["날짜", "호스트", "블로그"],
     "concert": ["날짜", "장소", "연주자/단체", "블로그", "프로그램"],
     "album": ["날짜", "블로그"],
 }

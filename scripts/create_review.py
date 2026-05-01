@@ -62,6 +62,11 @@ CONTENT_TYPES = {
         "list_file": ROOT / "greatminds" / "greatminds.md",
         "review_dir": REVIEWS_DIR / "greatminds",
     },
+    "podcast": {
+        "name": "팟캐스트",
+        "list_file": ROOT / "podcast" / "podcast.md",
+        "review_dir": REVIEWS_DIR / "podcast",
+    },
 }
 
 
@@ -747,10 +752,66 @@ def create_greatminds(blog_url: str = ""):
         print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
 
 
+# ─── 팟캐스트 ─────────────────────────────────────────────────
+
+
+def create_podcast(blog_url: str = ""):
+    """팟캐스트 리뷰 생성"""
+    cfg = CONTENT_TYPES["podcast"]
+    print(f"\n🎙️ {cfg['name']} 리뷰 생성")
+
+    title = ask("🎙️ 제목")
+    host = ask("👤 호스트")
+    if not blog_url:
+        blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
+
+    review_date = get_date(blog_url)
+    blog_line = f"[Link]({blog_url})" if blog_url else ""
+
+    content = f"""# {title}
+
+- **날짜**: {review_date}
+- **호스트**: {host}
+- **블로그**: {blog_line}
+
+---
+
+"""
+
+    filename = title_to_filename(title) + ".md"
+    review_file = cfg["review_dir"] / filename
+
+    if review_file.exists():
+        print(f"\n⚠️  {review_file} 이미 존재합니다.")
+        if not confirm("덮어쓰시겠어요?", default=False):
+            sys.exit(0)
+
+    print(f"\n📄 생성할 파일: {review_file}")
+    if not confirm("생성하시겠어요?"):
+        print("취소했습니다.")
+        sys.exit(0)
+
+    review_file.parent.mkdir(parents=True, exist_ok=True)
+    review_file.write_text(content, encoding="utf-8")
+    print(f"✅ {review_file} 생성 완료!")
+
+    review_rel = f"../reviews/podcast/{filename}"
+    if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        review_link = f"[📝]({review_rel})"
+        blog_link = f"[✏️]({blog_url})" if blog_url else ""
+        new_row = f"| {title} | {host} | {review_link} | {blog_link} |\n"
+        if add_to_list_table(cfg["list_file"], new_row, title):
+            print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
+        else:
+            print(f"⚠️  {cfg['list_file'].name} 업데이트 실패 — 수동으로 확인해주세요.")
+    else:
+        print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
+
+
 # ─── 메인 ──────────────────────────────────────────────────────
 
 
-TYPE_CHOICES = ["book", "drama", "radio", "movie", "webtoon", "greatminds"]
+TYPE_CHOICES = ["book", "drama", "radio", "movie", "webtoon", "greatminds", "podcast"]
 TYPE_LABELS = {
     "book": "📚 책",
     "drama": "📺 드라마",
@@ -758,6 +819,7 @@ TYPE_LABELS = {
     "movie": "🎬 영화",
     "webtoon": "📖 웹툰",
     "greatminds": "🎓 위대한 수업",
+    "podcast": "🎙️ 팟캐스트",
 }
 
 CREATORS = {
@@ -767,6 +829,7 @@ CREATORS = {
     "movie": create_movie,
     "webtoon": create_webtoon,
     "greatminds": create_greatminds,
+    "podcast": create_podcast,
 }
 
 
