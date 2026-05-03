@@ -14,6 +14,9 @@
   python scripts/create_review.py --type movie            # 영화
   python scripts/create_review.py --type webtoon          # 웹툰
   python scripts/create_review.py --type greatminds       # 위대한 수업
+  python scripts/create_review.py --reread 1697           # 재독 업데이트 (대화형 날짜)
+  python scripts/create_review.py --reread 1697 -d 2026-03-21  # 재독 + 날짜 지정
+  python scripts/create_review.py --sync-reread           # 재독 목록 일괄 동기화
 """
 
 import sys
@@ -345,6 +348,84 @@ def add_to_topic(topic_name: str, book: dict, year: str, review_rel: str, blog_u
 
     lines.insert(insert_at, new_row)
     topic_file.write_text("".join(lines), encoding="utf-8")
+    return True
+
+
+def add_reread_to_books(book_num: int, book: dict, original_date: str, reread_date: str) -> bool:
+    """books/ 파일의 '한번 더 읽은 책 목록' 섹션에 재독 행 추가
+
+    reread_date의 연도에 해당하는 books 파일에 추가한다.
+    """
+    reread_year = reread_date[:4]
+    books_file = BOOKS_DIR / f"{reread_year}.md"
+    if not books_file.exists():
+        return False
+
+    text = books_file.read_text(encoding="utf-8")
+
+    # 이미 재독 목록에 있는지 확인 (같은 번호 + 같은 재독 날짜)
+    if f"| {book_num} |" in text.split("한번 더 읽은 책 목록")[-1] if "한번 더 읽은 책 목록" in text else "":
+        # 더 정밀하게: 재독 날짜까지 일치하는지 확인
+        for line in text.splitlines():
+            if f"| {book_num} |" in line and reread_date in line:
+                return False
+
+    reread_month = str(int(reread_date[5:7]))
+    original_year = original_date[:4]
+    review_link = f"[📝](../reviews/{original_year}/{book_num}.md)"
+    new_row = f"| {reread_month} | {book_num} | {book['title']} | {book['author']} | {original_date} | {reread_date} | {review_link} |"
+
+    if "한번 더 읽은 책 목록" not in text:
+        # 섹션이 없으면 새로 생성
+        section = f"""
+---
+
+## {reread_year}년 한번 더 읽은 책 목록
+
+| 월 | 번호 | 제목 | 작가 | 원래 날짜 | 재독 날짜 | 리뷰 |
+|:--:|:----:|------|------|:---------:|:---------:|------|
+{new_row}
+"""
+        text = text.rstrip() + "\n" + section
+    else:
+        # 섹션이 있으면 재독 날짜 내림차순으로 삽입
+        lines = text.splitlines(keepends=True)
+        insert_at = -1
+        in_reread_section = False
+        past_separator = False
+
+        for i, line in enumerate(lines):
+            if "한번 더 읽은 책 목록" in line:
+                in_reread_section = True
+                continue
+            if not in_reread_section:
+                continue
+            s = line.strip()
+            if not s.startswith("|"):
+                continue
+            cells = [c.strip() for c in s.strip("|").split("|")]
+            # 구분선 감지
+            if all(re.fullmatch(r"[-: ]+", c) for c in cells if c):
+                past_separator = True
+                insert_at = i + 1
+                continue
+            if not past_separator:
+                continue
+            # 데이터 행에서 재독 날짜 추출 (5번째 컬럼, 0-indexed)
+            try:
+                row_reread_date = cells[5] if len(cells) > 5 else ""
+            except IndexError:
+                continue
+            if reread_date >= row_reread_date:
+                insert_at = i
+                break
+            insert_at = i + 1
+
+        if insert_at >= 0:
+            lines.insert(insert_at, new_row + "\n")
+            text = "".join(lines)
+
+    books_file.write_text(text, encoding="utf-8")
     return True
 
 
@@ -811,6 +892,157 @@ def create_podcast(blog_url: str = ""):
 # ─── 메인 ──────────────────────────────────────────────────────
 
 
+def reread_book(book_num: int = None, reread_date: str = ""):
+    """기존 리뷰 파일에 재독 업데이트 + books 재독 목록 추가"""
+    if book_num is None:
+        raw = input("📚 책 번호: ").strip()
+        try:
+            book_num = int(raw)
+        except ValueError:
+            print("❌ 번호는 숫자로 입력해주세요.")
+            sys.exit(1)
+
+    if not reread_date:
+        reread_date = input("📅 재독 날짜 (YYYY-MM-DD, 엔터=오늘): ").strip()
+        if not reread_date:
+            reread_date = datetime.now().strftime("%Y-%m-%d")
+
+    # 날짜 형식 검증
+    try:
+        datetime.strptime(reread_date, "%Y-%m-%d")
+    except ValueError:
+        print("❌ 날짜 형식이 올바르지 않습니다. YYYY-MM-DD 형식으로 입력해주세요.")
+        sys.exit(1)
+
+    print(f"\n🔍 #{book_num} 검색 중...")
+    book = find_book(book_num)
+    if not book:
+        print(f"❌ #{book_num}을 books/ 테이블에서 찾을 수 없습니다.")
+        sys.exit(1)
+
+    original_year = book["year_file"].stem
+    print(f"  제목    : {book['title']}")
+    print(f"  저자    : {book['author']}")
+    print(f"  원래 연도: {original_year}")
+
+    # 리뷰 파일 확인
+    review_file = REVIEWS_DIR / original_year / f"{book_num}.md"
+    if not review_file.exists():
+        print(f"❌ {review_file} 리뷰 파일이 없습니다. 먼저 리뷰를 생성해주세요.")
+        sys.exit(1)
+
+    # 리뷰 파일에서 원래 날짜 추출
+    review_text = review_file.read_text(encoding="utf-8")
+    date_match = re.search(r"\*\*날짜\*\*:\s*(\d{4}-\d{2}-\d{2})", review_text)
+    if not date_match:
+        print("❌ 리뷰 파일에서 날짜를 찾을 수 없습니다.")
+        sys.exit(1)
+    original_date = date_match.group(1)
+
+    # 리뷰 파일에 업데이트 날짜 추가/갱신
+    if "**업데이트 날짜**" in review_text:
+        review_text = re.sub(
+            r"(\*\*업데이트 날짜\*\*:\s*)\d{4}-\d{2}-\d{2}",
+            f"\\g<1>{reread_date}",
+            review_text,
+        )
+        print(f"  📝 업데이트 날짜 갱신: {reread_date}")
+    else:
+        review_text = review_text.replace(
+            f"- **날짜**: {original_date}\n",
+            f"- **날짜**: {original_date}\n- **업데이트 날짜**: {reread_date}\n",
+        )
+        print(f"  📝 업데이트 날짜 추가: {reread_date}")
+
+    # 재독 섹션 뼈대 추가 (이미 해당 날짜 섹션이 없으면)
+    reread_heading = f"### {reread_date}"
+    if reread_heading not in review_text:
+        review_text = review_text.rstrip() + f"\n\n---\n{reread_heading}\n\n"
+        print(f"  📝 재독 섹션 추가: {reread_heading}")
+
+    review_file.write_text(review_text, encoding="utf-8")
+
+    # books 재독 목록 추가
+    if add_reread_to_books(book_num, book, original_date, reread_date):
+        reread_year = reread_date[:4]
+        print(f"✅ books/{reread_year}.md 재독 목록 추가 완료!")
+    else:
+        print("  ℹ️  재독 목록에 이미 있거나 추가할 수 없습니다.")
+
+    print("✅ 재독 업데이트 완료!")
+
+
+def sync_reread():
+    """전체 리뷰 파일을 스캔하여 누락된 재독 목록을 books/ 파일에 일괄 추가"""
+    print("🔄 재독 목록 동기화 시작...\n")
+    added = 0
+    skipped = 0
+
+    for year_dir in sorted(REVIEWS_DIR.iterdir()):
+        if not year_dir.is_dir():
+            continue
+        # reviews/YYYY/ 형태만 처리
+        if not re.fullmatch(r"\d{4}", year_dir.name):
+            continue
+
+        for review_file in sorted(year_dir.glob("*.md")):
+            # 번호 추출
+            try:
+                book_num = int(review_file.stem)
+            except ValueError:
+                continue
+
+            text = review_file.read_text(encoding="utf-8")
+
+            # 업데이트 날짜 확인
+            update_match = re.search(r"\*\*업데이트 날짜\*\*:\s*(\d{4}-\d{2}-\d{2})", text)
+            if not update_match:
+                continue
+
+            # 원래 날짜 확인
+            date_match = re.search(r"\*\*날짜\*\*:\s*(\d{4}-\d{2}-\d{2})", text)
+            if not date_match:
+                continue
+
+            original_date = date_match.group(1)
+
+            # 재독 섹션에서 모든 재독 날짜 추출 (### YYYY-MM-DD)
+            reread_dates = re.findall(r"^### (\d{4}-\d{2}-\d{2})\s*$", text, re.MULTILINE)
+            if not reread_dates:
+                continue
+
+            # 책 정보 조회
+            book = find_book(book_num)
+            if not book:
+                print(f"  ⚠️  #{book_num} books/ 테이블에서 찾을 수 없음 — 건너뜀")
+                continue
+
+            for reread_date in reread_dates:
+                # 이미 재독 목록에 있는지 먼저 확인
+                reread_year = reread_date[:4]
+                books_file = BOOKS_DIR / f"{reread_year}.md"
+                if books_file.exists():
+                    books_text = books_file.read_text(encoding="utf-8")
+                    if f"| {book_num} |" in books_text and reread_date in books_text:
+                        skipped += 1
+                        continue
+
+                # 확인 프롬프트
+                print(f"  📖 #{book_num} {book['title']} ({original_date} → {reread_date})")
+                if not confirm("    재독 목록에 추가할까요?"):
+                    print("    건너뜀")
+                    skipped += 1
+                    continue
+
+                if add_reread_to_books(book_num, book, original_date, reread_date):
+                    print(f"    ✅ books/{reread_year}.md 추가")
+                    added += 1
+                else:
+                    skipped += 1
+
+    print(f"\n🔄 동기화 완료: {added}건 추가, {skipped}건 건너뜀")
+
+
 TYPE_CHOICES = ["book", "drama", "radio", "movie", "webtoon", "greatminds", "podcast"]
 TYPE_LABELS = {
     "book": "📚 책",
@@ -843,7 +1075,32 @@ def main():
         default=None,
         help="콘텐츠 유형",
     )
+    parser.add_argument(
+        "--reread", "-r",
+        action="store_true",
+        help="재독 업데이트 모드",
+    )
+    parser.add_argument(
+        "--sync-reread",
+        action="store_true",
+        help="재독 목록 일괄 동기화",
+    )
+    parser.add_argument(
+        "--date", "-d",
+        default="",
+        help="재독 날짜 (YYYY-MM-DD, reread 모드에서 사용)",
+    )
     args = parser.parse_args()
+
+    # sync-reread 모드
+    if args.sync_reread:
+        sync_reread()
+        return
+
+    # reread 모드
+    if args.reread:
+        reread_book(args.book_num, args.date)
+        return
 
     # --type 없이 숫자만 넘기면 책으로 처리 (기존 호환)
     if args.type is None and args.book_num is not None:
