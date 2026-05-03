@@ -355,7 +355,7 @@ def update_picks_link(book_num: int, year: str) -> bool:
         return False
 
     text = picks_file.read_text(encoding="utf-8")
-    pattern = rf"(?<!\[)#{book_num}\b"
+    pattern = rf"\\?(?<!\[)#{book_num}\b"
     replacement = f"[#{book_num}](../reviews/{year}/{book_num}.md)"
     new_text = re.sub(pattern, replacement, text)
 
