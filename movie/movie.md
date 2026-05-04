@@ -5,3 +5,4 @@
 | 프로젝트 헤일메리 | 필 로드, 크리스 밀러 | 2026 | 2026 | [📝](../reviews/movie/프로젝트_헤일메리.md) | [✏️](https://blog.naver.com/naraeun33/224233864544) |
 | 왕과 사는 남자 | 장항준 | 2026 | 2026 | [📝](../reviews/movie/왕과_사는_남자.md) | [✏️](https://m.blog.naver.com/naraeun33/224226066970) |
 | 맵고 뜨겁게 | 지아 링 | 2024 | 2026 | [📝](../reviews/movie/맵고_뜨겁게.md) | [✏️](https://blog.naver.com/naraeun33/224220438582) |
+| 메리, 퀸 오브 스코틀랜드 | 조지 루크 | 2018 | 2026 | [📝](../reviews/movie/메리,_퀸_오브_스코틀랜드.md) | [✏️](https://blog.naver.com/naraeun33/224215869730) |
