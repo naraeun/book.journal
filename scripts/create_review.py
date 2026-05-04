@@ -580,7 +580,7 @@ def create_drama(blog_url: str = ""):
     if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
         review_link = f"[📝]({review_rel})"
         blog_link = f"[✏️]({blog_url})" if blog_url else ""
-        watch_year = datetime.now().year
+        watch_year = review_date[:4]
         new_row = f"| {title} | {director} | {writer} | {platform} | {air_year} | {watch_year} | {review_link} | {blog_link} |\n"
         if add_to_list_table(cfg["list_file"], new_row, title):
             print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
@@ -700,7 +700,7 @@ def create_movie(blog_url: str = ""):
     if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
         review_link = f"[📝]({review_rel})"
         blog_link = f"[✏️]({blog_url})" if blog_url else ""
-        watch_year = datetime.now().year
+        watch_year = review_date[:4]
         new_row = f"| {title} | {director} | {release_year} | {watch_year} | {review_link} | {blog_link} |\n"
         if add_to_list_table(cfg["list_file"], new_row, title):
             print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
