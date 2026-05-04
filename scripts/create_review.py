@@ -301,15 +301,80 @@ def list_topics() -> list[str]:
     return sorted(f.stem for f in TOPICS_DIR.glob("*.md"))
 
 
+def update_topic_row(topic_name: str, book: dict, review_rel: str, blog_url: str = "") -> bool:
+    """topic 파일에서 이미 존재하는 행의 빈 리뷰·블로그 컬럼 업데이트"""
+    topic_file = TOPICS_DIR / f"{topic_name}.md"
+    if not topic_file.exists():
+        return False
+
+    text = topic_file.read_text(encoding="utf-8")
+    lines = text.splitlines(keepends=True)
+
+    # 헤더에서 리뷰·블로그 컬럼 인덱스 찾기
+    review_idx = -1
+    blog_idx = -1
+    for h_line in lines:
+        h_stripped = h_line.strip()
+        if h_stripped.startswith("|") and "리뷰" in h_stripped:
+            header_cells = [c.strip() for c in h_stripped.strip("|").split("|")]
+            try:
+                review_idx = header_cells.index("리뷰")
+            except ValueError:
+                pass
+            try:
+                blog_idx = header_cells.index("블로그")
+            except ValueError:
+                pass
+            break
+
+    if review_idx < 0:
+        return False
+
+    updated = False
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if not stripped.startswith("|"):
+            continue
+        cells = [c.strip() for c in stripped.strip("|").split("|")]
+        if len(cells) < 2:
+            continue
+        # 번호 컬럼(첫 번째)으로 매칭
+        try:
+            row_num = int(cells[0])
+        except (ValueError, IndexError):
+            continue
+        if row_num != book["num"]:
+            continue
+
+        # 빈 리뷰 컬럼 채우기
+        if review_idx < len(cells) and not cells[review_idx]:
+            cells[review_idx] = f"[📝]({review_rel})"
+            updated = True
+        # 빈 블로그 컬럼 채우기
+        if blog_url and blog_idx >= 0 and blog_idx < len(cells) and not cells[blog_idx]:
+            cells[blog_idx] = f"[✏️]({blog_url})"
+            updated = True
+        if updated:
+            lines[i] = "| " + " | ".join(cells) + " |\n"
+        break
+
+    if updated:
+        topic_file.write_text("".join(lines), encoding="utf-8")
+    return updated
+
+
 def add_to_topic(topic_name: str, book: dict, year: str, review_rel: str, blog_url: str = "") -> bool:
-    """topic 파일 테이블에 번호 내림차순으로 책 추가"""
+    """topic 파일 테이블에 번호 내림차순으로 책 추가, 이미 있으면 빈 컬럼 업데이트"""
     topic_file = TOPICS_DIR / f"{topic_name}.md"
     if not topic_file.exists():
         return False
 
     text = topic_file.read_text(encoding="utf-8")
     if f"| {book['num']} |" in text:
-        print(f"  ℹ️  #{book['num']}은 이미 {topic_name}.md에 있습니다.")
+        if update_topic_row(topic_name, book, review_rel, blog_url):
+            print(f"  📝 #{book['num']} {topic_name}.md 리뷰/블로그 링크 업데이트!")
+            return True
+        print(f"  ℹ️  #{book['num']}은 이미 {topic_name}.md에 있습니다 (업데이트 불필요).")
         return False
 
     review_link = f"[📝]({review_rel})"
