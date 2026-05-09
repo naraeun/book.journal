@@ -9,6 +9,7 @@
 | 📺 드라마 | [drama/drama.md](drama/drama.md) | [reviews/drama/drama/](reviews/drama/drama/) |
 | 📻 라디오 극장 | [drama/radio_theater.md](drama/radio_theater.md) | [reviews/drama/radio_theater/](reviews/drama/radio_theater/) |
 | 🎬 영화 | [movie/movie.md](movie/movie.md) | [reviews/movie/](reviews/movie/) |
+| 🎭 연극/뮤지컬 | [theater/theater.md](theater/theater.md) | [reviews/theater/](reviews/theater/) |
 | 📖 웹툰 | [webtoon/webtoon.md](webtoon/webtoon.md) | [reviews/webtoon/](reviews/webtoon/) |
 | 🎓 위대한 수업 | [greatminds/greatminds.md](greatminds/greatminds.md) | [reviews/greatminds/](reviews/greatminds/) |
 | 🎵 음악 | [music/](music/) | [reviews/music/](reviews/music/) |
