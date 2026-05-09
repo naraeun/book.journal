@@ -24,6 +24,9 @@
     - 리뷰 파일은 `reviews/greatminds/`
 - 영화 목록은 `movie/movie.md`에 보관
     - 리뷰 파일은 `reviews/movie/`
+- 영상(강연, 유튜브, 다큐 등) 목록은 `video/video.md`에 보관
+    - 리뷰 파일은 `reviews/video/`
+    - 파일명은 제목 기반 (예: `reviews/video/노벨문학상_강연_빛과_실.md`)
 
 ### 카테고리
 - 알라딘 API에서 조회 (대분류>중분류)
