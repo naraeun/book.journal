@@ -30,8 +30,8 @@ def parse_table_rows(md_text: str) -> list[dict]:
             continue
         cells = [c.strip() for c in line.strip("|").split("|")]
 
-        # 헤더 행 감지
-        if header is None and any(k in cells for k in ["제목", "번호", "월"]):
+        # 헤더 행 감지 (반복 헤더 포함)
+        if any(k in cells for k in ["제목", "번호", "월"]):
             header = cells
             continue
         # 구분선 건너뛰기
@@ -43,8 +43,16 @@ def parse_table_rows(md_text: str) -> list[dict]:
     return rows
 
 
+_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def is_reread(row: dict) -> bool:
+    """재독 행 여부 — 재독 날짜 컬럼이 있거나 연번호가 날짜 형식이면 재독"""
+    return "재독 날짜" in row or bool(_DATE_RE.match(row.get("연번호", "")))
+
+
 def load_all_books() -> list[dict]:
-    """모든 연도 md 파일 로드"""
+    """모든 연도 md 파일 로드 (재독 제외)"""
     all_books = []
     for md_file in sorted(BOOKS_DIR.glob("*.md")):
         year = md_file.stem
@@ -53,6 +61,8 @@ def load_all_books() -> list[dict]:
         text = md_file.read_text(encoding="utf-8")
         rows = parse_table_rows(text)
         for row in rows:
+            if is_reread(row):
+                continue
             row["연도"] = int(year)
             all_books.append(row)
     return all_books
