@@ -6,3 +6,4 @@
 | 바른연애 길잡이 | 남수 | 네이버 웹툰 | 2018-2021 | 2026 | [📝](../reviews/webtoon/바른연애_길잡이.md) | [✏️](https://blog.naver.com/naraeun33/224241209314) |
 | 쓰레기는 쓰레기통에 | EDDiERiNG | 네이버 웹툰 | 2022-2024 | 2026 | [📝](../reviews/webtoon/쓰레기는_쓰레기통에.md) | [✏️](https://blog.naver.com/naraeun33/224191246148) |
 | 사랑아 영원해 | 초피 | 네이버 웹툰 | 2023-2024 | 2025 | [📝](../reviews/webtoon/사랑아_영원해.md) | [✏️](https://blog.naver.com/naraeun33/224117157204) |
+| 그렇고 그런 바람에 | 아니영 | 네이버 웹툰 | 2022-2024 | 2025 | [📝](../reviews/webtoon/그렇고_그런_바람에.md) | [✏️](https://blog.naver.com/naraeun33/224084994857) |
