@@ -7,3 +7,4 @@
 | 쓰레기는 쓰레기통에 | EDDiERiNG | 네이버 웹툰 | 2022-2024 | 2026 | [📝](../reviews/webtoon/쓰레기는_쓰레기통에.md) | [✏️](https://blog.naver.com/naraeun33/224191246148) |
 | 사랑아 영원해 | 초피 | 네이버 웹툰 | 2023-2024 | 2025 | [📝](../reviews/webtoon/사랑아_영원해.md) | [✏️](https://blog.naver.com/naraeun33/224117157204) |
 | 그렇고 그런 바람에 | 아니영 | 네이버 웹툰 | 2022-2024 | 2025 | [📝](../reviews/webtoon/그렇고_그런_바람에.md) | [✏️](https://blog.naver.com/naraeun33/224084994857) |
+| 집이 없어 | 와난 | 네이버 웹툰 | 2018-2024 | 2025 | [📝](../reviews/webtoon/집이_없어.md) | [✏️](https://blog.naver.com/naraeun33/224057227003) |
