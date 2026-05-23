@@ -1,5 +1,11 @@
 # 라디오 극장 성우 인덱스
 
+## 강수진
+
+| 작품 | 역할 |
+|------|------|
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 준호 |
+
 ## 강영호
 
 | 작품 | 역할 |
@@ -35,6 +41,7 @@
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 사무장 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 광섭 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 임금, 27화 명창 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 김기사/남선배 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 수호 부, 라디오 MC |
 
 ## 김용효
@@ -46,6 +53,7 @@
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 남변호사 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 오형사, 이순경, 경찰1 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 용천, 손광익 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 공대생2 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 이장 |
 
 ## 김인
@@ -75,6 +83,7 @@
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 영원모 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 스텔라 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 첫째(현)/펜션주인 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 전지현, 작가, 약사, 간호사, 승객2 |
 
 ## 남유정
@@ -88,12 +97,20 @@
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 박상궁, 기생 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 엄마 |
 
 ## 박준모
 
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 묵호, 내금위장 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 인성 |
+
+## 박하진
+
+| 작품 | 역할 |
+|------|------|
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 해수 |
 
 ## 박희은
 
@@ -111,6 +128,7 @@
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 동기할머니, 테스, 부반장 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 당골네, 사월 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 집주인/학원생 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 수호 모, 진상고객 |
 
 ## 백경민
@@ -152,12 +170,14 @@
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 마행수 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 미연 |
 
 ## 오은수
 
 | 작품 | 역할 |
 |------|------|
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 지윤 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 은수 |
 
 ## 유승희
 
@@ -168,7 +188,14 @@
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 미래모 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 감실, 백연모 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 은비 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 장명연, 할머니 |
+
+## 유인선
+
+| 작품 | 역할 |
+|------|------|
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 지수 |
 
 ## 유하나
 
@@ -198,6 +225,7 @@
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 곤 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 제임스/앵무새/상철 |
 
 ## 이명호
 
@@ -232,6 +260,7 @@
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 절쑤, 변씨, 누렁이, 36화 주모 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 큰고모 |
 
 ## 전승화
 
@@ -244,6 +273,7 @@
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 꼭두쇠, 땡중, 주지스님, 오씨 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 강도/유저/피디 |
 
 ## 전지원
 
@@ -270,6 +300,7 @@
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 미래부 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 수동, 종선부 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 춘봉 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 사진사 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 켄터키 사장, 승객1 |
 
 ## 정세연
@@ -292,6 +323,7 @@
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 외할머니, 종선모 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 숙경, 종달, 곤이 모, 살순이(버순이) |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 둘째(윤)/은비이모 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 영롱댁, 어린 수호, 수호 이모, 간호사 |
 
 ## 조민수
@@ -316,6 +348,7 @@
 |------|------|
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 영원 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 원향 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 미용사/사장 |
 
 ## 천송이
 
@@ -323,11 +356,18 @@
 |------|------|
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 미래 |
 
+## 최덕희
+
+| 작품 | 역할 |
+|------|------|
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 연수 |
+
 ## 최우성
 
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 얼쑤, 6화 명창, 무연 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 이회장/편집장 |
 
 ## 최인일
 
@@ -338,6 +378,7 @@
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 명훈, 최기자 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 한종선 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 돌삼 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 서점직원/아빠/프레디 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 이동진, 학생2 |
 
 ## 최하나
