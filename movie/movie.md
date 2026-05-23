@@ -7,4 +7,5 @@
 | 맵고 뜨겁게 | 지아 링 | 2024 | 2026 | [📝](../reviews/movie/맵고_뜨겁게.md) | [✏️](https://blog.naver.com/naraeun33/224220438582) |
 | 메리, 퀸 오브 스코틀랜드 | 조지 루크 | 2018 | 2026 | [📝](../reviews/movie/메리,_퀸_오브_스코틀랜드.md) | [✏️](https://blog.naver.com/naraeun33/224215869730) |
 | 파반느 | 이종필 | 2026 | 2026 | [📝](../reviews/movie/파반느.md) | [✏️](https://blog.naver.com/naraeun33/224200209047) |
+| 불멸의 연인 | 버나드 로즈 | 1995 | 2026 | [📝](../reviews/movie/불멸의_연인.md) | [✏️](https://blog.naver.com/naraeun33/224197545766) |
 | 20세기 소녀 | 방우리 | 2022 | 2022 | [📝](../reviews/movie/20세기_소녀.md) | [✏️](https://m.blog.naver.com/naraeun33/222949380377) |
