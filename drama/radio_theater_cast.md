@@ -21,6 +21,7 @@
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 보디가드 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 남학생1, 비행기 기장, 응급 구조사 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 경규, 경찰, 어른 동기 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 준이, 남학생2 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 주임, 버스기사 |
 
 ## 곽윤상
@@ -28,6 +29,12 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 창석 |
+
+## 권도일
+
+| 작품 | 역할 |
+|------|------|
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 민용 |
 
 ## 권선영
 
@@ -47,6 +54,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 약사, 남학생2, 하루키 소설 속 해설, 나 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 데스크, 배달원 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 순택, 구관조 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 청년, 외국인노동자 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 박영감, 학생1, 직원, 알바3(남), 환자 |
 
 ## 김순미
@@ -65,6 +73,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 안박사, 지호아빠, 하루키 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 사무장 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 광섭 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 종원, 연후부 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 임금, 27화 명창 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 김기사/남선배 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 수호 부, 라디오 MC |
@@ -79,9 +88,16 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 영민 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 남변호사 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 오형사, 이순경, 경찰1 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 총무, 청년2, 사장, 경비 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 용천, 손광익 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 공대생2 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 이장 |
+
+## 김익태
+
+| 작품 | 역할 |
+|------|------|
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 이안 |
 
 ## 김인
 
@@ -112,6 +128,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 어린시온, 승무원2 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 영원모 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 스텔라 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 유로, 연서 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 첫째(현)/펜션주인 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 전지현, 작가, 약사, 간호사, 승객2 |
@@ -171,6 +188,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 간병사, 승무원1, 윤쌤 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 원장 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 동기할머니, 테스, 부반장 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 옥순, 은영, 최강사 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 당골네, 사월 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 집주인/학원생 |
@@ -186,6 +204,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 성우1, 의사, 돈까스알바, 앵커 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | AI상담사 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 어른 하인, 만식, 경찰2 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 노인, 기사, 행인, 강사, 점원 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 이웃집 남자, 버스기사, 남학생, 알바2(남), 승객3, 환자 |
 
 ## 변혜숙
@@ -242,6 +261,7 @@
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 김경희, 노인 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 할머니, 시온 모 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 미래모 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 연후모, 실장 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 감실, 백연모 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 은비 |
@@ -263,6 +283,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 간호사, 카페알바, 아이 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 서우 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 담임, 엘자2, 무당, 반장 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 알바 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 연예뉴스 MC, 여학생1, 알바2(여) |
 
 ## 윤용식
@@ -275,6 +296,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 연후 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 이날치 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 김요한, 노인 |
 
@@ -314,6 +336,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 진행자 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 김부장 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 사장, 영수, 흔탁 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 남학생1, 아재2, 선배, 수강생1 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 황영감, 의사, 친구1, 알바1(남), 환자 |
 
 ## 이자영
@@ -361,6 +384,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 여아, 안내방송, 사서 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 옆반애 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 송엘자 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 미진, 안내멘트, 점원, 스탭 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 김주애, 간호사 |
 
 ## 정상일
@@ -373,6 +397,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 후배, 전공의, 사장, 구급대원1, 남자 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 미래부 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 수동, 종선부 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 태형, 아재1, 청년1, 수강생2 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 춘봉 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 사진사 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 켄터키 사장, 승객1 |
@@ -387,6 +412,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 동생, 성우2, 아이 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 간호사, 종업원 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 동기 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 여학생, 여직원, 주인 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 은희 모, 7세 아이(남), 알바3(여), 간호사 |
 
 ## 정수현
@@ -399,6 +425,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 배영, 지아 이모 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 인영, 보험사 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 외할머니, 종선모 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 혜연, 상담쌤, 박씨, 미리 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 숙경, 종달, 곤이 모, 살순이(버순이) |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 둘째(윤)/은비이모 |
@@ -420,6 +447,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 애엄마, 학생1, 교사, 알바 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 담임 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 옥선이모, 담임, 안내 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | AI애니, 안내방송, 소미 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 알바1(여), 간호사 |
 
 ## 주예진
@@ -459,6 +487,7 @@
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 의사, 남학생, 구급대원2 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 명훈, 최기자 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 한종선 |
+| [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 저커 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 돌삼 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 서점직원/아빠/프레디 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 이동진, 학생2 |
