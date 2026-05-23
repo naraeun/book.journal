@@ -9,5 +9,6 @@
 | 작은 아씨들 |  | 2025-01 | [📝](../reviews/drama/radio_theater/작은_아씨들.md) | [✏️](https://blog.naver.com/naraeun33/224149638047) |
 | 급류 | [📖](../reviews/2024/2833.md) | 2025-12 | [📝](../reviews/drama/radio_theater/급류.md) | [✏️](https://blog.naver.com/naraeun33/224132468646) |
 | 내 생의 마지막 다이어트 | [📖](../reviews/2025/2961.md) | 2023-10 | [📝](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | [✏️](https://blog.naver.com/naraeun33/224100213503) |
+| 스파클 | [📖](../reviews/2025/3079.md) | 2025-11 | [📝](../reviews/drama/radio_theater/스파클.md) | [✏️](https://blog.naver.com/naraeun33/224095024515) |
 | 단역배우 김순효 씨 | [📖](../reviews/2025/3044.md)  | 2025-09 | [📝](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | [✏️](https://blog.naver.com/naraeun33/224035376834) | 
 | 이날치, 파란만장 | [📖](../reviews/2025/2914.md) | 2025-03 ~ 2025-04 | [📝](../reviews/drama/radio_theater/이날치,_파란만장.md) | [✏️](https://m.blog.naver.com/naraeun33/223851852078) |
