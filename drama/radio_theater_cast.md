@@ -10,10 +10,17 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 남학생, 인부, 음주운전자, 앵커, 작업자 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 학원강사 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 보디가드 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 경규, 경찰, 어른 동기 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 주임, 버스기사 |
+
+## 곽윤상
+
+| 작품 | 역할 |
+|------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 창석 |
 
 ## 권선영
 
@@ -26,6 +33,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 이일방 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 스님 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 안전 요원, 수영 강사 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 데스크, 배달원 |
@@ -36,6 +44,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 승주, 담임선생님 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 인철 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 지광림 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 사무장 |
@@ -48,6 +57,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 형사, 대원 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 명호 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 추과장, 체육센터 직원, 경찰, 트레이너 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 남변호사 |
@@ -78,6 +88,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 희진 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 최안순/엠마 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 태이 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 영원모 |
@@ -122,6 +133,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 민박집주인, 애엄마, 주민1 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 진해 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 고미선 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 원장 |
@@ -135,6 +147,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 앵커, 행인, 의사 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 원장 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 고등학생 우경, 손님 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | AI상담사 |
@@ -165,6 +178,12 @@
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 장두령, 깡쇠 |
 
+## 신범식
+
+| 작품 | 역할 |
+|------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 해솔 |
+
 ## 엄지은
 
 | 작품 | 역할 |
@@ -176,6 +195,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 선화 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 지윤 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 은수 |
 
@@ -183,6 +203,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 미영, 해솔할머니 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 박봉자/작은 엄마/은희 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 김경희, 노인 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 미래모 |
@@ -201,6 +222,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 여고생1 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 안내양/이복동생(여) |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 윤지애 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 서우 |
@@ -233,6 +255,12 @@
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 백연, 계동 |
 
+## 이미형
+
+| 작품 | 역할 |
+|------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 정미 |
+
 ## 이슬
 
 | 작품 | 역할 |
@@ -243,6 +271,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 민재, 김일방, 앵커 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 상인/영화감독 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 오진홍 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 김부장 |
@@ -253,6 +282,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 도담 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 옥선 |
 
 ## 임지현
@@ -272,6 +302,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 진수 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 꼭두쇠, 땡중, 주지스님, 오씨 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 강도/유저/피디 |
 
@@ -285,6 +316,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 라디오DJ, 간호사 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 승호/아이경주 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 중학생 인회, 소개팅녀 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 옆반애 |
@@ -295,6 +327,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 무경, 경찰, 본부, 화재현장대원 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 황부장/기사/고물상 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 칸쿤신랑(지애남편) |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 미래부 |
@@ -307,6 +340,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 중개인, 여고생2 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 간호사/아줌마 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 산부인과 의사, 미친 여자(홍옥실 딸) |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 간호사, 종업원 |
@@ -317,6 +351,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 예지, 주민2 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 대봉댁/여스님 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 홍옥실 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 인영, 보험사 |
@@ -336,6 +371,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 안내멘트, 아이 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 여직원/영어안내음/주민2 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | ARS, 직장동료 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 담임 |
@@ -373,6 +409,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [급류](../reviews/drama/radio_theater/급류.md) | 박일방, 도담남친, 요원 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 장피디/조종사/의사 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 인회부, 칸쿤동료 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 명훈, 최기자 |
