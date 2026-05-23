@@ -1,5 +1,11 @@
 # 라디오 극장 성우 인덱스
 
+## 강규리
+
+| 작품 | 역할 |
+|------|------|
+| [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 홍안나 |
+
 ## 강수진
 
 | 작품 | 역할 |
@@ -26,6 +32,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 소운남(소강미) |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 경주 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 엄지민 |
 
@@ -39,6 +46,12 @@
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 데스크, 배달원 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 순택, 구관조 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 박영감, 학생1, 직원, 알바3(남), 환자 |
+
+## 김순미
+
+| 작품 | 역할 |
+|------|------|
+| [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 정미향 |
 
 ## 김시우
 
@@ -96,6 +109,12 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 첫째(현)/펜션주인 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 전지현, 작가, 약사, 간호사, 승객2 |
+
+## 김지혜
+
+| 작품 | 역할 |
+|------|------|
+| [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 구유리 |
 
 ## 남유정
 
@@ -253,6 +272,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 양봉희 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 백연, 계동 |
 
 ## 이미형
@@ -423,3 +443,9 @@
 | 작품 | 역할 |
 |------|------|
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 순효 |
+
+## 하지형
+
+| 작품 | 역할 |
+|------|------|
+| [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 공피디 |
