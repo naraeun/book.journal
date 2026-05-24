@@ -92,6 +92,7 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 임금, 27화 명창 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 김기사, 남선배 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 수호 부, 라디오 MC |
+| [타오](../reviews/drama/radio_theater/타오.md) | 박우태, 이솔로몬 |
 
 ## 김용효
 
@@ -108,6 +109,7 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 용천, 손광익 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 공대생2 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 이장 |
+| [타오](../reviews/drama/radio_theater/타오.md) | 김인석, 이영태, 신부, 부장 |
 
 ## 김익태
 
@@ -149,6 +151,7 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 첫째(현), 펜션주인 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 전지현, 작가, 약사, 간호사, 승객2 |
+| [타오](../reviews/drama/radio_theater/타오.md) | 정상원, 성우, 검시관, 꾸잉, 이연주 |
 
 ## 김지혜
 
@@ -217,6 +220,7 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 집주인, 학원생 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 수호 모, 진상고객 |
+| [타오](../reviews/drama/radio_theater/타오.md) | 김태경, 윤미라 |
 
 ## 백경민
 
@@ -237,6 +241,12 @@
 | 작품 | 역할 |
 |------|------|
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 강우 |
+
+## 변영희
+
+| 작품 | 역할 |
+|------|------|
+| [타오](../reviews/drama/radio_theater/타오.md) | 최계호, 윤미라 부 |
 
 ## 변혜숙
 
@@ -306,6 +316,7 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 은비 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 장명연, 할머니 |
+| [타오](../reviews/drama/radio_theater/타오.md) | 권윤정, 소라야, 윤미라 모, 윤유진 |
 
 ## 유인선
 
@@ -387,11 +398,18 @@
 | [급류](../reviews/drama/radio_theater/급류.md) | 도담 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 옥선 |
 
+## 이제인
+
+| 작품 | 역할 |
+|------|------|
+| [타오](../reviews/drama/radio_theater/타오.md) | 오지영 |
+
 ## 이주봉
 
 | 작품 | 역할 |
 |------|------|
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 민재 |
+| [타오](../reviews/drama/radio_theater/타오.md) | 이지혁, 박종구 |
 
 ## 이현주
 
@@ -463,6 +481,7 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 춘봉 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 사진사 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 켄터키 사장, 승객1 |
+| [타오](../reviews/drama/radio_theater/타오.md) | 이근식, 이진우, 전남편 |
 
 ## 정세연
 
@@ -494,6 +513,7 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 둘째(윤), 은비이모 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 영롱댁, 어린 수호, 수호 이모, 간호사 |
+| [타오](../reviews/drama/radio_theater/타오.md) | 타오, 정은이, 여직원, 타오어머니 |
 
 ## 조민수
 
@@ -564,6 +584,7 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 돌삼 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 서점직원, 아빠, 프레디 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 이동진, 학생2 |
+| [타오](../reviews/drama/radio_theater/타오.md) | 알바생, 민변호사, 통역, 이근식(20화~), 캡 |
 
 ## 최하나
 
