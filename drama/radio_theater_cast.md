@@ -24,6 +24,12 @@
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 준이, 남학생2 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 주임, 버스기사 |
 
+## 강한별
+
+| 작품 | 역할 |
+|------|------|
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 은영 |
+
 ## 곽윤상
 
 | 작품 | 역할 |
@@ -56,6 +62,12 @@
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 순택, 구관조 |
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 청년, 외국인노동자 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 박영감, 학생1, 직원, 알바3(남), 환자 |
+
+## 김성희
+
+| 작품 | 역할 |
+|------|------|
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 승희 |
 
 ## 김순미
 
@@ -138,6 +150,12 @@
 | 작품 | 역할 |
 |------|------|
 | [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 구유리 |
+
+## 김희승
+
+| 작품 | 역할 |
+|------|------|
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 준표 |
 
 ## 남유정
 
@@ -241,6 +259,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 지은 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 마행수 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 미연 |
 
@@ -249,6 +268,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 선화 |
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 명원 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 지윤 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 은수 |
 
@@ -346,12 +366,30 @@
 | [급류](../reviews/drama/radio_theater/급류.md) | 도담 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 옥선 |
 
+## 이주봉
+
+| 작품 | 역할 |
+|------|------|
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 민재 |
+
+## 이현주
+
+| 작품 | 역할 |
+|------|------|
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 상우 |
+
 ## 임지현
 
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 절쑤, 변씨, 누렁이, 36화 주모 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 큰고모 |
+
+## 전병하
+
+| 작품 | 역할 |
+|------|------|
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 진호 |
 
 ## 전승화
 
@@ -365,6 +403,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 진수 |
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 병관 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 꼭두쇠, 땡중, 주지스님, 오씨 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 강도/유저/피디 |
 
@@ -454,6 +493,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 미주 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 영원 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 원향 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 미용사/사장 |
@@ -497,6 +537,12 @@
 | 작품 | 역할 |
 |------|------|
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 순효 |
+
+## 최현지
+
+| 작품 | 역할 |
+|------|------|
+| [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 강숙 |
 
 ## 하지형
 
