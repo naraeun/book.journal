@@ -51,6 +51,7 @@
 | [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 소운남(소강미) |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 경주 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 엄지민 |
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 벨 |
 
 ## 길기철
 
@@ -64,6 +65,12 @@
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 순택, 구관조 |
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 청년, 외국인노동자 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 박영감, 학생1, 직원, 알바3(남), 환자 |
+
+## 김봄
+
+| 작품 | 역할 |
+|------|------|
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 혜용 |
 
 ## 김성희
 
@@ -208,6 +215,7 @@
 | 작품 | 역할 |
 |------|------|
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 해수 |
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 제비 |
 
 ## 박희은
 
@@ -285,6 +293,12 @@
 |------|------|
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 엄마, 셀마 |
 
+## 설영범
+
+| 작품 | 역할 |
+|------|------|
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 홍성 |
+
 ## 송백경
 
 | 작품 | 역할 |
@@ -338,6 +352,7 @@
 | 작품 | 역할 |
 |------|------|
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 지수 |
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 양희 |
 
 ## 유하나
 
@@ -351,6 +366,12 @@
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 담임, 엘자2, 무당, 반장 |
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 알바 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 연예뉴스 MC, 여학생1, 알바2(여) |
+
+## 윤세웅
+
+| 작품 | 역할 |
+|------|------|
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 스테판 |
 
 ## 윤용식
 
@@ -427,6 +448,12 @@
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 민재 |
 | [타오](../reviews/drama/radio_theater/타오.md) | 이지혁, 박종구 |
 
+## 이지선
+
+| 작품 | 역할 |
+|------|------|
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 송화 |
+
 ## 이현주
 
 | 작품 | 역할 |
@@ -441,6 +468,12 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 절쑤, 변씨, 누렁이, 36화 주모 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 큰고모 |
 
+## 장우영
+
+| 작품 | 역할 |
+|------|------|
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 회장해녀, 정미 |
+
 ## 전병하
 
 | 작품 | 역할 |
@@ -453,6 +486,7 @@
 |------|------|
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 조우경 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 아빠 |
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 석영 |
 
 ## 전종건
 
@@ -535,6 +569,12 @@
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 영롱댁, 어린 수호, 수호 이모, 간호사 |
 | [타오](../reviews/drama/radio_theater/타오.md) | 타오, 정은이, 여직원, 타오어머니 |
 
+## 정해은
+
+| 작품 | 역할 |
+|------|------|
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 이주현 |
+
 ## 조민수
 
 | 작품 | 역할 |
@@ -583,6 +623,12 @@
 |------|------|
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 연수 |
 
+## 최수민
+
+| 작품 | 역할 |
+|------|------|
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 목포할망 |
+
 ## 최우성
 
 | 작품 | 역할 |
@@ -590,6 +636,7 @@
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 오빠 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 얼쑤, 6화 명창, 무연 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 이회장, 편집장 |
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 형진 |
 
 ## 최인일
 
@@ -619,6 +666,7 @@
 | 작품 | 역할 |
 |------|------|
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 강숙 |
+| [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 효재 |
 
 ## 하지형
 
