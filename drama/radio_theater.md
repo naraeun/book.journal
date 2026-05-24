@@ -2,6 +2,7 @@
 
 | 제목 | 원작 | 방송 | 리뷰 | 블로그 |
 |------|------|:----:|:----:|--------|
+| 멜라닌 | [📖](../reviews/2025/3014.md) | 2025-08 | [📝](../reviews/drama/radio_theater/멜라닌.md) | [✏️](https://blog.naver.com/naraeun33/224007111751) |
 | 엘자의 하인 | [📖](../reviews/2026/3162.md) | 2026-04 | [📝](../reviews/drama/radio_theater/엘자의_하인.md) | [✏️](https://blog.naver.com/naraeun33/224275076021) |
 | 안락한 삶 | [📖](../reviews/2026/3149.md) | 2026-03 | [📝](../reviews/drama/radio_theater/안락한_삶.md) | [✏️](https://blog.naver.com/naraeun33/224239018792) |
 | 러브 몬스터 | [📖](../reviews/2024/2614.md) | 2026-02 | [📝](../reviews/drama/radio_theater/러브_몬스터.md) | [✏️](https://blog.naver.com/naraeun33/224202075985) |
