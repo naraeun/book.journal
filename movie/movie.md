@@ -9,4 +9,5 @@
 | 파반느 | 이종필 | 2026 | 2026 | [📝](../reviews/movie/파반느.md) | [✏️](https://blog.naver.com/naraeun33/224200209047) |
 | 불멸의 연인 | 버나드 로즈 | 1995 | 2026 | [📝](../reviews/movie/불멸의_연인.md) | [✏️](https://blog.naver.com/naraeun33/224197545766) |
 | 케이팝 데몬 헌터스 | 메기 강, 크리스 애펄헌즈 | 2025 | 2025 | [📝](../reviews/movie/케이팝_데몬_헌터스.md) | [✏️](https://blog.naver.com/naraeun33/223975194897) |
+| 어른 김장하 | 김현지 | 2025 | 2025 | [📝](../reviews/movie/어른_김장하.md) | [✏️](https://blog.naver.com/naraeun33/223942294488) |
 | 20세기 소녀 | 방우리 | 2022 | 2022 | [📝](../reviews/movie/20세기_소녀.md) | [✏️](https://m.blog.naver.com/naraeun33/222949380377) |
