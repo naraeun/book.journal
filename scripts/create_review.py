@@ -76,6 +76,40 @@ CONTENT_TYPES = {
 # ─── 공통 유틸 ─────────────────────────────────────────────────
 
 
+def resolve_original(review_dir: Path, list_file: Path) -> tuple[str, str]:
+    """원작 리뷰 번호를 입력받아 (리뷰파일용 상대경로, 인덱스파일용 상대경로) 반환.
+    입력이 없으면 ("", "") 반환."""
+    from os.path import relpath
+
+    original_input = input("📖 원작 리뷰 번호 (선택, 엔터 건너뜀): ").strip()
+    if not original_input:
+        return ("", "")
+
+    try:
+        book_num = int(original_input)
+    except ValueError:
+        print(f"⚠️  숫자가 아닙니다: {original_input}")
+        return ("", "")
+
+    book = find_book(book_num)
+    if book:
+        year = book["year_file"].stem  # e.g. "2025"
+    else:
+        year = input("📅 원작 읽은 연도 (books에서 못 찾음, 직접 입력): ").strip()
+
+    # 원작 리뷰 파일의 절대 경로
+    original_abs = REVIEWS_DIR / year / f"{book_num}.md"
+
+    # 리뷰 파일 기준 상대경로 (review_dir → reviews/YYYY/번호.md)
+    original_for_review = relpath(original_abs, review_dir)
+
+    # 인덱스 파일 기준 상대경로 (list_file의 부모 → reviews/YYYY/번호.md)
+    list_dir = list_file.parent
+    original_for_list = relpath(original_abs, list_dir)
+
+    return (original_for_review, original_for_list)
+
+
 def fetch_blog_date(blog_url: str) -> str | None:
     """네이버 블로그에서 작성 날짜 추출 (시간 제외)"""
     url = blog_url.replace("m.blog.naver.com", "blog.naver.com").replace(
@@ -602,13 +636,13 @@ def create_drama(blog_url: str = ""):
     air_year = ask("📅 방영연도")
     director = ask("🎬 연출")
     writer = ask("✍️  작가")
-    original = input("📖 원작 리뷰 경로 (선택, 엔터 건너뜀): ").strip()
+    original_for_review, original_for_list = resolve_original(cfg["review_dir"], cfg["list_file"])
     if not blog_url:
         blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
 
     review_date = get_date(blog_url)
     blog_line = f"[Link]({blog_url})" if blog_url else ""
-    original_line = f"[Link]({original})" if original else ""
+    original_line = f"[Link]({original_for_review})" if original_for_review else ""
 
     content = f"""# {title}
 
@@ -665,13 +699,13 @@ def create_radio(blog_url: str = ""):
 
     title = ask("📻 제목")
     broadcast = ask("📅 방송 (예: 2026-03)")
-    original = input("📖 원작 리뷰 경로 (선택, 엔터 건너뜀): ").strip()
+    original_for_review, original_for_list = resolve_original(cfg["review_dir"], cfg["list_file"])
     if not blog_url:
         blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
 
     review_date = get_date(blog_url)
     blog_line = f"[Link]({blog_url})" if blog_url else ""
-    original_line = f"[Link]({original})" if original else ""
+    original_line = f"[Link]({original_for_review})" if original_for_review else ""
 
     content = f"""# {title} — KBS 라디오 극장
 
@@ -706,7 +740,7 @@ def create_radio(blog_url: str = ""):
     if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
         review_link = f"[📝]({review_rel})"
         blog_link = f"[✏️]({blog_url})" if blog_url else ""
-        original_link = f"[📖]({original})" if original else ""
+        original_link = f"[📖]({original_for_list})" if original_for_list else ""
         new_row = f"| {title} | {original_link} | {broadcast} | {review_link} | {blog_link} |\n"
         if add_to_list_table(cfg["list_file"], new_row, title):
             print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
