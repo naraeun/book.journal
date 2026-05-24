@@ -14,6 +14,8 @@
   python scripts/create_review.py --type movie            # 영화
   python scripts/create_review.py --type webtoon          # 웹툰
   python scripts/create_review.py --type greatminds       # 위대한 수업
+  python scripts/create_review.py --type podcast          # 팟캐스트
+  python scripts/create_review.py --type exhibition       # 전시회
   python scripts/create_review.py --reread 1697           # 재독 업데이트 (대화형 날짜)
   python scripts/create_review.py --reread 1697 -d 2026-03-21  # 재독 + 날짜 지정
   python scripts/create_review.py --sync-reread           # 재독 목록 일괄 동기화
@@ -69,6 +71,11 @@ CONTENT_TYPES = {
         "name": "팟캐스트",
         "list_file": ROOT / "podcast" / "podcast.md",
         "review_dir": REVIEWS_DIR / "podcast",
+    },
+    "exhibition": {
+        "name": "전시회",
+        "list_file": ROOT / "exhibition" / "exhibition.md",
+        "review_dir": REVIEWS_DIR / "exhibition",
     },
 }
 
@@ -991,6 +998,60 @@ def create_podcast(blog_url: str = ""):
 # ─── 메인 ──────────────────────────────────────────────────────
 
 
+def create_exhibition(blog_url: str = ""):
+    """전시회 리뷰 생성"""
+    cfg = CONTENT_TYPES["exhibition"]
+    print(f"\n🖼️ {cfg['name']} 리뷰 생성")
+
+    title = ask("🖼️ 제목")
+    venue = ask("📍 장소")
+    if not blog_url:
+        blog_url = input("🔗 블로그 URL (선택, 엔터 건너뜀): ").strip()
+
+    review_date = get_date(blog_url)
+    blog_line = f"[Link]({blog_url})" if blog_url else ""
+
+    content = f"""# {title}
+
+- **날짜**: {review_date}
+- **장소**: {venue}
+- **블로그**: {blog_line}
+
+---
+
+"""
+
+    filename = title_to_filename(title) + ".md"
+    review_file = cfg["review_dir"] / filename
+
+    if review_file.exists():
+        print(f"\n⚠️  {review_file} 이미 존재합니다.")
+        if not confirm("덮어쓰시겠어요?", default=False):
+            sys.exit(0)
+
+    print(f"\n📄 생성할 파일: {review_file}")
+    if not confirm("생성하시겠어요?"):
+        print("취소했습니다.")
+        sys.exit(0)
+
+    review_file.parent.mkdir(parents=True, exist_ok=True)
+    review_file.write_text(content, encoding="utf-8")
+    print(f"✅ {review_file} 생성 완료!")
+
+    review_rel = f"../reviews/exhibition/{filename}"
+    if not update_list_table(cfg["list_file"], title, review_rel, blog_url):
+        review_link = f"[📝]({review_rel})"
+        blog_link = f"[✏️]({blog_url})" if blog_url else ""
+        visit_date = review_date[:7]  # YYYY-MM
+        new_row = f"| {title} | {venue} | {visit_date} | {review_link} | {blog_link} |\n"
+        if add_to_list_table(cfg["list_file"], new_row, title):
+            print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
+        else:
+            print(f"⚠️  {cfg['list_file'].name} 업데이트 실패 — 수동으로 확인해주세요.")
+    else:
+        print(f"✅ {cfg['list_file'].name} 테이블 업데이트 완료!")
+
+
 def reread_book(book_num: int = None, reread_date: str = ""):
     """기존 리뷰 파일에 재독 업데이트 + books 재독 목록 추가"""
     if book_num is None:
@@ -1142,7 +1203,7 @@ def sync_reread():
     print(f"\n🔄 동기화 완료: {added}건 추가, {skipped}건 건너뜀")
 
 
-TYPE_CHOICES = ["book", "drama", "radio", "movie", "webtoon", "greatminds", "podcast"]
+TYPE_CHOICES = ["book", "drama", "radio", "movie", "webtoon", "greatminds", "podcast", "exhibition"]
 TYPE_LABELS = {
     "book": "📚 책",
     "drama": "📺 드라마",
@@ -1151,6 +1212,7 @@ TYPE_LABELS = {
     "webtoon": "📖 웹툰",
     "greatminds": "🎓 위대한 수업",
     "podcast": "🎙️ 팟캐스트",
+    "exhibition": "🖼️ 전시회",
 }
 
 CREATORS = {
@@ -1161,6 +1223,7 @@ CREATORS = {
     "webtoon": create_webtoon,
     "greatminds": create_greatminds,
     "podcast": create_podcast,
+    "exhibition": create_exhibition,
 }
 
 
