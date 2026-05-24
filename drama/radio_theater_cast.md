@@ -90,7 +90,7 @@
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 광섭 |
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 종원, 연후부 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 임금, 27화 명창 |
-| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 김기사/남선배 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 김기사, 남선배 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 수호 부, 라디오 MC |
 
 ## 김용효
@@ -139,7 +139,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 희진 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 최안순/엠마 |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 최안순, 엠마 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 태이 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 재일(아역), 클로이 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 어린시온, 승무원2 |
@@ -147,7 +147,7 @@
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 스텔라 |
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 유로, 연서 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
-| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 첫째(현)/펜션주인 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 첫째(현), 펜션주인 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 전지현, 작가, 약사, 간호사, 승객2 |
 
 ## 김지혜
@@ -215,7 +215,7 @@
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 옥순, 은영, 최강사 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 당골네, 사월 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
-| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 집주인/학원생 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 집주인, 학원생 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 수호 모, 진상고객 |
 
 ## 백경민
@@ -296,7 +296,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 미영, 해솔할머니 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 박봉자/작은 엄마/은희 |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 박봉자, 작은 엄마, 은희 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 김경희, 노인 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 오스틴, 해먼(교장), 앤더슨 부인 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 할머니, 시온 모 |
@@ -318,7 +318,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 여고생1 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 안내양/이복동생(여) |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 안내양, 이복동생(여) |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 윤지애 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 간호사, 카페알바, 아이 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 서우 |
@@ -345,7 +345,7 @@
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 곤 |
-| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 제임스/앵무새/상철 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 제임스, 앵무새, 상철 |
 
 ## 이명호
 
@@ -371,7 +371,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 민재, 김일방, 앵커 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 상인/영화감독 |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 상인, 영화감독 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 오진홍 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 사이먼, 팀, 시장 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 진행자 |
@@ -426,7 +426,7 @@
 | [급류](../reviews/drama/radio_theater/급류.md) | 진수 |
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 병관 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 꼭두쇠, 땡중, 주지스님, 오씨 |
-| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 강도/유저/피디 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 강도, 유저, 피디 |
 
 ## 전지원
 
@@ -439,7 +439,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 라디오DJ, 간호사 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 승호/아이경주 |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 승호, 아이경주 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 중학생 인회, 소개팅녀 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 승무원 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 여아, 안내방송, 사서 |
@@ -453,7 +453,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 무경, 경찰, 본부, 화재현장대원 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 황부장/기사/고물상 |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 황부장, 기사, 고물상 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 칸쿤신랑(지애남편) |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 윤회장, 후버 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 후배, 전공의, 사장, 구급대원1, 남자 |
@@ -469,7 +469,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 중개인, 여고생2 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 간호사/아줌마 |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 간호사, 아줌마 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 산부인과 의사, 미친 여자(홍옥실 딸) |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 레이철, 도서관 사서 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 동생, 성우2, 아이 |
@@ -483,7 +483,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 예지, 주민2 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 대봉댁/여스님 |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 대봉댁, 여스님 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 홍옥실 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 재우, 에밀리, 스콧여사 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 배영, 지아 이모 |
@@ -492,7 +492,7 @@
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 혜연, 상담쌤, 박씨, 미리 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 숙경, 종달, 곤이 모, 살순이(버순이) |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 줄순이들 |
-| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 둘째(윤)/은비이모 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 둘째(윤), 은비이모 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 영롱댁, 어린 수호, 수호 이모, 간호사 |
 
 ## 조민수
@@ -506,7 +506,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 안내멘트, 아이 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 여직원/영어안내음/주민2 |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 여직원, 영어안내음, 주민2 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | ARS, 직장동료 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 전화연결음(영어) |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 애엄마, 학생1, 교사, 알바 |
@@ -522,7 +522,7 @@
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 미주 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 영원 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 원향 |
-| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 미용사/사장 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 미용사, 사장 |
 
 ## 천송이
 
@@ -547,14 +547,14 @@
 | 작품 | 역할 |
 |------|------|
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 얼쑤, 6화 명창, 무연 |
-| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 이회장/편집장 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 이회장, 편집장 |
 
 ## 최인일
 
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 박일방, 도담남친, 요원 |
-| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 장피디/조종사/의사 |
+| [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 장피디, 조종사, 의사 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 인회부, 칸쿤동료 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 병국, 래리 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 의사, 남학생, 구급대원2 |
@@ -562,7 +562,7 @@
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 한종선 |
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 저커 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 돌삼 |
-| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 서점직원/아빠/프레디 |
+| [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 서점직원, 아빠, 프레디 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 이동진, 학생2 |
 
 ## 최하나
