@@ -5,6 +5,7 @@
 | 미지의 서울 | 박신우, 남건 | 이강 | tvN | 2025 | 2025 | [📝](../reviews/drama/drama/미지의_서울.md) | [✏️](https://blog.naver.com/naraeun33/223948373353) |
 | 우리 영화 | 이정흠 | 한가은, 강경민 | SBS | 2025 | 2025 | [📝](../reviews/drama/drama/우리_영화.md) | [✏️](https://blog.naver.com/naraeun33/223987300670) |
 | 탄금 | 김홍선 | 김진아 | 넷플릭스 | 2025 | 2025 | [📝](../reviews/drama/drama/탄금.md) | [✏️](https://m.blog.naver.com/naraeun33/223898774361) |
+| 내가 죽기 일주일 전 | 김혜영, 최하나 | 송현주, 장인정 | 티빙 | 2025 | 2025 | [📝](../reviews/drama/drama/내가_죽기_일주일_전.md) | [✏️](https://blog.naver.com/naraeun33/223853985706) |
 | 선재 업고 튀어 | 윤종호, 김태엽 | 이시은 | tvN | 2024 | 2024 | [📝](../reviews/drama/drama/선재_업고_튀어.md) | [✏️](https://m.blog.naver.com/naraeun33/223539138801) |
 | 웰컴투 삼달리 | 차영훈, 김형준 | 권혜주 | JTBC | 2023 - 2024 | 2024 | [📝](../reviews/drama/drama/웰컴투_삼달리.md) | [✏️](https://m.blog.naver.com/naraeun33/223329552373) |
 | 상견니 | 황천인 | 간기봉, 임흔혜 | 넷플릭스 | 2019 | 2023 | [📝](../reviews/drama/drama/상견니.md) | [✏️](https://m.blog.naver.com/naraeun33/223062290426) |
