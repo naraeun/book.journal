@@ -20,3 +20,4 @@
 | 꿈의 불가마 | [📖](../reviews/2025/2936.md) | 2025-05 | [📝](../reviews/drama/radio_theater/꿈의_불가마.md) | [✏️](https://blog.naver.com/naraeun33/223883707961) |
 | 전우치전 | [📖](../reviews/2025/2935.md) | 2024-02 | [📝](../reviews/drama/radio_theater/전우치전.md) | [✏️](https://blog.naver.com/naraeun33/223860863876) |
 | 이날치, 파란만장 | [📖](../reviews/2025/2914.md) | 2025-03 ~ 2025-04 | [📝](../reviews/drama/radio_theater/이날치,_파란만장.md) | [✏️](https://m.blog.naver.com/naraeun33/223851852078) |
+| 꿈으로 갈게 | [📖](../reviews/2025/2887.md) | 2024-10 | [📝](../reviews/drama/radio_theater/꿈으로_갈게.md) | [✏️](https://blog.naver.com/naraeun33/223822716342) |

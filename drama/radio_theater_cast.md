@@ -108,6 +108,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 형사, 대원 |
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 새아빠 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 주연부 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 명호 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 추과장, 체육센터 직원, 경찰, 트레이너 |
@@ -195,6 +196,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 수키, 희원, 2팀장 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 명자 |
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 박윤경쌤, 큰고모, 최수현쌤 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 박상궁, 기생 |
@@ -206,10 +208,17 @@
 |------|------|
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 윤공, 임금, 노인 |
 
+## 박주광
+
+| 작품 | 역할 |
+|------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 지후 |
+
 ## 박준모
 
 | 작품 | 역할 |
 |------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 경호원, 마약상1 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 진남 |
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 아빠 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 영준, 하루키 소설 속 소년, 까마귀 |
@@ -298,6 +307,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 동동, 장순 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 하인부 |
 
 ## 선은혜
@@ -324,6 +334,12 @@
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 해솔 |
 
+## 신온유
+
+| 작품 | 역할 |
+|------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 수현 |
+
 ## 심규혁
 
 | 작품 | 역할 |
@@ -334,6 +350,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 예니 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 민진, 주연모 |
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 지은 |
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 라임, 슬아 |
@@ -354,6 +371,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 미영, 해솔할머니 |
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 비서 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 박순이 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 박봉자, 작은 엄마, 은희 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 김경희, 노인 |
@@ -414,6 +432,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 기자, 마약상2 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 라디오DJ, 김명철 |
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 선오, 학주, 시나리오 강사 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 곤 |
@@ -461,6 +480,12 @@
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 옥선 |
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 구미호, 선녀, 오씨, 선전관3 |
 
+## 이정민
+
+| 작품 | 역할 |
+|------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 황회장, 기사, 재욱, 엘 쿠쿠이, 낙호 |
+
 ## 이제인
 
 | 작품 | 역할 |
@@ -491,6 +516,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 캐서린, 원장 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 은숙 |
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 작은 고모, 철물점 할머니 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 절쑤, 변씨, 누렁이, 36화 주모 |
@@ -522,6 +548,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 진수 |
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 직원1, 경찰2 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 팀장, 순이아들 |
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 병관 |
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 카페사장, 큰고모부, 돈까스집 사장 |
@@ -632,6 +659,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 소라 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 소영 |
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 미주 |
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 이미정쌤, 세영, 이다미, 성재 |
@@ -667,6 +695,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 1팀장, 직원2 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 토모 |
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 오빠 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 얼쑤, 6화 명창, 무연 |
@@ -678,6 +707,7 @@
 | 작품 | 역할 |
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 박일방, 도담남친, 요원 |
+| [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 전기톱 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 명자남편, 어린윤기 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 장피디, 조종사, 의사 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 인회부, 칸쿤동료 |
