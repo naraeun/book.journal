@@ -200,6 +200,12 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 박상궁, 기생 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 엄마 |
 
+## 박영재
+
+| 작품 | 역할 |
+|------|------|
+| [전우치전](../reviews/drama/radio_theater/전우치전.md) | 윤공, 임금, 노인 |
+
 ## 박준모
 
 | 작품 | 역할 |
@@ -318,6 +324,12 @@
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 해솔 |
 
+## 심규혁
+
+| 작품 | 역할 |
+|------|------|
+| [전우치전](../reviews/drama/radio_theater/전우치전.md) | 송아범, 문기, 재경 |
+
 ## 엄지은
 
 | 작품 | 역할 |
@@ -361,6 +373,7 @@
 | 작품 | 역할 |
 |------|------|
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 지수 |
+| [전우치전](../reviews/drama/radio_theater/전우치전.md) | 최씨, 내시, 선전관2 |
 | [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 양희 |
 
 ## 유하나
@@ -394,6 +407,7 @@
 |------|------|
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 연후 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 이날치 |
+| [전우치전](../reviews/drama/radio_theater/전우치전.md) | 전우치, 왕가 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 김요한, 노인 |
 
 ## 이도하
@@ -411,6 +425,7 @@
 |------|------|
 | [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 양봉희 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 백연, 계동 |
+| [전우치전](../reviews/drama/radio_theater/전우치전.md) | 슬랑, 선전관1 |
 
 ## 이미형
 
@@ -444,6 +459,7 @@
 |------|------|
 | [급류](../reviews/drama/radio_theater/급류.md) | 도담 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 옥선 |
+| [전우치전](../reviews/drama/radio_theater/전우치전.md) | 구미호, 선녀, 오씨, 선전관3 |
 
 ## 이제인
 
@@ -456,6 +472,7 @@
 | 작품 | 역할 |
 |------|------|
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 민재 |
+| [전우치전](../reviews/drama/radio_theater/전우치전.md) | 염준 |
 | [타오](../reviews/drama/radio_theater/타오.md) | 이지혁, 박종구 |
 
 ## 이지선
@@ -490,6 +507,7 @@
 | 작품 | 역할 |
 |------|------|
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 진호 |
+| [전우치전](../reviews/drama/radio_theater/전우치전.md) | 도승지 |
 
 ## 전승화
 
@@ -684,6 +702,7 @@
 | 작품 | 역할 |
 |------|------|
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 강숙 |
+| [전우치전](../reviews/drama/radio_theater/전우치전.md) | 고지기, 시모 |
 | [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 효재 |
 
 ## 하지형

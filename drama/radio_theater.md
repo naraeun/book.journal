@@ -18,4 +18,5 @@
 | 분실물이 돌아왔습니다 | [📖](../reviews/2025/2975.md) | 2025-06 | [📝](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | [✏️](https://blog.naver.com/naraeun33/223930701633) |
 | 하쿠다 사진관 | [📖](../reviews/2025/2857.md) | 2023-12 | [📝](../reviews/drama/radio_theater/하쿠다_사진관.md) | [✏️](https://blog.naver.com/naraeun33/223914387315) |
 | 꿈의 불가마 | [📖](../reviews/2025/2936.md) | 2025-05 | [📝](../reviews/drama/radio_theater/꿈의_불가마.md) | [✏️](https://blog.naver.com/naraeun33/223883707961) |
+| 전우치전 | [📖](../reviews/2025/2935.md) | 2024-02 | [📝](../reviews/drama/radio_theater/전우치전.md) | [✏️](https://blog.naver.com/naraeun33/223860863876) |
 | 이날치, 파란만장 | [📖](../reviews/2025/2914.md) | 2025-03 ~ 2025-04 | [📝](../reviews/drama/radio_theater/이날치,_파란만장.md) | [✏️](https://m.blog.naver.com/naraeun33/223851852078) |
