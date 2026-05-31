@@ -332,6 +332,10 @@ def update_books_table(book: dict, review_path: str, blog_url: str = "") -> bool
             if not cells[7]:
                 cells[7] = f"[✏️]({blog_url})"
 
+        # 작가가 비어있고 book에 업데이트된 작가가 있으면 반영
+        if not cells[3].strip() and book.get("_author_updated"):
+            cells[3] = book["author"]
+
         lines[i] = "| " + " | ".join(cells) + " |\n"
         updated = True
         break
@@ -583,6 +587,13 @@ def create_book(book_num: int = None, blog_url: str = ""):
     print(f"  저자    : {book['author']}")
     print(f"  카테고리: {book['category']}")
     print(f"  연도    : {year}")
+
+    # 작가가 비어있으면 입력받아서 업데이트
+    if not book["author"].strip():
+        author_input = input("  ⚠️  작가가 비어있습니다. 작가명 입력: ").strip()
+        if author_input:
+            book["author"] = author_input
+            book["_author_updated"] = True
 
     review_file = REVIEWS_DIR / year / f"{book_num}.md"
     if review_file.exists():
