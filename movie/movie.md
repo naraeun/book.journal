@@ -11,4 +11,5 @@
 | 케이팝 데몬 헌터스 | 메기 강, 크리스 애펄헌즈 | 2025 | 2025 | [📝](../reviews/movie/케이팝_데몬_헌터스.md) | [✏️](https://blog.naver.com/naraeun33/223975194897) |
 | 어른 김장하 | 김현지 | 2025 | 2025 | [📝](../reviews/movie/어른_김장하.md) | [✏️](https://blog.naver.com/naraeun33/223942294488) |
 | 이 별에 필요한 | 한지원 | 2025 | 2025 | [📝](../reviews/movie/이_별에_필요한.md) | [✏️](https://blog.naver.com/naraeun33/223884641309) |
+| 애프터 양 | 코고나다 | 2022 | 2023 | [📝](../reviews/movie/애프터_양.md) | [✏️](https://m.blog.naver.com/naraeun33/223069101903) |
 | 20세기 소녀 | 방우리 | 2022 | 2022 | [📝](../reviews/movie/20세기_소녀.md) | [✏️](https://m.blog.naver.com/naraeun33/222949380377) |
