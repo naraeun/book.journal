@@ -6,4 +6,5 @@
 | 2026-04-10 | 키안 솔타니 & 박재홍 듀오 리사이틀 | 예술의전당 IBK기업은행 챔버홀 | 키안 솔타니, 박재홍 | [📝](../reviews/music/concerts/2026-04-10.md) | [✏️](https://blog.naver.com/naraeun33/224248320759) |
 | 2026-01-28 | 정명훈 & 드레스덴 슈타츠카펠레 (임윤찬 협연) | 롯데콘서트홀 | 정명훈, 드레스덴 슈타츠카펠레, 임윤찬 | [📝](../reviews/music/concerts/2026-01-28.md) | [✏️](https://blog.naver.com/naraeun33/224163415039) |
 | 2026-01-13 | 크리스티안 짐머만 피아노 리사이틀 | 롯데콘서트홀 | 크리스티안 짐머만 | [📝](../reviews/music/concerts/2026-01-13.md) | [✏️](https://blog.naver.com/naraeun33/224145616594) |
+| 2024-03-25 | 손열음 스베틀린 루세브 듀오 리사이틀 | 롯데콘서트홀 | 손열음, 스베틀린 루세브 | [📝](../reviews/music/concerts/2024-03-25.md) | [✏️](https://blog.naver.com/naraeun33/223395238989) |
 | 2023-05-02 | 손열음 모차르트 피아노 소나타 전곡 리사이틀 | 예술의전당 | 손열음 | [📝](../reviews/music/concerts/2023-05-02.md) | [✏️](https://m.blog.naver.com/naraeun33/223091842376) |
