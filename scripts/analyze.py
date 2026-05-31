@@ -122,6 +122,20 @@ def analyze(books: list[dict]) -> dict:
     stats["blog_link_rate"] = (blog_linked, total)
     stats["review_link_rate"] = (review_linked, total)
 
+    # 올해 월별 독서량
+    current_year = datetime.now().year
+    current_year_books = [b for b in books if b["연도"] == current_year]
+    monthly_current = Counter()
+    for b in current_year_books:
+        try:
+            m = int(b.get("월", 0))
+            if m > 0:
+                monthly_current[m] += 1
+        except ValueError:
+            pass
+    stats["current_year"] = current_year
+    stats["current_year_monthly"] = dict(sorted(monthly_current.items()))
+
     # 총 독서량
     stats["total"] = total
 
@@ -162,6 +176,19 @@ def generate_stats_md(stats: dict) -> str:
     for month, count in stats["by_month"].items():
         bar = render_bar(count, max_month_count)
         lines.append(f"| {month}월 | {count} | `{bar}` |")
+
+    # 올해 월별 독서량
+    current_year = stats["current_year"]
+    current_monthly = stats["current_year_monthly"]
+    if current_monthly:
+        year_total = sum(current_monthly.values())
+        lines.append(f"\n## {current_year}년 월별 독서량 (총 {year_total}권)\n")
+        lines.append("| 월 | 권수 | 그래프 |")
+        lines.append("|---:|-----:|--------|")
+        max_cm = max(current_monthly.values())
+        for month, count in current_monthly.items():
+            bar = render_bar(count, max_cm)
+            lines.append(f"| {month}월 | {count} | `{bar}` |")
 
     # 평균 독서 속도
     lines.append(f"\n## 평균 독서량\n")
