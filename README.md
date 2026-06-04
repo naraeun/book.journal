@@ -11,6 +11,7 @@
 | 🎬 영화 | [movie/movie.md](movie/movie.md) | [reviews/movie/](reviews/movie/) |
 | 🎭 연극/뮤지컬 | [theater/theater.md](theater/theater.md) | [reviews/theater/](reviews/theater/) |
 | 🖼️ 전시회 | [exhibition/exhibition.md](exhibition/exhibition.md) | [reviews/exhibition/](reviews/exhibition/) |
+| ☕ 차와 커피 | [food/tea_coffee.md](food/tea_coffee.md) | [reviews/food/](reviews/food/) |
 | 📖 웹툰 | [webtoon/webtoon.md](webtoon/webtoon.md) | [reviews/webtoon/](reviews/webtoon/) |
 | 🎓 위대한 수업 | [greatminds/greatminds.md](greatminds/greatminds.md) | [reviews/greatminds/](reviews/greatminds/) |
 | 🎵 음악 | [music/](music/) | [reviews/music/](reviews/music/) |

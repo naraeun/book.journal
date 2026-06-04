@@ -28,6 +28,8 @@
     - 리뷰 파일은 `reviews/theater/{날짜}.md`
 - 전시회 목록은 `exhibition/exhibition.md`에 보관
     - 리뷰 파일은 `reviews/exhibition/{제목}.md`
+- 차와 커피 목록은 `food/tea_coffee.md`에 보관
+    - 리뷰 파일은 `reviews/food/{제목}.md`
 - 영상(강연, 유튜브, 다큐 등) 목록은 `video/video.md`에 보관
     - 리뷰 파일은 `reviews/video/`
     - 파일명은 제목 기반 (예: `reviews/video/노벨문학상_강연_빛과_실.md`)
