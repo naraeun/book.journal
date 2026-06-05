@@ -8,3 +8,4 @@
 | 사랑아 영원해 | 초피 | 네이버 웹툰 | 2023-2024 | 2025 | [📝](../reviews/webtoon/사랑아_영원해.md) | [✏️](https://blog.naver.com/naraeun33/224117157204) |
 | 그렇고 그런 바람에 | 아니영 | 네이버 웹툰 | 2022-2024 | 2025 | [📝](../reviews/webtoon/그렇고_그런_바람에.md) | [✏️](https://blog.naver.com/naraeun33/224084994857) |
 | 집이 없어 | 와난 | 네이버 웹툰 | 2018-2024 | 2025 | [📝](../reviews/webtoon/집이_없어.md) | [✏️](https://blog.naver.com/naraeun33/224057227003) |
+| 헤어진 다음날, 달리기 | 돌배 | 네이버 웹툰 | 2023 | 2025 | [📝](../reviews/webtoon/헤어진_다음날,_달리기.md) | [✏️](https://m.blog.naver.com/naraeun33/223775900680) |
