@@ -23,3 +23,4 @@
 | 이날치, 파란만장 | [📖](../reviews/2025/2914.md) | 2025-03 ~ 2025-04 | [📝](../reviews/drama/radio_theater/이날치,_파란만장.md) | [✏️](https://m.blog.naver.com/naraeun33/223851852078) |
 | 꿈으로 갈게 | [📖](../reviews/2025/2887.md) | 2024-10 | [📝](../reviews/drama/radio_theater/꿈으로_갈게.md) | [✏️](https://blog.naver.com/naraeun33/223822716342) |
 | 최씨네 종말 탈출기 | [📖](../reviews/2025/2880.md) | 2025-02 | [📝](../reviews/drama/radio_theater/최씨네_종말_탈출기.md) | [✏️](https://blog.naver.com/naraeun33/223796722552) |
+| 나의 돈키호테 | [📖](../reviews/2024/2682.md) | 2024-11 | [📝](../reviews/drama/radio_theater/나의_돈키호테.md) | [✏️](https://blog.naver.com/naraeun33/223704718855) |
