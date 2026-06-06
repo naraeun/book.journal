@@ -13,3 +13,4 @@
 | 이 별에 필요한 | 한지원 | 2025 | 2025 | [📝](../reviews/movie/이_별에_필요한.md) | [✏️](https://blog.naver.com/naraeun33/223884641309) |
 | 애프터 양 | 코고나다 | 2022 | 2023 | [📝](../reviews/movie/애프터_양.md) | [✏️](https://m.blog.naver.com/naraeun33/223069101903) |
 | 20세기 소녀 | 방우리 | 2022 | 2022 | [📝](../reviews/movie/20세기_소녀.md) | [✏️](https://m.blog.naver.com/naraeun33/222949380377) |
+| 패딩턴 | 폴 킹 | 2015 | 2021 | [📝](../reviews/movie/패딩턴.md) | [✏️](https://m.blog.naver.com/naraeun33/222483007980) |
