@@ -107,8 +107,8 @@ def analyze(books: list[dict]) -> dict:
         year_cat[b["연도"]][top] += 1
     stats["year_category"] = {y: cat.most_common(5) for y, cat in sorted(year_cat.items())}
 
-    # 작가별 권수 (상위 15)
-    stats["by_author"] = Counter(b.get("작가", "") for b in books).most_common(15)
+    # 작가별 권수 (상위 20)
+    stats["by_author"] = Counter(b.get("작가", "") for b in books).most_common(20)
 
     # 평균 독서 속도 (월 평균 권수)
     year_count = len(stats["by_year"])
@@ -217,12 +217,20 @@ def generate_stats_md(stats: dict) -> str:
         lines.append(f"- **{year}**: {cat_str}")
 
     # 작가별
-    lines.append("\n## 많이 읽은 작가 (상위 15)\n")
-    lines.append("| 작가 | 권수 |")
-    lines.append("|------|-----:|")
+    lines.append("\n## 많이 읽은 작가 (상위 20)\n")
+    lines.append("| 작가 | 권수 | 작가 페이지 |")
+    lines.append("|------|-----:|:-----------:|")
+    authors_dir = Path(__file__).parent.parent / "authors"
     for author, count in stats["by_author"]:
         if author:
-            lines.append(f"| {author} | {count} |")
+            # 작가 파일명: 공백 → _
+            author_filename = author.replace(" ", "_") + ".md"
+            author_path = authors_dir / author_filename
+            if author_path.exists():
+                link = f"[📖](authors/{author_filename})"
+            else:
+                link = ""
+            lines.append(f"| {author} | {count} | {link} |")
 
     # 블로그·리뷰 연동률
     blog_linked, total = stats["blog_link_rate"]
