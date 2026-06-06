@@ -227,7 +227,7 @@ def generate_stats_md(stats: dict) -> str:
             author_filename = author.replace(" ", "_") + ".md"
             author_path = authors_dir / author_filename
             if author_path.exists():
-                link = f"[📖](authors/{author_filename})"
+                link = f"[📖](../authors/{author_filename})"
             else:
                 link = ""
             lines.append(f"| {author} | {count} | {link} |")
