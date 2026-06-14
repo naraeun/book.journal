@@ -48,6 +48,8 @@ def detect_review_type(path: Path) -> str:
         return "movie"
     if len(parts) >= 1 and parts[0] == "podcast":
         return "podcast"
+    if len(parts) >= 1 and parts[0] == "food":
+        return "food"
     if len(parts) >= 1 and parts[0] == "exhibition":
         return "exhibition"
     if len(parts) >= 1 and parts[0] == "theater":
@@ -71,6 +73,7 @@ REQUIRED_META = {
     "greatminds": ["날짜", "강연자", "방영연도", "시청연도", "블로그"],
     "movie": ["날짜", "감독", "개봉연도", "블로그"],
     "podcast": ["날짜", "호스트", "블로그"],
+    "food": ["번호", "날짜", "종류", "브랜드", "블로그"],
     "exhibition": ["날짜", "장소", "블로그"],
     "theater": ["날짜", "장소", "블로그"],
     "video": ["날짜", "블로그"],
