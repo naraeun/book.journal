@@ -22,16 +22,21 @@ MIN_BOOKS_DEFAULT = 10
 
 
 def parse_table_rows(md_text: str) -> list[dict]:
-    """마크다운 테이블에서 행 데이터 파싱"""
+    """마크다운 테이블에서 행 데이터 파싱 (재독 테이블 제외)"""
     rows = []
     lines = md_text.splitlines()
     header = None
     for line in lines:
         line = line.strip()
         if not line.startswith("|"):
+            header = None  # 테이블이 끊기면 헤더 리셋
             continue
         cells = [c.strip() for c in line.strip("|").split("|")]
         if header is None and any(k in cells for k in ["제목", "번호", "월"]):
+            # 재독 테이블은 "재독 날짜" 컬럼이 있으므로 제외
+            if "재독 날짜" in cells:
+                header = None
+                continue
             header = cells
             continue
         if header and all(re.fullmatch(r"[-: ]+", c) for c in cells):
