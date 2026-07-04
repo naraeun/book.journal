@@ -18,6 +18,7 @@
 |------|------|
 | [결혼은 세 번쯤 하는게 좋아](../reviews/drama/radio_theater/결혼은_세_번쯤_하는게_좋아.md) | 장 아버지, 점원2, 남자 간호사 |
 | [급류](../reviews/drama/radio_theater/급류.md) | 남학생, 인부, 음주운전자, 앵커, 작업자 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 대장, 이윤호, 덩치, 춘미 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 학원강사 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 보디가드 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 도니스헬 주인, 잭슨 |
@@ -66,6 +67,7 @@
 |------|------|
 | [결혼은 세 번쯤 하는게 좋아](../reviews/drama/radio_theater/결혼은_세_번쯤_하는게_좋아.md) | 경찰1, 한인1, 성우1, 홈리스 |
 | [급류](../reviews/drama/radio_theater/급류.md) | 이일방 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 찬민 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 스님 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 안전 요원, 수영 강사 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 약사, 남학생2, 하루키 소설 속 해설, 나 |
@@ -86,6 +88,7 @@
 | 작품 | 역할 |
 |------|------|
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 승희 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 미아 |
 
 ## 김순미
 
@@ -101,6 +104,7 @@
 | [급류](../reviews/drama/radio_theater/급류.md) | 승주, 담임선생님 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 소영남편 |
 | [나의 돈키호테](../reviews/drama/radio_theater/나의_돈키호테.md) | 권영훈 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 친절맨, 로아 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 인철 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 지광림 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 윈스턴, 미치 |
@@ -124,6 +128,7 @@
 | [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 새아빠 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 주연부 |
 | [나의 돈키호테](../reviews/drama/radio_theater/나의_돈키호테.md) | 알바 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 할아버지, 축구부원2, 춘보 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 명호 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 추과장, 체육센터 직원, 경찰, 트레이너 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 루크, 네이트, 리앤더 |
@@ -172,6 +177,7 @@
 | [급류](../reviews/drama/radio_theater/급류.md) | 희진 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 백아연, 어린주연 |
 | [나의 돈키호테](../reviews/drama/radio_theater/나의_돈키호테.md) | 대준의 처, 여중생1 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 알리나, 지인처 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 최안순, 엠마 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 태이 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 재일(아역), 클로이 |
@@ -282,6 +288,7 @@
 | [급류](../reviews/drama/radio_theater/급류.md) | 민박집주인, 애엄마, 주민1 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 옥자 |
 | [나의 돈키호테](../reviews/drama/radio_theater/나의_돈키호테.md) | 한빈엄마 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 미아 모 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 진해 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 고미선 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 구미할머니, 질리언 |
@@ -303,6 +310,7 @@
 |------|------|
 | [결혼은 세 번쯤 하는게 좋아](../reviews/drama/radio_theater/결혼은_세_번쯤_하는게_좋아.md) | 마이클, 도어맨, 점원1, 첫째남편 |
 | [급류](../reviews/drama/radio_theater/급류.md) | 앵커, 행인, 의사 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 영조, 영배, 앵커, 축구부원1 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 원장 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 고등학생 우경, 손님 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 애드 |
@@ -411,6 +419,7 @@
 | [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 비서 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 박순이 |
 | [나의 돈키호테](../reviews/drama/radio_theater/나의_돈키호테.md) | 여중생2 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 어린 영조, 그 사람 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 박봉자, 작은 엄마, 은희 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 김경희, 노인 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 오스틴, 해먼(교장), 앤더슨 부인 |
@@ -429,6 +438,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 미래, 해솔 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 지수 |
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 최씨, 내시, 선전관2 |
 | [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 양희 |
@@ -440,6 +450,7 @@
 |------|------|
 | [결혼은 세 번쯤 하는게 좋아](../reviews/drama/radio_theater/결혼은_세_번쯤_하는게_좋아.md) | 미셸, 휘트니, 웨딩종업원 |
 | [급류](../reviews/drama/radio_theater/급류.md) | 여고생1 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 미지, 조원2 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 안내양, 이복동생(여) |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 윤지애 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 간호사, 카페알바, 아이 |
@@ -521,6 +532,7 @@
 |------|------|
 | [결혼은 세 번쯤 하는게 좋아](../reviews/drama/radio_theater/결혼은_세_번쯤_하는게_좋아.md) | 브라이언, 주방장 |
 | [급류](../reviews/drama/radio_theater/급류.md) | 민재, 김일방, 앵커 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 샤먼, 불독 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 상인, 영화감독 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 오진홍 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 사이먼, 팀, 시장 |
@@ -638,6 +650,7 @@
 |------|------|
 | [결혼은 세 번쯤 하는게 좋아](../reviews/drama/radio_theater/결혼은_세_번쯤_하는게_좋아.md) | 줄리아, 앤디, 쥬얼리, 꽃가게 사장 |
 | [급류](../reviews/drama/radio_theater/급류.md) | 라디오DJ, 간호사 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 할머니, 아이2 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 승호, 아이경주 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 중학생 인회, 소개팅녀 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 승무원 |
@@ -654,6 +667,7 @@
 | [결혼은 세 번쯤 하는게 좋아](../reviews/drama/radio_theater/결혼은_세_번쯤_하는게_좋아.md) | 존, 한국인관광객2 |
 | [급류](../reviews/drama/radio_theater/급류.md) | 무경, 경찰, 본부, 화재현장대원 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 선배, 트럭사장 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 미아 부, 호진, 조원1, 문지기, MC |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 황부장, 기사, 고물상 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 칸쿤신랑(지애남편) |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 윤회장, 후버 |
@@ -674,6 +688,7 @@
 |------|------|
 | [결혼은 세 번쯤 하는게 좋아](../reviews/drama/radio_theater/결혼은_세_번쯤_하는게_좋아.md) | 장 어머니, 여자2 |
 | [급류](../reviews/drama/radio_theater/급류.md) | 중개인, 여고생2 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 시호 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 간호사, 아줌마 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 산부인과 의사, 미친 여자(홍옥실 딸) |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 레이철, 도서관 사서 |
@@ -691,6 +706,7 @@
 | [급류](../reviews/drama/radio_theater/급류.md) | 예지, 주민2 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 노파, 진남바람녀 |
 | [나의 돈키호테](../reviews/drama/radio_theater/나의_돈키호테.md) | 어린한빈, 오름 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 남관희, 교사 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 대봉댁, 여스님 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 홍옥실 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 재우, 에밀리, 스콧여사 |
@@ -724,6 +740,7 @@
 |------|------|
 | [결혼은 세 번쯤 하는게 좋아](../reviews/drama/radio_theater/결혼은_세_번쯤_하는게_좋아.md) | 다이아나, 경찰2, 한인2, 한국인관광객1, 기자1 |
 | [급류](../reviews/drama/radio_theater/급류.md) | 안내멘트, 아이 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 성우 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 여직원, 영어안내음, 주민2 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | ARS, 직장동료 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 전화연결음(영어) |
@@ -793,6 +810,7 @@
 | [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 전기톱 |
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 명자남편, 어린윤기 |
 | [나의 돈키호테](../reviews/drama/radio_theater/나의_돈키호테.md) | 진솔아빠 |
+| [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 재헌, 이장 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 장피디, 조종사, 의사 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 인회부, 칸쿤동료 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 병국, 래리 |
