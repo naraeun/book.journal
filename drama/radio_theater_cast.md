@@ -227,6 +227,7 @@
 | 작품 | 역할 |
 |------|------|
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 윤공, 임금, 노인 |
+| [허생전](../reviews/drama/radio_theater/허생전.md) | 허생 |
 
 ## 박주광
 
@@ -378,6 +379,7 @@
 | 작품 | 역할 |
 |------|------|
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 송아범, 문기, 재경 |
+| [허생전](../reviews/drama/radio_theater/허생전.md) | 변진사, 사공 |
 
 ## 엄지은
 
@@ -430,6 +432,7 @@
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 지수 |
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 최씨, 내시, 선전관2 |
 | [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 양희 |
+| [허생전](../reviews/drama/radio_theater/허생전.md) | 조면 |
 
 ## 유하나
 
@@ -477,6 +480,7 @@
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 이날치 |
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 전우치, 왕가 |
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 김요한, 노인 |
+| [허생전](../reviews/drama/radio_theater/허생전.md) | 영치, 두목 |
 
 ## 이도하
 
@@ -497,6 +501,7 @@
 | [내 생의 마지막 다이어트](../reviews/drama/radio_theater/내_생의_마지막_다이어트.md) | 양봉희 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 백연, 계동 |
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 슬랑, 선전관1 |
+| [허생전](../reviews/drama/radio_theater/허생전.md) | 산모, 상인2, 손님2, 박씨 |
 
 ## 이미형
 
@@ -532,6 +537,7 @@
 | [급류](../reviews/drama/radio_theater/급류.md) | 도담 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 옥선 |
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 구미호, 선녀, 오씨, 선전관3 |
+| [허생전](../reviews/drama/radio_theater/허생전.md) | 이씨, 문지기, 상인1, 손님1 |
 
 ## 이정민
 
