@@ -11,5 +11,6 @@
 | 선재 업고 튀어 | 윤종호, 김태엽 | 이시은 | tvN | 2024 | 2024 | [📝](../reviews/drama/drama/선재_업고_튀어.md) | [✏️](https://m.blog.naver.com/naraeun33/223539138801) |
 | 웰컴투 삼달리 | 차영훈, 김형준 | 권혜주 | JTBC | 2023 - 2024 | 2024 | [📝](../reviews/drama/drama/웰컴투_삼달리.md) | [✏️](https://m.blog.naver.com/naraeun33/223329552373) |
 | 상견니 | 황천인 | 간기봉, 임흔혜 | 넷플릭스 | 2019 | 2023 | [📝](../reviews/drama/drama/상견니.md) | [✏️](https://m.blog.naver.com/naraeun33/223062290426) |
+| 파친코 | 코고나다, 저스틴 전 | 수 휴 | 애플티비 | 2022 | 2022 | [📝](../reviews/drama/drama/파친코.md) | [✏️](https://blog.naver.com/naraeun33/222724515358) |
 | 오월의 청춘 | 송민엽 | 이강 | KBS | 2021 | 2022 | [📝](../reviews/drama/drama/오월의_청춘.md) | [✏️](https://m.blog.naver.com/naraeun33/222665052010) |
 | 보건교사 안은영 | 이경미 | 정세랑, 이경미 | 넷플릭스 | 2020 | 2020 | [📝](../reviews/drama/drama/보건교사_안은영.md) | [✏️](https://m.blog.naver.com/naraeun33/222110815481) |
