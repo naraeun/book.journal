@@ -260,6 +260,57 @@ def add_to_list_table(list_file: Path, new_row: str, title: str) -> bool:
     return False
 
 
+def add_to_food_list(list_file: Path, new_row: str, title: str, num_input: str) -> bool:
+    """차와 커피 목록 테이블에 번호 내림차순으로 행 추가"""
+    if not list_file.exists():
+        return False
+
+    text = list_file.read_text(encoding="utf-8")
+
+    # 이미 존재하는지 확인
+    if f"| {title} |" in text or f"| {title} " in text:
+        return False
+
+    try:
+        new_num = int(num_input)
+    except (ValueError, TypeError):
+        # 번호가 없으면 기존 방식 (맨 위에 삽입)
+        return add_to_list_table(list_file, new_row, title)
+
+    lines = text.splitlines(keepends=True)
+
+    insert_at = -1
+    past_separator = False
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if not s.startswith("|"):
+            continue
+        cells = [c.strip() for c in s.strip("|").split("|")]
+        # 구분선 감지
+        if all(re.fullmatch(r"[-: ]+", c) for c in cells if c):
+            past_separator = True
+            insert_at = i + 1
+            continue
+        if not past_separator:
+            continue
+        # 데이터 행에서 번호 추출
+        try:
+            row_num = int(cells[0])
+        except (ValueError, IndexError):
+            continue
+        if new_num > row_num:
+            insert_at = i
+            break
+        insert_at = i + 1
+
+    if insert_at < 0:
+        return False
+
+    lines.insert(insert_at, new_row)
+    list_file.write_text("".join(lines), encoding="utf-8")
+    return True
+
+
 # ─── 책 ────────────────────────────────────────────────────────
 
 
@@ -1124,7 +1175,7 @@ def create_food(blog_url: str = ""):
         review_link = f"[📝]({review_rel})"
         blog_link = f"[✏️]({blog_url})" if blog_url else ""
         new_row = f"| {num_input} | {title} | {kind} | {brand} | {review_link} | {blog_link} |\n"
-        if add_to_list_table(cfg["list_file"], new_row, title):
+        if add_to_food_list(cfg["list_file"], new_row, title, num_input):
             print(f"✅ {cfg['list_file'].name} 행 추가 완료!")
         else:
             print(f"⚠️  {cfg['list_file'].name} 업데이트 실패 — 수동으로 확인해주세요.")
