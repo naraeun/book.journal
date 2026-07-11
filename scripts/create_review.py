@@ -690,6 +690,14 @@ def create_book(book_num: int = None, blog_url: str = ""):
     if update_picks_link(book_num, year):
         print(f"✅ picks/{year}.md 링크 업데이트 완료!")
 
+    # 웹툰 카테고리인 경우 webtoon index에도 리뷰 링크 반영
+    if book["category"] == "웹툰":
+        webtoon_list = ROOT / "webtoon" / "webtoon.md"
+        webtoon_title = book["title"].replace("(웹툰)", "").replace("(웹툰)", "").strip()
+        review_rel_webtoon = f"../reviews/{year}/{book_num}.md"
+        if update_list_table(webtoon_list, webtoon_title, review_rel_webtoon, blog_url):
+            print(f"✅ webtoon.md 테이블 업데이트 완료!")
+
     topics = list_topics()
     if topics:
         print(f"\n📂 topic 추가 (사용 가능: {', '.join(topics)})")
