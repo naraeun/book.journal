@@ -2,6 +2,7 @@
 
 | 제목 | 강연자 | 방영연도 | 시청연도 | 리뷰 | 블로그 |
 |------|--------|:-------:|:-------:|:----:|--------|
+| 거장의 클래식 | 다니엘 바렌보임 | 2022 | 2026 | [📝](../reviews/greatminds/거장의_클래식.md) | [✏️](https://blog.naver.com/naraeun33/224346950934) |
 | 소설가의 글쓰기 | 줄리언 반스 | 2022 | 2026 | [📝](../reviews/greatminds/소설가의_글쓰기.md) | [✏️](https://blog.naver.com/naraeun33/224316004482) |
 | 그림은 어떻게 이야기가 되는가 | 앤서니 브라운 | 2024 | 2026 | [📝](../reviews/greatminds/그림은_어떻게_이야기가_되는가.md) | [✏️](https://blog.naver.com/naraeun33/224294822556) |
 | 베토벤과 피아노 | 마르쿠스 그로 | 2026 | 2026 | [📝](../reviews/greatminds/베토벤과_피아노.md) | [✏️](https://m.blog.naver.com/naraeun33/224178023495) |
