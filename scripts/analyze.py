@@ -11,11 +11,35 @@ from pathlib import Path
 from collections import defaultdict, Counter
 from datetime import datetime
 
-BOOKS_DIR = Path(__file__).parent.parent / "books"
-ANALYSIS_DIR = Path(__file__).parent.parent / "analysis"
-README_PATH = Path(__file__).parent.parent / "README.md"
+ROOT_DIR = Path(__file__).parent.parent
+BOOKS_DIR = ROOT_DIR / "books"
+ANALYSIS_DIR = ROOT_DIR / "analysis"
+README_PATH = ROOT_DIR / "README.md"
 
 ANALYSIS_DIR.mkdir(exist_ok=True)
+
+# 책 외 콘텐츠: (README 표시 라벨, 목록 파일 경로) — 표에서 데이터 행 수를 센다
+CONTENT_TABLE_SOURCES = [
+    ("📺 드라마", "drama/drama.md"),
+    ("📻 라디오 극장", "drama/radio_theater.md"),
+    ("🎬 영화", "movie/movie.md"),
+    ("🎭 연극/뮤지컬", "theater/theater.md"),
+    ("🖼️ 전시회", "exhibition/exhibition.md"),
+    ("☕ 차와 커피", "food/tea_coffee.md"),
+    ("📖 웹툰", "webtoon/webtoon.md"),
+    ("🎓 위대한 수업", "greatminds/greatminds.md"),
+    ("🎙️ 팟캐스트", "podcast/podcast.md"),
+    ("🎞️ 영상", "video/video.md"),
+    ("🎼 음악 앨범", "music/albums.md"),
+    ("🎵 음악회", "music/concerts.md"),
+]
+
+# 책 외 콘텐츠: (README 표시 라벨, 디렉터리 경로) — md 파일 개수를 센다
+CONTENT_DIR_SOURCES = [
+    ("✍️ 작가별 페이지", "authors"),
+    ("📂 주제별 페이지", "topics"),
+    ("⭐ 기억에 남는 책 (연도별)", "picks"),
+]
 
 
 def parse_table_rows(md_text: str) -> list[dict]:
@@ -41,6 +65,39 @@ def parse_table_rows(md_text: str) -> list[dict]:
             rows.append(dict(zip(header, cells)))
 
     return rows
+
+
+def count_table_rows(md_text: str) -> int:
+    """단일 표 마크다운에서 데이터 행 수를 센다 (첫 표만, 헤더/구분선 제외)"""
+    count = 0
+    header_seen = False
+    for line in md_text.splitlines():
+        line = line.strip()
+        if not line.startswith("|"):
+            continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if not header_seen:
+            header_seen = True
+            continue
+        if all(re.fullmatch(r"[-: ]+", c) for c in cells):
+            continue
+        if any(cells):
+            count += 1
+    return count
+
+
+def count_content_stats() -> list[tuple[str, int]]:
+    """책 외 콘텐츠(드라마/영화/웹툰 등)의 항목 개수 집계"""
+    results = []
+    for label, rel_path in CONTENT_TABLE_SOURCES:
+        path = ROOT_DIR / rel_path
+        if path.exists():
+            results.append((label, count_table_rows(path.read_text(encoding="utf-8"))))
+    for label, rel_dir in CONTENT_DIR_SOURCES:
+        dir_path = ROOT_DIR / rel_dir
+        if dir_path.exists():
+            results.append((label, len(list(dir_path.glob("*.md")))))
+    return results
 
 
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -247,16 +304,16 @@ def generate_stats_md(stats: dict) -> str:
     return "\n".join(lines)
 
 
-def update_readme(stats_summary: str):
-    """README.md의 <!-- STATS --> 블록 갱신"""
-    marker_start = "<!-- STATS_START -->"
-    marker_end = "<!-- STATS_END -->"
+def update_readme_block(marker_name: str, block_content: str, heading: str = ""):
+    """README.md의 <!-- {marker_name}_START/END --> 블록 갱신 (없으면 새로 추가)"""
+    marker_start = f"<!-- {marker_name}_START -->"
+    marker_end = f"<!-- {marker_name}_END -->"
 
     if not README_PATH.exists():
         return
 
     content = README_PATH.read_text(encoding="utf-8")
-    new_block = f"{marker_start}\n{stats_summary}\n{marker_end}"
+    new_block = f"{marker_start}\n{block_content}\n{marker_end}"
 
     if marker_start in content:
         content = re.sub(
@@ -266,10 +323,12 @@ def update_readme(stats_summary: str):
             flags=re.DOTALL,
         )
     else:
-        content += f"\n\n{new_block}\n"
+        content = content.rstrip("\n")
+        prefix = f"\n\n{heading}\n" if heading else "\n\n"
+        content += f"{prefix}{new_block}\n"
 
     README_PATH.write_text(content, encoding="utf-8")
-    print("✅ README.md 통계 섹션 갱신 완료")
+    print(f"✅ README.md {marker_name} 섹션 갱신 완료")
 
 
 def main():
@@ -293,7 +352,19 @@ def main():
         summary_lines.append(f"| {year} | {count} |")
     summary_lines.append("\n자세한 통계 → [analysis/stats.md](analysis/stats.md)")
 
-    update_readme("\n".join(summary_lines))
+    update_readme_block("STATS", "\n".join(summary_lines))
+
+    # 콘텐츠 통계 (책 외 항목별 개수)
+    print("📊 콘텐츠 통계 집계 중...")
+    content_counts = count_content_stats()
+    content_lines = ["| 콘텐츠 | 개수 |", "|--------|-----:|"]
+    for label, count in content_counts:
+        content_lines.append(f"| {label} | {count} |")
+    update_readme_block(
+        "CONTENT_STATS",
+        "\n".join(content_lines),
+        heading="## 콘텐츠 통계",
+    )
 
 
 if __name__ == "__main__":
