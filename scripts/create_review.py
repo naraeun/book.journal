@@ -20,6 +20,8 @@
   python scripts/create_review.py --type food             # 차와 커피
   python scripts/create_review.py --reread 1697           # 재독 업데이트 (대화형 날짜)
   python scripts/create_review.py --reread 1697 -d 2026-03-21  # 재독 + 날짜 지정
+  python scripts/create_review.py --rewatch 두_교황            # 영화 재관람 업데이트 (대화형 날짜)
+  python scripts/create_review.py --rewatch 두_교황 -d 2025-05-18  # 영화 재관람 + 날짜 지정
   python scripts/create_review.py --sync-reread           # 재독 목록 일괄 동기화
 """
 
@@ -1326,6 +1328,164 @@ def reread_book(book_num: int = None, reread_date: str = ""):
     print("✅ 재독 업데이트 완료!")
 
 
+def add_rewatch_to_movie(title: str, director: str, original_date: str, rewatch_date: str) -> bool:
+    """movie/movie.md의 '한번 더 본 영화 목록' 섹션에 재관람 행 추가"""
+    movie_file = CONTENT_TYPES["movie"]["list_file"]
+    if not movie_file.exists():
+        return False
+
+    text = movie_file.read_text(encoding="utf-8")
+
+    # 이미 재관람 목록에 있는지 확인 (같은 제목 + 같은 재관람 날짜)
+    if "한번 더 본 영화 목록" in text:
+        rewatch_section = text.split("한번 더 본 영화 목록")[-1]
+        for line in rewatch_section.splitlines():
+            if title in line and rewatch_date in line:
+                return False
+
+    filename = title_to_filename(title) + ".md"
+    review_link = f"[📝](../reviews/movie/{filename})"
+    new_row = f"| {title} | {director} | {original_date} | {rewatch_date} | {review_link} |"
+
+    if "한번 더 본 영화 목록" not in text:
+        # 섹션이 없으면 새로 생성
+        section = f"""
+---
+
+## 한번 더 본 영화 목록
+
+| 제목 | 감독 | 원래 날짜 | 재관람 날짜 | 리뷰 |
+|------|------|:---------:|:---------:|------|
+{new_row}
+"""
+        text = text.rstrip() + "\n" + section
+    else:
+        # 섹션이 있으면 재관람 날짜 내림차순으로 삽입
+        lines = text.splitlines(keepends=True)
+        insert_at = -1
+        in_rewatch_section = False
+        past_separator = False
+
+        for i, line in enumerate(lines):
+            if "한번 더 본 영화 목록" in line:
+                in_rewatch_section = True
+                continue
+            if not in_rewatch_section:
+                continue
+            s = line.strip()
+            if not s.startswith("|"):
+                continue
+            cells = [c.strip() for c in s.strip("|").split("|")]
+            # 구분선 감지
+            if all(re.fullmatch(r"[-: ]+", c) for c in cells if c):
+                past_separator = True
+                insert_at = i + 1
+                continue
+            if not past_separator:
+                continue
+            # 데이터 행에서 재관람 날짜 추출 (3번째 컬럼, 0-indexed)
+            try:
+                row_rewatch_date = cells[3] if len(cells) > 3 else ""
+            except IndexError:
+                continue
+            if rewatch_date >= row_rewatch_date:
+                insert_at = i
+                break
+            insert_at = i + 1
+
+        if insert_at >= 0:
+            lines.insert(insert_at, new_row + "\n")
+            text = "".join(lines)
+
+    movie_file.write_text(text, encoding="utf-8")
+    return True
+
+
+def rewatch_movie(title: str = "", rewatch_date: str = ""):
+    """기존 영화 리뷰 파일에 재관람 업데이트 + movie.md 재관람 목록 추가"""
+    if not title:
+        title = input("🎬 영화 제목: ").strip()
+        if not title:
+            print("❌ 제목을 입력해주세요.")
+            sys.exit(1)
+
+    if not rewatch_date:
+        rewatch_date = input("📅 재관람 날짜 (YYYY-MM-DD, 엔터=오늘): ").strip()
+        if not rewatch_date:
+            rewatch_date = datetime.now().strftime("%Y-%m-%d")
+
+    # 날짜 형식 검증
+    try:
+        datetime.strptime(rewatch_date, "%Y-%m-%d")
+    except ValueError:
+        print("❌ 날짜 형식이 올바르지 않습니다. YYYY-MM-DD 형식으로 입력해주세요.")
+        sys.exit(1)
+
+    # 리뷰 파일 검색
+    filename = title_to_filename(title) + ".md"
+    review_dir = CONTENT_TYPES["movie"]["review_dir"]
+    review_file = review_dir / filename
+
+    if not review_file.exists():
+        # 파일명 유사 검색
+        candidates = list(review_dir.glob("*.md"))
+        matches = [f for f in candidates if title.replace(" ", "_") in f.stem or title in f.stem]
+        if matches:
+            print(f"❌ '{filename}'을 찾을 수 없지만 유사한 파일이 있습니다:")
+            for m in matches:
+                print(f"    - {m.stem}")
+        else:
+            print(f"❌ {review_file} 리뷰 파일이 없습니다.")
+        sys.exit(1)
+
+    # 리뷰 파일에서 메타데이터 추출
+    review_text = review_file.read_text(encoding="utf-8")
+    date_match = re.search(r"\*\*날짜\*\*:\s*(\d{4}-\d{2}-\d{2})", review_text)
+    if not date_match:
+        print("❌ 리뷰 파일에서 날짜를 찾을 수 없습니다.")
+        sys.exit(1)
+    original_date = date_match.group(1)
+
+    director_match = re.search(r"\*\*감독\*\*:\s*(.+)", review_text)
+    director = director_match.group(1).strip() if director_match else ""
+
+    print(f"\n🔍 '{title}' 검색 완료")
+    print(f"  감독    : {director}")
+    print(f"  원래 날짜: {original_date}")
+    print(f"  재관람   : {rewatch_date}")
+
+    # 리뷰 파일에 업데이트 날짜 추가/갱신
+    if "**업데이트 날짜**" in review_text:
+        review_text = re.sub(
+            r"(\*\*업데이트 날짜\*\*:\s*)\d{4}-\d{2}-\d{2}",
+            f"\\g<1>{rewatch_date}",
+            review_text,
+        )
+        print(f"  📝 업데이트 날짜 갱신: {rewatch_date}")
+    else:
+        review_text = review_text.replace(
+            f"- **날짜**: {original_date}\n",
+            f"- **날짜**: {original_date}\n- **업데이트 날짜**: {rewatch_date}\n",
+        )
+        print(f"  📝 업데이트 날짜 추가: {rewatch_date}")
+
+    # 재관람 섹션 뼈대 추가 (이미 해당 날짜 섹션이 없으면)
+    rewatch_heading = f"### {rewatch_date}"
+    if rewatch_heading not in review_text:
+        review_text = review_text.rstrip() + f"\n\n---\n{rewatch_heading}\n\n"
+        print(f"  📝 재관람 섹션 추가: {rewatch_heading}")
+
+    review_file.write_text(review_text, encoding="utf-8")
+
+    # movie.md 재관람 목록 추가
+    if add_rewatch_to_movie(title, director, original_date, rewatch_date):
+        print(f"✅ movie/movie.md 재관람 목록 추가 완료!")
+    else:
+        print("  ℹ️  재관람 목록에 이미 있거나 추가할 수 없습니다.")
+
+    print("✅ 재관람 업데이트 완료!")
+
+
 def sync_reread():
     """전체 리뷰 파일을 스캔하여 누락된 재독 목록을 books/ 파일에 일괄 추가"""
     print("🔄 재독 목록 동기화 시작...\n")
@@ -1441,6 +1601,13 @@ def main():
         help="재독 업데이트 모드",
     )
     parser.add_argument(
+        "--rewatch",
+        nargs="?",
+        const="",
+        default=None,
+        help="영화 재관람 업데이트 모드 (제목 지정, 예: 두_교황)",
+    )
+    parser.add_argument(
         "--sync-reread",
         action="store_true",
         help="재독 목록 일괄 동기화",
@@ -1460,6 +1627,12 @@ def main():
     # reread 모드
     if args.reread:
         reread_book(args.book_num, args.date)
+        return
+
+    # rewatch 모드
+    if args.rewatch is not None:
+        title = args.rewatch if args.rewatch else ""
+        rewatch_movie(title, args.date)
         return
 
     # --type 없이 숫자만 넘기면 책으로 처리 (기존 호환)
