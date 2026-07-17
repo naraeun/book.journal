@@ -15,6 +15,7 @@
 | 애프터 양 | 코고나다 | 2022 | 2023 | [📝](../reviews/movie/애프터_양.md) | [✏️](https://m.blog.naver.com/naraeun33/223069101903) |
 | 20세기 소녀 | 방우리 | 2022 | 2022 | [📝](../reviews/movie/20세기_소녀.md) | [✏️](https://m.blog.naver.com/naraeun33/222949380377) |
 | 패딩턴 | 폴 킹 | 2015 | 2021 | [📝](../reviews/movie/패딩턴.md) | [✏️](https://m.blog.naver.com/naraeun33/222483007980) |
+| 트라이얼 오브 더 시카고 7 | 소킨 | 2020 | 2020 | [📝](../reviews/movie/트라이얼_오브_더_시카고_7.md) | [✏️](https://blog.naver.com/naraeun33/222123860067) |
 | 컨택트 | 드니 빌뇌브 | 2017 | 2020 | [📝](../reviews/movie/컨택트.md) | [✏️](https://m.blog.naver.com/naraeun33/222116989348) |
 | 두 교황 | 페르난도 메이렐레스 | 2019 | 2020 | [📝](../reviews/movie/두_교황.md) | [✏️](https://blog.naver.com/naraeun33/221929369501) |
 
