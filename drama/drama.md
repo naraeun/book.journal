@@ -18,3 +18,4 @@
 | 오월의 청춘 | 송민엽 | 이강 | KBS | 2021 | 2022 | [📝](../reviews/drama/drama/오월의_청춘.md) | [✏️](https://m.blog.naver.com/naraeun33/222665052010) |
 | 그 해 우리는 | 김윤진, 이단 | 이나은 | SBS | 2021 | 2022 | [📝](../reviews/drama/drama/그_해_우리는.md) | [✏️](https://m.blog.naver.com/naraeun33/222638407775) |
 | 보건교사 안은영 | 이경미 | 정세랑, 이경미 | 넷플릭스 | 2020 | 2020 | [📝](../reviews/drama/drama/보건교사_안은영.md) | [✏️](https://m.blog.naver.com/naraeun33/222110815481) |
+| 비밀의 숲 2 | 박현석 | 이수연 | tvN | 2020 | 2020 | [📝](../reviews/drama/drama/비밀의_숲_2.md) | [✏️](https://blog.naver.com/naraeun33/222107913413) |
