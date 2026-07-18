@@ -13,6 +13,7 @@
 | 63 | 트와이닝 퓨어 캐모마일 | 허브차 | 트와이닝 | [📝](../reviews/food/트와이닝_퓨어_캐모마일.md) | [✏️](https://m.blog.naver.com/naraeun33/222648847641) |
 | 61 | 히스앤헤더 오가닉 캐모마일&스피어민트 | 허브차 | 히스앤헤더 | [📝](../reviews/food/히스앤헤더_오가닉_캐모마일&스피어민트.md) | [✏️](https://m.blog.naver.com/naraeun33/222634233220) |
 | 59 | 히스앤헤더 오가닉 나이트타임 | 허브차 | 히스앤헤더 | [📝](../reviews/food/히스앤헤더_오가닉_나이트타임.md) | [✏️](https://m.blog.naver.com/naraeun33/222604127922) |
+| 58 | 테틀리 티 얼그레이 | 홍차 | 테틀리 티 | [📝](../reviews/food/테틀리_티_얼그레이.md) | [✏️](https://m.blog.naver.com/naraeun33/222597545139) |
 | 52 | 런던 프룻&허브 스위트 캐모마일 | 허브차 | 런던 프룻&허브 | [📝](../reviews/food/런던_프룻&허브_스위트_캐모마일.md) | [✏️](https://m.blog.naver.com/naraeun33/222565784342) |
 | 34 | 아마드티 캐모마일 & 레몬그라스 | 허브차 | 아마드티 | [📝](../reviews/food/아마드티_캐모마일_&_레몬그라스.md) | [✏️](https://m.blog.naver.com/naraeun33/222217945103) |
 | 30 | 아마드티 얼그레이 | 홍차 | 아마드티 | [📝](../reviews/food/아마드티_얼그레이.md) | [✏️](https://m.blog.naver.com/naraeun33/222144571506) |
