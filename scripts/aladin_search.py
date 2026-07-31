@@ -22,13 +22,13 @@ def clean_author(author: str) -> str:
     author = author.strip(", ")
     return author
 
-def _do_search(query: str) -> dict | None:
+def _do_search(query: str, max_results: int = 1) -> dict | None:
     """알라딘 API 단일 검색 요청"""
     params = {
         "ttbkey": TTB_KEY,
         "Query": query,
         "QueryType": "Title",
-        "MaxResults": 1,
+        "MaxResults": max_results,
         "output": "js",
         "Version": "20131101"
     }
@@ -56,6 +56,40 @@ def _do_search(query: str) -> dict | None:
     return None
 
 
+def _do_search_multi(query: str, max_results: int = 10) -> list[dict]:
+    """알라딘 API 복수 결과 검색 요청"""
+    params = {
+        "ttbkey": TTB_KEY,
+        "Query": query,
+        "QueryType": "Title",
+        "MaxResults": max_results,
+        "output": "js",
+        "Version": "20131101"
+    }
+
+    url = "http://www.aladin.co.kr/ttb/api/ItemSearch.aspx?" + urllib.parse.urlencode(params)
+
+    results = []
+    try:
+        with urllib.request.urlopen(url, timeout=10) as response:
+            data = json.loads(response.read().decode('utf-8'))
+
+            for item in data.get("item", []):
+                results.append({
+                    "title": item.get("title", ""),
+                    "author": clean_author(item.get("author", "")),
+                    "publisher": item.get("publisher", ""),
+                    "category": item.get("categoryName", ""),
+                    "isbn": item.get("isbn13", item.get("isbn", "")),
+                    "pubDate": item.get("pubDate", ""),
+                    "cover": item.get("cover", "")
+                })
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+
+    return results
+
+
 def search_book(title: str, author: str = "") -> dict | None:
     """알라딘 API로 책 검색 (작가 포함 실패 시 제목만 재시도)"""
     query = f"{title} {author}".strip().replace("/", " ")
@@ -66,6 +100,18 @@ def search_book(title: str, author: str = "") -> dict | None:
         result = _do_search(title.replace("/", " "))
 
     return result
+
+
+def search_book_multi(title: str, author: str = "", max_results: int = 10) -> list[dict]:
+    """알라딘 API로 책 복수 검색 (여러 판/번역본 중 선택 가능)"""
+    query = f"{title} {author}".strip().replace("/", " ")
+    results = _do_search_multi(query, max_results)
+
+    # 작가 포함 검색 실패 시 제목만으로 재시도
+    if not results and author:
+        results = _do_search_multi(title.replace("/", " "), max_results)
+
+    return results
 
 
 def get_category_short(category: str) -> str:

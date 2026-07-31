@@ -15,7 +15,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from aladin_search import search_book, get_category_short
+from aladin_search import search_book, search_book_multi, get_category_short
 from create_review import create_review_md, find_book, update_books_table, list_topics, add_to_topic
 
 BOOKS_DIR = Path(__file__).parent.parent / "books"
@@ -155,15 +155,60 @@ def main():
         print(f"\n검색 결과:")
         print(f"  제목    : {result['title']}")
         print(f"  저자    : {result['author']}")
+        print(f"  출판사  : {result['publisher']}")
         print(f"  카테고리: {category_short}")
 
         if not confirm("\n이 책이 맞나요?"):
-            print("직접 입력으로 전환합니다.")
-            title_input = input(f"제목 [{title_input}]: ").strip() or title_input
-            result["author"] = input(f"저자 [{result['author']}]: ").strip() or result["author"]
-            category_short = input(f"카테고리 [{category_short}]: ").strip() or category_short
+            # 멀티 검색으로 전환
+            print(f"\n🔍 다른 판/번역본 검색 중...")
+            results = search_book_multi(title_input, search_author)
 
-        result["category"] = get_category_short(result["category"])
+            if results:
+                print(f"\n검색 결과 ({len(results)}건):")
+                print("-" * 70)
+                for i, r in enumerate(results, 1):
+                    cat = get_category_short(r["category"])
+                    print(f"  [{i}] {r['title']}")
+                    print(f"      저자: {r['author']} | 출판사: {r['publisher']} | {cat}")
+                    if r.get("pubDate"):
+                        print(f"      출간일: {r['pubDate']}")
+                    print()
+                print(f"  [0] 직접 입력")
+                print("-" * 70)
+
+                choice = input(f"선택 (1-{len(results)}, 0=직접입력): ").strip()
+                try:
+                    choice_num = int(choice)
+                except ValueError:
+                    choice_num = 0
+
+                if choice_num == 0 or choice_num > len(results):
+                    print("직접 입력으로 전환합니다.")
+                    title_input = input(f"제목 [{title_input}]: ").strip() or title_input
+                    result = {
+                        "title": title_input,
+                        "author": input(f"저자 [{author_input}]: ").strip() or author_input,
+                        "category": input("카테고리 (예: 소설/시/희곡>한국소설): ").strip(),
+                    }
+                else:
+                    result = results[choice_num - 1]
+                    category_short = get_category_short(result["category"])
+                    print(f"\n선택됨:")
+                    print(f"  제목    : {result['title']}")
+                    print(f"  저자    : {result['author']}")
+                    print(f"  출판사  : {result['publisher']}")
+                    print(f"  카테고리: {category_short}")
+                    result["category"] = category_short
+            else:
+                print("직접 입력으로 전환합니다.")
+                title_input = input(f"제목 [{title_input}]: ").strip() or title_input
+                result = {
+                    "title": title_input,
+                    "author": input(f"저자 [{result['author']}]: ").strip() or result["author"],
+                    "category": input(f"카테고리 [{category_short}]: ").strip() or category_short,
+                }
+        else:
+            result["category"] = category_short
 
     # 연도/월 확인
     year_input = input(f"\n연도 [{year}]: ").strip()
