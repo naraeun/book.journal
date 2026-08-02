@@ -3,7 +3,6 @@
 | 제목 | 감독 | 개봉연도 | 본 연도 | 리뷰 | 블로그 |
 |------|------|:-------:|:------:|:----:|--------|
 | 소울메이트 | 민용근 | 2023 | 2026 | [📝](../reviews/movie/소울메이트.md) | [✏️](https://blog.naver.com/naraeun33/224365384338) |
-| 안녕, 나의 소울메이트 | 증국상 | 2017 | 2022 | [📝](../reviews/movie/안녕,_나의_소울메이트.md) | [✏️](https://m.blog.naver.com/naraeun33/222702957967) |
 | 오늘 밤, 세계에서 이 사랑이 사라진다 해도 | 김혜영 | 2025 | 2026 | [📝](../reviews/movie/오늘_밤,_세계에서_이_사랑이_사라진다_해도.md) | [✏️](https://blog.naver.com/naraeun33/224308259361) |
 | 프로젝트 헤일메리 | 필 로드, 크리스 밀러 | 2026 | 2026 | [📝](../reviews/movie/프로젝트_헤일메리.md) | [✏️](https://blog.naver.com/naraeun33/224233864544) |
 | 왕과 사는 남자 | 장항준 | 2026 | 2026 | [📝](../reviews/movie/왕과_사는_남자.md) | [✏️](https://m.blog.naver.com/naraeun33/224226066970) |
@@ -16,6 +15,7 @@
 | 이 별에 필요한 | 한지원 | 2025 | 2025 | [📝](../reviews/movie/이_별에_필요한.md) | [✏️](https://blog.naver.com/naraeun33/223884641309) |
 | 애프터 양 | 코고나다 | 2022 | 2023 | [📝](../reviews/movie/애프터_양.md) | [✏️](https://m.blog.naver.com/naraeun33/223069101903) |
 | 20세기 소녀 | 방우리 | 2022 | 2022 | [📝](../reviews/movie/20세기_소녀.md) | [✏️](https://m.blog.naver.com/naraeun33/222949380377) |
+| 안녕, 나의 소울메이트 | 증국상 | 2017 | 2022 | [📝](../reviews/movie/안녕,_나의_소울메이트.md) | [✏️](https://m.blog.naver.com/naraeun33/222702957967) |
 | 패딩턴 | 폴 킹 | 2015 | 2021 | [📝](../reviews/movie/패딩턴.md) | [✏️](https://m.blog.naver.com/naraeun33/222483007980) |
 | 먼 훗날 우리 | 유약영 | 2018 | 2020 | [📝](../reviews/movie/먼_훗날_우리.md) | [✏️](https://m.blog.naver.com/naraeun33/222149342406) |
 | 세상을 바꾼 변호인 | 미미 레더 | 2019 | 2020 | [📝](../reviews/movie/세상을_바꾼_변호인.md) | [✏️](https://blog.naver.com/naraeun33/222137833574) |
