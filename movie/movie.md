@@ -17,6 +17,7 @@
 | 20세기 소녀 | 방우리 | 2022 | 2022 | [📝](../reviews/movie/20세기_소녀.md) | [✏️](https://m.blog.naver.com/naraeun33/222949380377) |
 | 안녕, 나의 소울메이트 | 증국상 | 2017 | 2022 | [📝](../reviews/movie/안녕,_나의_소울메이트.md) | [✏️](https://m.blog.naver.com/naraeun33/222702957967) |
 | 패딩턴 | 폴 킹 | 2015 | 2021 | [📝](../reviews/movie/패딩턴.md) | [✏️](https://m.blog.naver.com/naraeun33/222483007980) |
+| 84번가의 연인 | 데이빗 휴 존스 | 1987 | 2020 | [📝](../reviews/movie/84번가의_연인.md) | [✏️](https://m.blog.naver.com/naraeun33/222155781119) |
 | 먼 훗날 우리 | 유약영 | 2018 | 2020 | [📝](../reviews/movie/먼_훗날_우리.md) | [✏️](https://m.blog.naver.com/naraeun33/222149342406) |
 | 세상을 바꾼 변호인 | 미미 레더 | 2019 | 2020 | [📝](../reviews/movie/세상을_바꾼_변호인.md) | [✏️](https://blog.naver.com/naraeun33/222137833574) |
 | 트라이얼 오브 더 시카고 7 | 소킨 | 2020 | 2020 | [📝](../reviews/movie/트라이얼_오브_더_시카고_7.md) | [✏️](https://blog.naver.com/naraeun33/222123860067) |
