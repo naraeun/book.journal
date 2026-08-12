@@ -47,6 +47,14 @@ def calc_avg_distance(distance_km: float, count: int) -> str:
     return f"{distance_km / count:.1f}"
 
 
+def is_monthly_header(line: str) -> bool:
+    """월별 러닝 표의 헤더인지 확인"""
+    if not line.strip().startswith("|"):
+        return False
+    cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+    return len(cells) >= 4 and cells[:4] == ["월", "횟수", "거리(km)", "시간"]
+
+
 def update_file(path: Path) -> bool:
     """파일에 평균 페이스 + 1회 평균 거리 컬럼 추가/갱신"""
     text = path.read_text(encoding="utf-8")
@@ -54,20 +62,30 @@ def update_file(path: Path) -> bool:
 
     updated_lines = []
     modified = False
+    in_monthly_table = False
 
     for line in lines:
         stripped = line.strip()
 
-        # 헤더 행
-        if stripped.startswith("|") and "월" in stripped and "횟수" in stripped:
+        # 월별 표의 헤더를 찾은 뒤 해당 표 안에서만 갱신한다.
+        if is_monthly_header(line):
+            in_monthly_table = True
             if stripped != HEADER:
                 line = HEADER
                 modified = True
             updated_lines.append(line)
             continue
 
+        # 표가 끝나면 대회 기록 등 다른 표를 그대로 보존한다.
+        if in_monthly_table and not stripped.startswith("|"):
+            in_monthly_table = False
+
+        if not in_monthly_table:
+            updated_lines.append(line)
+            continue
+
         # 구분선 행
-        if stripped.startswith("|") and re.search(r"[-:]{2,}", stripped) and "월" not in stripped:
+        if re.search(r"[-:]{2,}", stripped):
             if stripped != SEPARATOR:
                 line = SEPARATOR
                 modified = True
@@ -75,35 +93,31 @@ def update_file(path: Path) -> bool:
             continue
 
         # 데이터 행
-        if stripped.startswith("|"):
-            cells = [c.strip() for c in stripped.strip("|").split("|")]
-            try:
-                int(cells[0])  # 월 숫자 확인
-            except (ValueError, IndexError):
-                updated_lines.append(line)
-                continue
-
-            month = cells[0].strip()
-            count_str = cells[1].strip() if len(cells) > 1 else ""
-            dist_str = cells[2].strip() if len(cells) > 2 else ""
-            time_str = cells[3].strip() if len(cells) > 3 else ""
-
-            count = int(count_str) if count_str else 0
-            distance = float(dist_str) if dist_str else 0.0
-            seconds = parse_time(time_str)
-
-            pace = calc_pace(seconds, distance)
-            avg_dist = calc_avg_distance(distance, count)
-
-            new_line = f"| {month} | {count_str} | {dist_str} | {time_str} | {pace} | {avg_dist} |"
-
-            if stripped != new_line:
-                modified = True
-
-            updated_lines.append(new_line)
+        cells = [c.strip() for c in stripped.strip("|").split("|")]
+        try:
+            int(cells[0])  # 월 숫자 확인
+        except (ValueError, IndexError):
+            updated_lines.append(line)
             continue
 
-        updated_lines.append(line)
+        month = cells[0].strip()
+        count_str = cells[1].strip() if len(cells) > 1 else ""
+        dist_str = cells[2].strip() if len(cells) > 2 else ""
+        time_str = cells[3].strip() if len(cells) > 3 else ""
+
+        count = int(count_str) if count_str else 0
+        distance = float(dist_str) if dist_str else 0.0
+        seconds = parse_time(time_str)
+
+        pace = calc_pace(seconds, distance)
+        avg_dist = calc_avg_distance(distance, count)
+
+        new_line = f"| {month} | {count_str} | {dist_str} | {time_str} | {pace} | {avg_dist} |"
+
+        if stripped != new_line:
+            modified = True
+
+        updated_lines.append(new_line)
 
     if modified:
         path.write_text("\n".join(updated_lines) + "\n", encoding="utf-8")

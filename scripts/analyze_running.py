@@ -47,15 +47,33 @@ def format_pace(seconds: int, distance: float) -> str:
     return f"{minutes}'{secs:02d}\""
 
 
+def is_monthly_header(line: str) -> bool:
+    """월별 러닝 표의 헤더인지 확인"""
+    if not line.strip().startswith("|"):
+        return False
+    cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+    return len(cells) >= 4 and cells[:4] == ["월", "횟수", "거리(km)", "시간"]
+
+
 def parse_year_file(path: Path) -> list[dict]:
-    """연도별 md 파일에서 월별 데이터 파싱"""
+    """연도별 md 파일에서 월별 데이터만 파싱"""
     text = path.read_text(encoding="utf-8")
     rows = []
+    in_monthly_table = False
     for line in text.splitlines():
-        line = line.strip()
-        if not line.startswith("|"):
+        stripped = line.strip()
+
+        if is_monthly_header(line):
+            in_monthly_table = True
             continue
-        cells = [c.strip() for c in line.strip("|").split("|")]
+
+        if in_monthly_table and not stripped.startswith("|"):
+            in_monthly_table = False
+
+        if not in_monthly_table:
+            continue
+
+        cells = [c.strip() for c in stripped.strip("|").split("|")]
         if len(cells) < 4:
             continue
         try:
