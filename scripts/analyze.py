@@ -164,8 +164,10 @@ def analyze(books: list[dict]) -> dict:
         year_cat[b["연도"]][top] += 1
     stats["year_category"] = {y: cat.most_common(5) for y, cat in sorted(year_cat.items())}
 
-    # 작가별 권수 (상위 20)
-    stats["by_author"] = Counter(b.get("작가", "") for b in books).most_common(20)
+    # 작가별 권수 (상위 20) — 빈 문자열 제외
+    author_counter = Counter(b.get("작가", "") for b in books)
+    author_counter.pop("", None)
+    stats["by_author"] = author_counter.most_common(20)
 
     # 평균 독서 속도 (월 평균 권수)
     year_count = len(stats["by_year"])
@@ -304,6 +306,60 @@ def generate_stats_md(stats: dict) -> str:
     return "\n".join(lines)
 
 
+def update_author_pages(books: list[dict]):
+    """authors/ 디렉토리의 작가별 파일을 갱신 (책 수, 목록 테이블)"""
+    authors_dir = ROOT_DIR / "authors"
+    if not authors_dir.exists():
+        return
+
+    # 작가별 책 목록 집계 — 작가 필드에 이름이 포함되면 매칭 (공저 포함)
+    author_books: dict[str, list[dict]] = defaultdict(list)
+    # 먼저 갱신 대상 작가명 목록 수집
+    author_names = [f.stem.replace("_", " ") for f in authors_dir.glob("*.md")]
+    for b in books:
+        raw_author = b.get("작가", "").strip()
+        if not raw_author:
+            continue
+        for name in author_names:
+            if name in raw_author:
+                author_books[name].append(b)
+
+    # 기존 작가 파일만 갱신 (새 파일은 만들지 않음)
+    for author_file in authors_dir.glob("*.md"):
+        # 파일명에서 작가명 복원: _ → 공백
+        author_name = author_file.stem.replace("_", " ")
+        book_list = author_books.get(author_name, [])
+        if not book_list:
+            continue
+
+        # 번호 내림차순 정렬
+        book_list.sort(key=lambda b: int(b.get("번호", b.get("연번호", "0")) or "0"), reverse=True)
+
+        total = len(book_list)
+        lines = [
+            f"# {author_name}",
+            "",
+            f"총 {total}권",
+            "",
+            "| 번호 | 제목 | 연도 | 카테고리 | 리뷰 |",
+            "|:----:|------|:----:|----------|:----:|",
+        ]
+        for b in book_list:
+            num = b.get("번호", b.get("연번호", ""))
+            title = b.get("제목", "")
+            year = b.get("연도", "")
+            category = b.get("카테고리", "")
+            review = b.get("리뷰", "").strip()
+            # 리뷰 링크가 있으면 그대로 유지, 없으면 빈 칸
+            review_cell = review if review and review != "-" else ""
+            lines.append(f"| {num} | {title} | {year} | {category} | {review_cell} |")
+
+        lines.append("")
+        author_file.write_text("\n".join(lines), encoding="utf-8")
+
+    print(f"✅ authors/ 작가 파일 갱신 완료 ({len(list(authors_dir.glob('*.md')))}개)")
+
+
 def update_readme_block(marker_name: str, block_content: str, heading: str = ""):
     """README.md의 <!-- {marker_name}_START/END --> 블록 갱신 (없으면 새로 추가)"""
     marker_start = f"<!-- {marker_name}_START -->"
@@ -353,6 +409,10 @@ def main():
     summary_lines.append("\n자세한 통계 → [analysis/stats.md](analysis/stats.md)")
 
     update_readme_block("STATS", "\n".join(summary_lines))
+
+    # 작가 파일 갱신
+    print("✍️ 작가 파일 갱신 중...")
+    update_author_pages(books)
 
     # 콘텐츠 통계 (책 외 항목별 개수)
     print("📊 콘텐츠 통계 집계 중...")
