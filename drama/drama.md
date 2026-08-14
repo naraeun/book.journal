@@ -3,12 +3,13 @@
 | 제목 | 감독/연출 | 작가 | 플랫폼 | 방영연도 | 본 연도 | 리뷰 | 블로그 |
 |------|-----------|--------|:--------:|:-------:|:----:|:----:|--------|
 | 멋진 신세계 | 한태섭, 김현우 | 강현주 | SBS | 2026 | 2026 | [📝](../reviews/drama/drama/멋진_신세계.md) | [✏️](https://blog.naver.com/naraeun33/224372645746) |
-| 폭싹 속았수다 | 김원석 | 임상춘 | 넷플릭스 | 2025 | 2025 | [📝](../reviews/drama/drama/폭싹_속았수다.md) | [✏️](https://blog.naver.com/naraeun33/223813685708) |
-| 미지의 서울 | 박신우, 남건 | 이강 | tvN | 2025 | 2025 | [📝](../reviews/drama/drama/미지의_서울.md) | [✏️](https://blog.naver.com/naraeun33/223948373353) |
 | 우리 영화 | 이정흠 | 한가은, 강경민 | SBS | 2025 | 2025 | [📝](../reviews/drama/drama/우리_영화.md) | [✏️](https://blog.naver.com/naraeun33/223987300670) |
+| 미지의 서울 | 박신우, 남건 | 이강 | tvN | 2025 | 2025 | [📝](../reviews/drama/drama/미지의_서울.md) | [✏️](https://blog.naver.com/naraeun33/223948373353) |
 | 탄금 | 김홍선 | 김진아 | 넷플릭스 | 2025 | 2025 | [📝](../reviews/drama/drama/탄금.md) | [✏️](https://m.blog.naver.com/naraeun33/223898774361) |
 | 내가 죽기 일주일 전 | 김혜영, 최하나 | 송현주, 장인정 | 티빙 | 2025 | 2025 | [📝](../reviews/drama/drama/내가_죽기_일주일_전.md) | [✏️](https://blog.naver.com/naraeun33/223853985706) |
 | 멜로 무비 | 오충환 | 이나은 | 넷플릭스 | 2025 | 2025 | [📝](../reviews/drama/drama/멜로_무비.md) | [✏️](https://blog.naver.com/naraeun33/223839419904) |
+| 폭싹 속았수다 | 김원석 | 임상춘 | 넷플릭스 | 2025 | 2025 | [📝](../reviews/drama/drama/폭싹_속았수다.md) | [✏️](https://blog.naver.com/naraeun33/223813685708) |
+| 너의 시간 속으로 | 김진원 | 최효비 | 넷플릭스 | 2023 | 2024 | [📝](../reviews/drama/drama/너의_시간_속으로.md) | [✏️](https://blog.naver.com/naraeun33/223701703009) |
 | 파친코 시즌2 | 리앤 웰함, 진준림, 이상일 | 수 휴 | 애티비 | 2024 | 2024 | [📝](../reviews/drama/drama/파친코_시즌2.md) | [✏️](https://blog.naver.com/naraeun33/223636168581) |
 | 선재 업고 튀어 | 윤종호, 김태엽 | 이시은 | tvN | 2024 | 2024 | [📝](../reviews/drama/drama/선재_업고_튀어.md) | [✏️](https://m.blog.naver.com/naraeun33/223539138801) |
 | 웰컴투 삼달리 | 차영훈, 김형준 | 권혜주 | JTBC | 2023 - 2024 | 2024 | [📝](../reviews/drama/drama/웰컴투_삼달리.md) | [✏️](https://m.blog.naver.com/naraeun33/223329552373) |
