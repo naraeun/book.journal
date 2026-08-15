@@ -20,5 +20,6 @@
 | 파친코 | 코고나다, 저스틴 전 | 수 휴 | 애플티비 | 2022 | 2022 | [📝](../reviews/drama/drama/파친코.md) | [✏️](https://blog.naver.com/naraeun33/222724515358) |
 | 오월의 청춘 | 송민엽 | 이강 | KBS | 2021 | 2022 | [📝](../reviews/drama/drama/오월의_청춘.md) | [✏️](https://m.blog.naver.com/naraeun33/222665052010) |
 | 그 해 우리는 | 김윤진, 이단 | 이나은 | SBS | 2021 | 2022 | [📝](../reviews/drama/drama/그_해_우리는.md) | [✏️](https://m.blog.naver.com/naraeun33/222638407775) |
+| 한자와 나오키 시즌 1 | 후쿠자와 카츠오, 타나자와 타카요시 | 야츠 히로유키 | 티빙 | 2013 | 2021 | [📝](../reviews/drama/drama/한자와_나오키_시즌_1.md) | [✏️](https://blog.naver.com/naraeun33/222193978280) |
 | 보건교사 안은영 | 이경미 | 정세랑, 이경미 | 넷플릭스 | 2020 | 2020 | [📝](../reviews/drama/drama/보건교사_안은영.md) | [✏️](https://m.blog.naver.com/naraeun33/222110815481) |
 | 비밀의 숲 2 | 박현석 | 이수연 | tvN | 2020 | 2020 | [📝](../reviews/drama/drama/비밀의_숲_2.md) | [✏️](https://blog.naver.com/naraeun33/222107913413) |
