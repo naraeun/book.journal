@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 종류 | 브랜드 | 리뷰 | 블로그 |
 |:----:|------|------|--------|:----:|:--------:|
+| 114 | TWG 화이트 스카이 티 | 백차 | TWG | [📝](../reviews/food/TWG_화이트_스카이_티.md) | [✏️](https://blog.naver.com/naraeun33/224379972209) |
 | 113 | TWG 크림 카라멜 티 | 레드티 | TWG | [📝](../reviews/food/TWG_크림_카라멜_티.md) | [✏️](https://blog.naver.com/naraeun33/224314516010) |
 | 112 | TWG 캐모마일 | 허브차 | TWG | [📝](../reviews/food/TWG_캐모마일.md) | [✏️](https://blog.naver.com/naraeun33/224264420448) |
 | 111 | 조앤도슨 화이트 피더 | 백차 | 조앤도슨 | [📝](../reviews/food/조앤도슨_화이트_피더.md) | [✏️](https://blog.naver.com/naraeun33/224256434519) |
