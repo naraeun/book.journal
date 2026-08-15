@@ -17,6 +17,7 @@
 | 20세기 소녀 | 방우리 | 2022 | 2022 | [📝](../reviews/movie/20세기_소녀.md) | [✏️](https://m.blog.naver.com/naraeun33/222949380377) |
 | 안녕, 나의 소울메이트 | 증국상 | 2017 | 2022 | [📝](../reviews/movie/안녕,_나의_소울메이트.md) | [✏️](https://m.blog.naver.com/naraeun33/222702957967) |
 | 패딩턴 | 폴 킹 | 2015 | 2021 | [📝](../reviews/movie/패딩턴.md) | [✏️](https://m.blog.naver.com/naraeun33/222483007980) |
+| 승리호 | 조성희 | 2021 | 2021 | [📝](../reviews/movie/승리호.md) | [✏️](https://blog.naver.com/naraeun33/222233773388) |
 | 삼진그룹 영어토익반 | 이종필 | 2020 | 2021 | [📝](../reviews/movie/삼진그룹_영어토익반.md) | [✏️](https://blog.naver.com/naraeun33/222229793437) |
 | 나의 문어 선생님 | 피파 얼릭, 제임스 리드 | 2020 | 2020 | [📝](../reviews/movie/나의_문어_선생님.md) | [✏️](https://blog.naver.com/naraeun33/222162325206) |
 | 84번가의 연인 | 데이빗 휴 존스 | 1987 | 2020 | [📝](../reviews/movie/84번가의_연인.md) | [✏️](https://m.blog.naver.com/naraeun33/222155781119) |
