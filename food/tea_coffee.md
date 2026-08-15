@@ -25,4 +25,5 @@
 | 34 | 아마드티 캐모마일 & 레몬그라스 | 허브차 | 아마드티 | [📝](../reviews/food/아마드티_캐모마일_&_레몬그라스.md) | [✏️](https://m.blog.naver.com/naraeun33/222217945103) |
 | 30 | 아마드티 얼그레이 | 홍차 | 아마드티 | [📝](../reviews/food/아마드티_얼그레이.md) | [✏️](https://m.blog.naver.com/naraeun33/222144571506) |
 | 23 | 트와이닝 얼그레이 | 홍차 | 트와이닝 | [📝](../reviews/food/트와이닝_얼그레이.md) | [✏️](https://m.blog.naver.com/naraeun33/222093586148) |
+| 15 | 오설록 제주난꽃향 그린티 | 녹차 | 오설록 | [📝](../reviews/food/오설록_제주난꽃향_그린티.md) | [✏️](https://m.blog.naver.com/naraeun33/222041091671) |
 | 10 | 오설록 웨딩 그린티 | 녹차 | 오설록 | [📝](../reviews/food/오설록_웨딩_그린티.md) | [✏️](https://m.blog.naver.com/naraeun33/222006596875) |
