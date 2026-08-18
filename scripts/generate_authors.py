@@ -14,6 +14,11 @@ import unicodedata
 from pathlib import Path
 from collections import defaultdict
 
+try:
+    from .author_utils import split_authors
+except ImportError:
+    from author_utils import split_authors
+
 BOOKS_DIR = Path(__file__).parent.parent / "books"
 AUTHORS_DIR = Path(__file__).parent.parent / "authors"
 REVIEWS_DIR = Path(__file__).parent.parent / "reviews"
@@ -59,13 +64,6 @@ def load_all_books() -> list[dict]:
             row["연도"] = int(year)
             all_books.append(row)
     return all_books
-
-
-def split_authors(author_str: str) -> list[str]:
-    """공저자 문자열을 개별 작가로 분리"""
-    author_str = re.sub(r"\s*외\s*\d+명", "", author_str)
-    authors = re.split(r"[,，]\s*", author_str)
-    return [a.strip() for a in authors if a.strip()]
 
 
 def safe_filename(name: str) -> str:

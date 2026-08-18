@@ -11,6 +11,11 @@ from pathlib import Path
 from collections import defaultdict, Counter
 from datetime import datetime
 
+try:
+    from .author_utils import split_authors
+except ImportError:
+    from author_utils import split_authors
+
 ROOT_DIR = Path(__file__).parent.parent
 BOOKS_DIR = ROOT_DIR / "books"
 ANALYSIS_DIR = ROOT_DIR / "analysis"
@@ -164,9 +169,10 @@ def analyze(books: list[dict]) -> dict:
         year_cat[b["연도"]][top] += 1
     stats["year_category"] = {y: cat.most_common(5) for y, cat in sorted(year_cat.items())}
 
-    # 작가별 권수 (상위 20) — 빈 문자열 제외
-    author_counter = Counter(b.get("작가", "") for b in books)
-    author_counter.pop("", None)
+    # 작가별 권수 (상위 20) — 공저자는 개별 작가로 분리
+    author_counter = Counter()
+    for book in books:
+        author_counter.update(split_authors(book.get("작가", "")))
     stats["by_author"] = author_counter.most_common(20)
 
     # 평균 독서 속도 (월 평균 권수)
