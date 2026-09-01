@@ -22,6 +22,7 @@
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 학원강사 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 보디가드 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 도니스헬 주인, 잭슨 |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 승갑 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 남학생1, 비행기 기장, 응급 구조사 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 경규, 경찰, 어른 동기 |
 | [오로라 상회의 집사들](../reviews/drama/radio_theater/오로라_상회의_집사들.md) | 준이, 남학생2 |
@@ -37,6 +38,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 박영지 |
 | [최씨네 종말 탈출기](../reviews/drama/radio_theater/최씨네_종말_탈출기.md) | 엄마 |
 
 ## 곽윤상
@@ -70,6 +72,7 @@
 | [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 찬민 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 스님 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 안전 요원, 수영 강사 |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 길동아저씨 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 약사, 남학생2, 하루키 소설 속 해설, 나 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 데스크, 배달원 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 순택, 구관조 |
@@ -119,6 +122,12 @@
 | [죽은 왕녀를 위한 파반느](../reviews/drama/radio_theater/죽은_왕녀를_위한_파반느.md) | 수호 부, 라디오 MC |
 | [최씨네 종말 탈출기](../reviews/drama/radio_theater/최씨네_종말_탈출기.md) | 전도사 |
 | [타오](../reviews/drama/radio_theater/타오.md) | 박우태, 이솔로몬 |
+
+## 김용
+
+| 작품 | 역할 |
+|------|------|
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 오민택 |
 
 ## 김용효
 
@@ -228,6 +237,7 @@
 | [꿈의 불가마](../reviews/drama/radio_theater/꿈의_불가마.md) | 명자 |
 | [나의 돈키호테](../reviews/drama/radio_theater/나의_돈키호테.md) | 칼국수집, 어린대준, 방씨할머니 |
 | [분실물이 돌아왔습니다](../reviews/drama/radio_theater/분실물이_돌아왔습니다.md) | 박윤경쌤, 큰고모, 최수현쌤 |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 오미림 |
 | [싱글빌](../reviews/drama/radio_theater/싱글빌.md) | 미인 |
 | [이날치, 파란만장](../reviews/drama/radio_theater/이날치,_파란만장.md) | 박상궁, 기생 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 엄마 |
@@ -321,6 +331,7 @@
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 원장 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 고등학생 우경, 손님 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 애드 |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 병하, 이삿짐 직원, 취한 사람 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 성우1, 의사, 돈까스알바, 앵커 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | AI상담사 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 어른 하인, 만식, 경찰2 |
@@ -468,6 +479,7 @@
 | [나의 미래에게](../reviews/drama/radio_theater/나의_미래에게.md) | 미지, 조원2 |
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 안내양, 이복동생(여) |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 윤지애 |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 진하, 첫째 고모, 홍영선, 미용실 손님 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 간호사, 카페알바, 아이 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 서우 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 담임, 엘자2, 무당, 반장 |
@@ -552,6 +564,7 @@
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 상인, 영화감독 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 오진홍 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 사이먼, 팀, 시장 |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 박사, 마트점장, 담임 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 진행자 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 김부장 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 사장, 영수, 흔탁 |
@@ -617,6 +630,7 @@
 
 | 작품 | 역할 |
 |------|------|
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 김순례 |
 | [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 회장해녀, 정미 |
 
 ## 장희문
@@ -672,6 +686,7 @@
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 승호, 아이경주 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 중학생 인회, 소개팅녀 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 승무원 |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 조은영, 셋째 고모, 냉면집 직원, 세탁소 주인, 핫도그 사장 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 여아, 안내방송, 사서 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 옆반애 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 송엘자 |
@@ -711,6 +726,7 @@
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 간호사, 아줌마 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 산부인과 의사, 미친 여자(홍옥실 딸) |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 레이철, 도서관 사서 |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 둘째 고모, 시장 늙은 상인 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 동생, 성우2, 아이 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 간호사, 종업원 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 동기 |
@@ -763,6 +779,7 @@
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 여직원, 영어안내음, 주민2 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | ARS, 직장동료 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 전화연결음(영어) |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 길동, 홍명주, 넷째 고모 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 애엄마, 학생1, 교사, 알바 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 담임 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 옥선이모, 담임, 안내 |
@@ -857,6 +874,7 @@
 | 작품 | 역할 |
 |------|------|
 | [나를 찾지 마](../reviews/drama/radio_theater/나를_찾지_마.md) | 강숙 |
+| [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 오수림 |
 | [전우치전](../reviews/drama/radio_theater/전우치전.md) | 고지기, 시모 |
 | [최씨네 종말 탈출기](../reviews/drama/radio_theater/최씨네_종말_탈출기.md) | 최한라 |
 | [하쿠다 사진관](../reviews/drama/radio_theater/하쿠다_사진관.md) | 효재 |
