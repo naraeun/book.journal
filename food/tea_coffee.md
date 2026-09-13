@@ -21,6 +21,7 @@
 | 98 | 폰트 커피 에디오피아 시다마 몰케 원두 | 원두 | 폰트 커피 | [📝](../reviews/food/폰트_커피_에디오피아_시다마_몰케_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223633983335) |
 | 97 | 프리레인 ORB 블렌드 원두 | 원두 | 프리레인 | [📝](../reviews/food/프리레인_ORB_블렌드_원두.md) | [✏️](https://blog.naver.com/naraeun33/223503107520) |
 | 96 | 모모스커피 프루티봉봉 시그너처 블렌드 원두 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_프루티봉봉_시그너처_블렌드_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223472580993) |
+| 95 | 딜마 실론 브렉퍼스트 티 | 홍차 | 딜마 | [📝](../reviews/food/딜마_실론_브렉퍼스트_티.md) | [✏️](https://blog.naver.com/naraeun33/223465335344) |
 | 91 | 모모스커피 부산 시그니처 블렌드 원두 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_부산_시그니처_블렌드_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223428650475) |
 | 93 | 모호 커피 로스터스 블랜드 미음 원두 | 원두 | 모호 커피 | [📝](../reviews/food/모호_커피_로스터스_블랜드_미음_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223443125136) |
 | 89 | 모모스커피 에스쇼콜라 시그니처 블렌드 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_에스쇼콜라_시그니처_블렌드.md) | [✏️](https://m.blog.naver.com/naraeun33/223405131545) |
