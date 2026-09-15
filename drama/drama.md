@@ -23,3 +23,4 @@
 | 한자와 나오키 시즌 1 | 후쿠자와 카츠오, 타나자와 타카요시 | 야츠 히로유키 | 티빙 | 2013 | 2021 | [📝](../reviews/drama/drama/한자와_나오키_시즌_1.md) | [✏️](https://blog.naver.com/naraeun33/222193978280) |
 | 보건교사 안은영 | 이경미 | 정세랑, 이경미 | 넷플릭스 | 2020 | 2020 | [📝](../reviews/drama/drama/보건교사_안은영.md) | [✏️](https://m.blog.naver.com/naraeun33/222110815481) |
 | 비밀의 숲 2 | 박현석 | 이수연 | tvN | 2020 | 2020 | [📝](../reviews/drama/drama/비밀의_숲_2.md) | [✏️](https://blog.naver.com/naraeun33/222107913413) |
+| 갈릴레오 | 니시타니 히로시 | 후쿠다 야스시 | 인터넷 | 2007 | 2013 | [📝](../reviews/drama/drama/갈릴레오.md) | [✏️](https://m.blog.naver.com/naraeun33/191672711) |
