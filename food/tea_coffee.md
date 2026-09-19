@@ -29,6 +29,7 @@
 | 90 | 트와이닝 레몬&진저 | 허브차 | 트와이닝 | [📝](../reviews/food/트와이닝_레몬&진저.md) | [✏️](https://blog.naver.com/naraeun33/223421251576) |
 | 89 | 모모스커피 에스쇼콜라 시그니처 블렌드 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_에스쇼콜라_시그니처_블렌드.md) | [✏️](https://m.blog.naver.com/naraeun33/223405131545) |
 | 88 | 바샤 커피 마라케시 모닝 | 커피 | 바샤 커피 | [📝](../reviews/food/바샤_커피_마라케시_모닝.md) | [✏️](https://m.blog.naver.com/naraeun33/223399967227) |
+| 85 | 베트남 하타 카푸치노 코코넛 커피 | 커피 | 하타 | [📝](../reviews/food/베트남_하타_카푸치노_코코넛_커피.md) | [✏️](https://m.blog.naver.com/naraeun33/223364310105) |
 | 84 | 알펜로제 얼그레이 | 홍차 | 알펜로제 | [📝](../reviews/food/알펜로제_얼그레이.md) | [✏️](https://blog.naver.com/naraeun33/223342662115) |
 | 80 | 바샤 커피 1910 커피 | 커피 | 바샤 커피 | [📝](../reviews/food/바샤_커피_1910_커피.md) | [✏️](https://m.blog.naver.com/naraeun33/223242475612) |
 | 63 | 트와이닝 퓨어 캐모마일 | 허브차 | 트와이닝 | [📝](../reviews/food/트와이닝_퓨어_캐모마일.md) | [✏️](https://m.blog.naver.com/naraeun33/222648847641) |
