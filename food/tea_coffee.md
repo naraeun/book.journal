@@ -23,8 +23,9 @@
 | 96 | 모모스커피 프루티봉봉 시그너처 블렌드 원두 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_프루티봉봉_시그너처_블렌드_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223472580993) |
 | 95 | 딜마 실론 브렉퍼스트 티 | 홍차 | 딜마 | [📝](../reviews/food/딜마_실론_브렉퍼스트_티.md) | [✏️](https://blog.naver.com/naraeun33/223465335344) |
 | 94 | 블루보틀 벨라 도노반 원두 | 원두 | 블루보틀 | [📝](../reviews/food/블루보틀_벨라_도노반_원두.md) | [✏️](https://blog.naver.com/naraeun33/223455439145) |
-| 91 | 모모스커피 부산 시그니처 블렌드 원두 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_부산_시그니처_블렌드_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223428650475) |
 | 93 | 모호 커피 로스터스 블랜드 미음 원두 | 원두 | 모호 커피 | [📝](../reviews/food/모호_커피_로스터스_블랜드_미음_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223443125136) |
+| 92 | 딜마 센차 그린티 | 녹차 | 딜마 | [📝](../reviews/food/딜마_센차_그린티.md) | [✏️](https://blog.naver.com/naraeun33/223436734453) |
+| 91 | 모모스커피 부산 시그니처 블렌드 원두 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_부산_시그니처_블렌드_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223428650475) |
 | 89 | 모모스커피 에스쇼콜라 시그니처 블렌드 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_에스쇼콜라_시그니처_블렌드.md) | [✏️](https://m.blog.naver.com/naraeun33/223405131545) |
 | 88 | 바샤 커피 마라케시 모닝 | 커피 | 바샤 커피 | [📝](../reviews/food/바샤_커피_마라케시_모닝.md) | [✏️](https://m.blog.naver.com/naraeun33/223399967227) |
 | 84 | 알펜로제 얼그레이 | 홍차 | 알펜로제 | [📝](../reviews/food/알펜로제_얼그레이.md) | [✏️](https://blog.naver.com/naraeun33/223342662115) |
