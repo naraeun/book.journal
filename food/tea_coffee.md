@@ -26,6 +26,7 @@
 | 93 | 모호 커피 로스터스 블랜드 미음 원두 | 원두 | 모호 커피 | [📝](../reviews/food/모호_커피_로스터스_블랜드_미음_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223443125136) |
 | 92 | 딜마 센차 그린티 | 녹차 | 딜마 | [📝](../reviews/food/딜마_센차_그린티.md) | [✏️](https://blog.naver.com/naraeun33/223436734453) |
 | 91 | 모모스커피 부산 시그니처 블렌드 원두 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_부산_시그니처_블렌드_원두.md) | [✏️](https://m.blog.naver.com/naraeun33/223428650475) |
+| 90 | 트와이닝 레몬&진저 | 허브차 | 트와이닝 | [📝](../reviews/food/트와이닝_레몬&진저.md) | [✏️](https://blog.naver.com/naraeun33/223421251576) |
 | 89 | 모모스커피 에스쇼콜라 시그니처 블렌드 | 원두 | 모모스커피 | [📝](../reviews/food/모모스커피_에스쇼콜라_시그니처_블렌드.md) | [✏️](https://m.blog.naver.com/naraeun33/223405131545) |
 | 88 | 바샤 커피 마라케시 모닝 | 커피 | 바샤 커피 | [📝](../reviews/food/바샤_커피_마라케시_모닝.md) | [✏️](https://m.blog.naver.com/naraeun33/223399967227) |
 | 84 | 알펜로제 얼그레이 | 홍차 | 알펜로제 | [📝](../reviews/food/알펜로제_얼그레이.md) | [✏️](https://blog.naver.com/naraeun33/223342662115) |
