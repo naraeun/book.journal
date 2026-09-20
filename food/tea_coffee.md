@@ -40,6 +40,7 @@
 | 59 | 히스앤헤더 오가닉 나이트타임 | 허브차 | 히스앤헤더 오가닉 | [📝](../reviews/food/히스앤헤더_오가닉_나이트타임.md) | [✏️](https://m.blog.naver.com/naraeun33/222604127922) |
 | 58 | 테틀리티 얼그레이 | 홍차 | 테틀리티 | [📝](../reviews/food/테틀리티_얼그레이.md) | [✏️](https://m.blog.naver.com/naraeun33/222597545139) |
 | 52 | 런던 프룻&허브 스위트 캐모마일 | 허브차 | 런던 프룻&허브 | [📝](../reviews/food/런던_프룻&허브_스위트_캐모마일.md) | [✏️](https://m.blog.naver.com/naraeun33/222565784342) |
+| 50 | 햄스테드 오가닉 페퍼민트 & 스피어민트 | 허브차 | 햄스테드 | [📝](../reviews/food/햄스테드_오가닉_페퍼민트_&_스피어민트.md) | [✏️](https://m.blog.naver.com/naraeun33/222542357222?recommendTrackingCode=2) |
 | 41 | 아일레스티 잉글리시 셀렉트 실론 | 홍차 | 아일레스티 | [📝](../reviews/food/아일레스티_잉글리시_셀렉트_실론.md) | [✏️](https://m.blog.naver.com/naraeun33/222289004400) |
 | 40 | 아일레스티 아쌈 스페셜 | 홍차 | 아일레스티 | [📝](../reviews/food/아일레스티_아쌈_스페셜.md) | [✏️](https://m.blog.naver.com/naraeun33/222281383585) |
 | 39 | 아일레스티 페퍼민트 | 허브차 | 아일레스티 | [📝](../reviews/food/아일레스티_페퍼민트.md) | [✏️](https://m.blog.naver.com/naraeun33/222274756092) |
