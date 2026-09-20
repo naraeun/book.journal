@@ -44,6 +44,7 @@
 | 40 | 아일레스티 아쌈 스페셜 | 홍차 | 아일레스티 | [📝](../reviews/food/아일레스티_아쌈_스페셜.md) | [✏️](https://m.blog.naver.com/naraeun33/222281383585) |
 | 38 | 아일레스티 다즐링 로얄 | 홍차 | 아일레스티 | [📝](../reviews/food/아일레스티_다즐링_로얄.md) | [✏️](https://m.blog.naver.com/naraeun33/222266052361) |
 | 34 | 아마드티 캐모마일 & 레몬그라스 | 허브차 | 아마드티 | [📝](../reviews/food/아마드티_캐모마일_&_레몬그라스.md) | [✏️](https://m.blog.naver.com/naraeun33/222217945103) |
+| 31 | 아마드티 페퍼민트 & 레몬 | 허브차 | 아마드티 | [📝](../reviews/food/아마드티_페퍼민트_&_레몬.md) | [✏️](https://m.blog.naver.com/naraeun33/222164355684) |
 | 30 | 아마드티 얼그레이 | 홍차 | 아마드티 | [📝](../reviews/food/아마드티_얼그레이.md) | [✏️](https://m.blog.naver.com/naraeun33/222144571506) |
 | 23 | 트와이닝 얼그레이 | 홍차 | 트와이닝 | [📝](../reviews/food/트와이닝_얼그레이.md) | [✏️](https://m.blog.naver.com/naraeun33/222093586148) |
 | 21 | 아마드티 믹스드 베리즈 & 히비스커스 | 허브차 | 아마드티 | [📝](../reviews/food/아마드티_믹스드_베리즈_&_히비스커스.md) | [✏️](https://m.blog.naver.com/naraeun33/222080784447) |
