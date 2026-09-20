@@ -42,6 +42,7 @@
 | 52 | 런던 프룻&허브 스위트 캐모마일 | 허브차 | 런던 프룻&허브 | [📝](../reviews/food/런던_프룻&허브_스위트_캐모마일.md) | [✏️](https://m.blog.naver.com/naraeun33/222565784342) |
 | 41 | 아일레스티 잉글리시 셀렉트 실론 | 홍차 | 아일레스티 | [📝](../reviews/food/아일레스티_잉글리시_셀렉트_실론.md) | [✏️](https://m.blog.naver.com/naraeun33/222289004400) |
 | 40 | 아일레스티 아쌈 스페셜 | 홍차 | 아일레스티 | [📝](../reviews/food/아일레스티_아쌈_스페셜.md) | [✏️](https://m.blog.naver.com/naraeun33/222281383585) |
+| 39 | 아일레스티 페퍼민트 | 허브차 | 아일레스티 | [📝](../reviews/food/아일레스티_페퍼민트.md) | [✏️](https://m.blog.naver.com/naraeun33/222274756092) |
 | 38 | 아일레스티 다즐링 로얄 | 홍차 | 아일레스티 | [📝](../reviews/food/아일레스티_다즐링_로얄.md) | [✏️](https://m.blog.naver.com/naraeun33/222266052361) |
 | 34 | 아마드티 캐모마일 & 레몬그라스 | 허브차 | 아마드티 | [📝](../reviews/food/아마드티_캐모마일_&_레몬그라스.md) | [✏️](https://m.blog.naver.com/naraeun33/222217945103) |
 | 31 | 아마드티 페퍼민트 & 레몬 | 허브차 | 아마드티 | [📝](../reviews/food/아마드티_페퍼민트_&_레몬.md) | [✏️](https://m.blog.naver.com/naraeun33/222164355684) |
