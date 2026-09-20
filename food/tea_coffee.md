@@ -51,3 +51,4 @@
 | 12 | 트와이닝 퓨어 다즐링 | 홍차 | 트와이닝 | [📝](../reviews/food/트와이닝_퓨어_다즐링.md) | [✏️](https://m.blog.naver.com/naraeun33/222020613611) |
 | 10 | 오설록 웨딩 그린티 | 녹차 | 오설록 | [📝](../reviews/food/오설록_웨딩_그린티.md) | [✏️](https://m.blog.naver.com/naraeun33/222006596875) |
 | 9 | 트와이닝 잉글리시 브렉퍼스트 | 홍차 | 트와이닝 | [📝](../reviews/food/트와이닝_잉글리시_브렉퍼스트.md) | [✏️](https://m.blog.naver.com/naraeun33/221999137708) |
+| 2 | 트와이닝 페퍼민트 | 허브차 | 트와이닝 | [📝](../reviews/food/트와이닝_페퍼민트.md) | [✏️](https://m.blog.naver.com/naraeun33/221916116320) |
