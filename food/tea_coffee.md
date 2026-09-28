@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 종류 | 브랜드 | 리뷰 | 블로그 |
 |:----:|------|------|--------|:----:|:--------:|
+| 115 | TWG 실버문 티 | 녹차 | TWG | [📝](../reviews/food/TWG_실버문_티.md) | [✏️](https://blog.naver.com/naraeun33/224423776507) |
 | 114 | TWG 화이트 스카이 티 | 백차 | TWG | [📝](../reviews/food/TWG_화이트_스카이_티.md) | [✏️](https://blog.naver.com/naraeun33/224379972209) |
 | 113 | TWG 크림 카라멜 티 | 레드티 | TWG | [📝](../reviews/food/TWG_크림_카라멜_티.md) | [✏️](https://blog.naver.com/naraeun33/224314516010) |
 | 112 | TWG 캐모마일 | 허브차 | TWG | [📝](../reviews/food/TWG_캐모마일.md) | [✏️](https://blog.naver.com/naraeun33/224264420448) |
