@@ -344,6 +344,12 @@ def find_book(book_num: int) -> dict | None:
             cells = [c.strip() for c in line.strip("|").split("|")]
             if len(cells) < 6:
                 continue
+            # '한번 더 읽은 책 목록'(재독) 테이블 행은 건너뛴다.
+            # 메인 테이블은 cells[4]가 연번호(정수)지만,
+            # 재독 테이블은 cells[4]가 '원래 날짜'(YYYY-MM-DD)다.
+            # 재독 행을 매칭하면 원작 연도가 아니라 재독 연도가 잡히므로 제외한다.
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", cells[4]):
+                continue
             try:
                 num = int(cells[1])
             except ValueError:
