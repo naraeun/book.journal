@@ -15,8 +15,28 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from aladin_search import search_book, search_book_multi, get_category_short
+import aladin_search
+import book_search
+from aladin_search import get_category_short
 from create_review import create_review_md, find_book, update_books_table, list_topics, add_to_topic
+
+
+def search_book(title: str, author: str = "") -> dict | None:
+    """알라딘 OpenAPI 우선, 실패 시 카카오+알라딘 스크래핑 폴백."""
+    result = aladin_search.search_book(title, author)
+    if result:
+        return result
+    print("ℹ️  알라딘 API 결과 없음 → 카카오 검색으로 폴백합니다.")
+    return book_search.search_book(title, author)
+
+
+def search_book_multi(title: str, author: str = "", max_results: int = 10) -> list[dict]:
+    """알라딘 OpenAPI 우선, 실패 시 카카오+알라딘 스크래핑 폴백."""
+    results = aladin_search.search_book_multi(title, author, max_results)
+    if results:
+        return results
+    print("ℹ️  알라딘 API 결과 없음 → 카카오 검색으로 폴백합니다.")
+    return book_search.search_book_multi(title, author, max_results)
 
 BOOKS_DIR = Path(__file__).parent.parent / "books"
 REVIEWS_DIR = Path(__file__).parent.parent / "reviews"
@@ -229,6 +249,12 @@ def main():
             )
         else:
             sys.exit(0)
+
+    # 카테고리가 비어 있으면(예: 카카오 검색은 됐지만 알라딘 분류 조회 실패) 직접 입력
+    if not result.get("category", "").strip():
+        result["category"] = input(
+            "카테고리가 비어 있습니다. 직접 입력 (예: 소설/시/희곡>한국소설): "
+        ).strip()
 
     # 번호 자동 계산
     text = md_file.read_text(encoding="utf-8")
