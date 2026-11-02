@@ -2,6 +2,7 @@
 
 | 제목 | 장소 | 관람일 | 리뷰 | 블로그 |
 |------|------|:------:|:----:|--------|
+| 스페인 미술 500년: 빛과 어둠의 연대기 | 예술의전당 한가람디자인미술관 | 2026-11 | [📝](../reviews/exhibition/스페인_미술_500년:_빛과_어둠의_연대기.md) | [✏️](https://blog.naver.com/naraeun33/224462983877) |
 | 단원 김홍도, 시대를 그리다 | 국립중앙박물관 | 2026-07 | [📝](../reviews/exhibition/단원_김홍도,_시대를_그리다.md) | [✏️](https://blog.naver.com/naraeun33/224358875826) |
 | 조선 민화전 | 아모레퍼시픽 미술관 | 2025-06 | [📝](../reviews/exhibition/조선_민화전.md) | [✏️](https://m.blog.naver.com/naraeun33/223907381328) |
 | 겸재 정선 | 호암 미술관 | 2025-04 | [📝](../reviews/exhibition/겸재_정선.md) | [✏️](https://m.blog.naver.com/naraeun33/223830427124) |
