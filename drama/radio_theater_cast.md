@@ -23,6 +23,7 @@
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 함박사, 인사팀장, 구매팀장, 호텔 직원 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 보디가드 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 도니스헬 주인, 잭슨 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 한규, 지형, 종태, 작업반장, 해설, 경찰1, 사장1, 취객, 건달들, 도박꾼들, 목사, 기자, 소방대원 |
 | [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 승갑 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 남학생1, 비행기 기장, 응급 구조사 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 경규, 경찰, 어른 동기 |
@@ -74,6 +75,7 @@
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 스님 |
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 웨이린, 윤과장, 손님, 회사 직원, 안내방송, 타투이스트 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 안전 요원, 수영 강사 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 상혁, 상태, 소장, 보좌관, 건달들, 도박꾼, 진행자, 남자 |
 | [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 길동아저씨 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 약사, 남학생2, 하루키 소설 속 해설, 나 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 데스크, 배달원 |
@@ -86,6 +88,7 @@
 | 작품 | 역할 |
 |------|------|
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 회계팀장, 회사 직원, 승객, 앵커, PC방 사장 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 신 사장, 재문, 편의점 직원, 건달, 경찰, 남자, 기자, 주민 |
 
 ## 김봄
 
@@ -166,6 +169,7 @@
 | 작품 | 역할 |
 |------|------|
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 국밥집 직원, 카페 직원, 회사 지원 ,안내방송, 항공사 직원, 관광객, 앵커, 손님 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 아기 성갑, 주민, 사장2, 내비게이션, 기상캐스터, 사회자, 사서함 음성, 직원, 안내, 승무원,친구, 아나운서 |
 
 ## 김익태
 
@@ -248,6 +252,7 @@
 | 작품 | 역할 |
 |------|------|
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 동준, 회사 직원, 승객, 손님, 디제이, 카페 사장 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 병호, 호건, 주민, 친구1, 건달2, 기자, 건달들, 경찰, 점원 |
 
 ## 박기욱
 
@@ -359,6 +364,7 @@
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 김대리, 앵커, 김기사, 회사 직원, 투숙객, 자동차 딜러 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 고등학생 우경, 손님 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 애드 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 석현, 승필, 상혁 부, 캐스터, 건달 |
 | [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 병하, 이삿짐 직원, 취한 사람 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 성우1, 의사, 돈까스알바, 앵커 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | AI상담사 |
@@ -401,6 +407,7 @@
 | 작품 | 역할 |
 |------|------|
 | [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 동동, 장순 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 성갑 |
 | [엘자의 하인](../reviews/drama/radio_theater/엘자의_하인.md) | 하인부 |
 
 ## 선은혜
@@ -464,6 +471,12 @@
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 지윤 |
 | [작은 아씨들](../reviews/drama/radio_theater/작은_아씨들.md) | 은수 |
 
+## 원호섭
+
+| 작품 | 역할 |
+|------|------|
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 재근 |
+
 ## 유승희
 
 | 작품 | 역할 |
@@ -508,6 +521,7 @@
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 안내양, 이복동생(여) |
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 중개인, 카페 직원, 회사 직원, 호텔 직원, 간호사, 손님, 타투이스트 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 윤지애 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 희경, 부동산, 사회자 |
 | [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 진하, 첫째 고모, 홍영선, 미용실 손님 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 간호사, 카페알바, 아이 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 서우 |
@@ -594,6 +608,7 @@
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 고팀장 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 오진홍 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 사이먼, 팀, 시장 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 재복, 오 팀장, 규환, 건달1, 뺑소니 운전자, 운전자, 경호, 기자 |
 | [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 박사, 마트점장, 담임 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 진행자 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 김부장 |
@@ -615,6 +630,7 @@
 | 작품 | 역할 |
 |------|------|
 | [꿈으로 갈게](../reviews/drama/radio_theater/꿈으로_갈게.md) | 황회장, 기사, 재욱, 엘 쿠쿠이, 낙호 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 도준, 박 약사, 은행원 |
 
 ## 이제인
 
@@ -717,6 +733,7 @@
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 박대리, 회사 직원, 손님, 엄마친구 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 중학생 인회, 소개팅녀 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 승무원 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 다온, 재근 모, 순창 할머니, 조합장, 승필 아내, 직원, 여자, 기자 |
 | [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 조은영, 셋째 고모, 냉면집 직원, 세탁소 주인, 핫도그 사장 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 여아, 안내방송, 사서 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 옆반애 |
@@ -729,6 +746,7 @@
 | 작품 | 역할 |
 |------|------|
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 김비서, 승객, 핫도그집 상인, 항공사 직원, 내비게이션, 회사 직원, 카페 직원 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 도준 여친, 주민, 아나운서, 안내방송, 주무관, 안내멘트, 점원 |
 
 ## 정상일
 
@@ -763,6 +781,7 @@
 | [단역배우 김순효 씨](../reviews/drama/radio_theater/단역배우_김순효_씨.md) | 간호사, 아줌마 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | 산부인과 의사, 미친 여자(홍옥실 딸) |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 레이철, 도서관 사서 |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 성은, 백 여사, 아나운서, 부동산, 기자 |
 | [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 둘째 고모, 시장 늙은 상인 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 동생, 성우2, 아이 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 간호사, 종업원 |
@@ -817,6 +836,7 @@
 | [달까지 가자](../reviews/drama/radio_theater/달까지_가자.md) | 연월도사, 다해이모, 오대리, 집주인, 회사 직원 |
 | [러브 몬스터](../reviews/drama/radio_theater/러브_몬스터.md) | ARS, 직장동료 |
 | [멜라닌](../reviews/drama/radio_theater/멜라닌.md) | 전화연결음(영어) |
+| [서울의 선인](../reviews/drama/radio_theater/서울의_선인.md) | 세나 |
 | [순례 주택](../reviews/drama/radio_theater/순례_주택.md) | 길동, 홍명주, 넷째 고모 |
 | [스파클](../reviews/drama/radio_theater/스파클.md) | 애엄마, 학생1, 교사, 알바 |
 | [안락한 삶](../reviews/drama/radio_theater/안락한_삶.md) | 담임 |

@@ -2,6 +2,7 @@
 
 | 제목 | 원작 | 방송 | 리뷰 | 블로그 |
 |------|------|:----:|:----:|:--------:|
+| 서울의 선인 | [📖](../reviews/2026/3268.md) | 2026-10 | [📝](../reviews/drama/radio_theater/서울의_선인.md) | [✏️](https://blog.naver.com/naraeun33/224468841914) |
 | 달까지 가자 | [📖](../reviews/2021/2010.md) | 2026-09 | [📝](../reviews/drama/radio_theater/달까지_가자.md) | [✏️](https://blog.naver.com/naraeun33/224440955919) |
 | 순례 주택 | [📖](../reviews/2023/2402.md) | 2026-08 | [📝](../reviews/drama/radio_theater/순례_주택.md) | [✏️](https://blog.naver.com/naraeun33/224398023364) |
 | 나의 미래에게 | [📖](../reviews/2026/3203.md) | 2026-06 | [📝](../reviews/drama/radio_theater/나의_미래에게.md) | [✏️](https://blog.naver.com/naraeun33/224336692138) |
