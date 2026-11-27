@@ -142,7 +142,17 @@ def fetch_blog_date(blog_url: str) -> str | None:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=10) as resp:
             html = resp.read().decode("utf-8")
-        m = re.search(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.", html)
+        date_re = r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\."
+        # 1) 게시일 요소(se_date) 우선. 본문 메타(og:description 등)에는
+        #    책 발매일(예: '발매 2013.09.30.')이 먼저 나오므로 전체 검색하면 안 된다.
+        m = re.search(r'class="[^"]*\bse_date\b[^"]*"[^>]*>\s*' + date_re, html)
+        if not m:
+            # 2) 대체: 발매일/출간일 문맥이 아닌 첫 번째 날짜
+            for cand in re.finditer(date_re, html):
+                before = html[max(0, cand.start() - 40):cand.start()]
+                if not re.search(r"(발매|출간|출판|발행)[^<>]{0,20}$", before):
+                    m = cand
+                    break
         if m:
             return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
     except Exception as e:
